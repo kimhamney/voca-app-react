@@ -1,0 +1,1576 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "word": "activity",
+      "pos": "n",
+      "meaning": "활동, 활기"
+    },
+    {
+      "id": 2,
+      "word": "afraid",
+      "pos": "a",
+      "meaning": "두려운"
+    },
+    {
+      "id": 3,
+      "word": "angry",
+      "pos": "a",
+      "meaning": "성난, 노한"
+    },
+    {
+      "id": 4,
+      "word": "area",
+      "pos": "n",
+      "meaning": "범위, 영역 ; 지역"
+    },
+    {
+      "id": 5,
+      "word": "arrest",
+      "pos": "v",
+      "meaning": "체포하다, 검거하다"
+    },
+    {
+      "id": 6,
+      "word": "arrest",
+      "pos": "n",
+      "meaning": "체포"
+    },
+    {
+      "id": 7,
+      "word": "art",
+      "pos": "n",
+      "meaning": "예술, 미술 ; 기술"
+    },
+    {
+      "id": 8,
+      "word": "astonish",
+      "pos": "v",
+      "meaning": "놀라게 하다"
+    },
+    {
+      "id": 9,
+      "word": "background",
+      "pos": "n",
+      "meaning": "배경"
+    },
+    {
+      "id": 10,
+      "word": "badly",
+      "pos": "ad",
+      "meaning": "나쁘게, 심하게 ; 서투르게"
+    },
+    {
+      "id": 11,
+      "word": "bathroom",
+      "pos": "n",
+      "meaning": "욕실"
+    },
+    {
+      "id": 12,
+      "word": "battle",
+      "pos": "n",
+      "meaning": "전투"
+    },
+    {
+      "id": 13,
+      "word": "battle",
+      "pos": "v",
+      "meaning": "싸우다"
+    },
+    {
+      "id": 14,
+      "word": "beach",
+      "pos": "n",
+      "meaning": "해안"
+    },
+    {
+      "id": 15,
+      "word": "beast",
+      "pos": "n",
+      "meaning": "짐승"
+    },
+    {
+      "id": 16,
+      "word": "beer",
+      "pos": "n",
+      "meaning": "맥주"
+    },
+    {
+      "id": 17,
+      "word": "below",
+      "pos": "prep",
+      "meaning": "~보다 아래에"
+    },
+    {
+      "id": 18,
+      "word": "below",
+      "pos": "ad",
+      "meaning": "~보다 아래에"
+    },
+    {
+      "id": 19,
+      "word": "bottom",
+      "pos": "n",
+      "meaning": "바닥, 아래, 밑바닥"
+    },
+    {
+      "id": 20,
+      "word": "bottom",
+      "pos": "v",
+      "meaning": "근거를 두다."
+    },
+    {
+      "id": 21,
+      "word": "brown",
+      "pos": "a",
+      "meaning": "갈색의"
+    },
+    {
+      "id": 22,
+      "word": "brown",
+      "pos": "n",
+      "meaning": "갈색"
+    },
+    {
+      "id": 23,
+      "word": "but",
+      "pos": "ad",
+      "meaning": "단지, 다만"
+    },
+    {
+      "id": 24,
+      "word": "but",
+      "pos": "prep",
+      "meaning": "~을 제외하고"
+    },
+    {
+      "id": 25,
+      "word": "but",
+      "pos": "conj",
+      "meaning": "그러나"
+    },
+    {
+      "id": 26,
+      "word": "canal",
+      "pos": "n",
+      "meaning": "운하"
+    },
+    {
+      "id": 27,
+      "word": "candle",
+      "pos": "n",
+      "meaning": "양초, 촛불"
+    },
+    {
+      "id": 28,
+      "word": "cash",
+      "pos": "n",
+      "meaning": "현금"
+    },
+    {
+      "id": 29,
+      "word": "castle",
+      "pos": "n",
+      "meaning": "성"
+    },
+    {
+      "id": 30,
+      "word": "certain",
+      "pos": "a",
+      "meaning": "특정한 ; 자신하는 , 확실한"
+    },
+    {
+      "id": 31,
+      "word": "chance",
+      "pos": "n",
+      "meaning": "우연 ; 가능성 ; 기회"
+    },
+    {
+      "id": 32,
+      "word": "clean",
+      "pos": "a",
+      "meaning": "청결한, 깨끗한 ; 살균의, 위생적인"
+    },
+    {
+      "id": 33,
+      "word": "clean",
+      "pos": "v",
+      "meaning": "깨끗하게 하다"
+    },
+    {
+      "id": 34,
+      "word": "clever",
+      "pos": "a",
+      "meaning": "영리한, 현명한"
+    },
+    {
+      "id": 35,
+      "word": "cloudy",
+      "pos": "a",
+      "meaning": "구름이 낀"
+    },
+    {
+      "id": 36,
+      "word": "coal",
+      "pos": "n",
+      "meaning": "석탄"
+    },
+    {
+      "id": 37,
+      "word": "collect",
+      "pos": "v",
+      "meaning": "모으다, 수집하다"
+    },
+    {
+      "id": 38,
+      "word": "comb",
+      "pos": "n",
+      "meaning": "빗"
+    },
+    {
+      "id": 39,
+      "word": "comb",
+      "pos": "v",
+      "meaning": "빗질하다 ; 찾다"
+    },
+    {
+      "id": 40,
+      "word": "complain",
+      "pos": "v",
+      "meaning": "불평하다 ; 한탄하다"
+    },
+    {
+      "id": 41,
+      "word": "correctly",
+      "pos": "ad",
+      "meaning": "적당하게, 알맞게"
+    },
+    {
+      "id": 42,
+      "word": "couple",
+      "pos": "n",
+      "meaning": "한쌍"
+    },
+    {
+      "id": 43,
+      "word": "crash",
+      "pos": "n",
+      "meaning": "굉음, 추락, 충돌"
+    },
+    {
+      "id": 44,
+      "word": "crash",
+      "pos": "v",
+      "meaning": "충돌하다"
+    },
+    {
+      "id": 45,
+      "word": "culture",
+      "pos": "n",
+      "meaning": "문화"
+    },
+    {
+      "id": 46,
+      "word": "culture",
+      "pos": "v",
+      "meaning": "배양하다"
+    },
+    {
+      "id": 47,
+      "word": "damage",
+      "pos": "n",
+      "meaning": "손해, 피해"
+    },
+    {
+      "id": 48,
+      "word": "damage",
+      "pos": "v",
+      "meaning": "손해를 입히다"
+    },
+    {
+      "id": 49,
+      "word": "danger",
+      "pos": "n",
+      "meaning": "위험"
+    },
+    {
+      "id": 50,
+      "word": "date",
+      "pos": "n",
+      "meaning": "날짜 ; 약속"
+    },
+    {
+      "id": 51,
+      "word": "date",
+      "pos": "v",
+      "meaning": "~의 연대를 추정하다"
+    },
+    {
+      "id": 52,
+      "word": "daughter",
+      "pos": "n",
+      "meaning": "딸"
+    },
+    {
+      "id": 53,
+      "word": "delight",
+      "pos": "n",
+      "meaning": "황홀경, 기쁨"
+    },
+    {
+      "id": 54,
+      "word": "delight",
+      "pos": "v",
+      "meaning": "기쁘게 하다"
+    },
+    {
+      "id": 55,
+      "word": "democracy",
+      "pos": "n",
+      "meaning": "민주주의, 민주정치, 자치"
+    },
+    {
+      "id": 56,
+      "word": "deserve",
+      "pos": "v",
+      "meaning": "~받을 만하다, ~할 가치가 있다"
+    },
+    {
+      "id": 57,
+      "word": "devil",
+      "pos": "n",
+      "meaning": "악마"
+    },
+    {
+      "id": 58,
+      "word": "dictionary",
+      "pos": "n",
+      "meaning": "사전"
+    },
+    {
+      "id": 59,
+      "word": "dig",
+      "pos": "v",
+      "meaning": "파다"
+    },
+    {
+      "id": 60,
+      "word": "disappoint",
+      "pos": "v",
+      "meaning": "좌절시키다"
+    },
+    {
+      "id": 61,
+      "word": "drown",
+      "pos": "v",
+      "meaning": "물에 빠지다, 익사하다"
+    },
+    {
+      "id": 62,
+      "word": "dull",
+      "pos": "a",
+      "meaning": "흐릿한 ; 무딘, 둔한 ; 따분한"
+    },
+    {
+      "id": 63,
+      "word": "earning",
+      "pos": "n",
+      "meaning": "소득"
+    },
+    {
+      "id": 64,
+      "word": "energy",
+      "pos": "n",
+      "meaning": "힘, 활기"
+    },
+    {
+      "id": 65,
+      "word": "engage",
+      "pos": "v",
+      "meaning": "종사하다 ; 고용하다 ; 약혼하다, 약속하다"
+    },
+    {
+      "id": 66,
+      "word": "entire",
+      "pos": "a",
+      "meaning": "전체의"
+    },
+    {
+      "id": 67,
+      "word": "envelope",
+      "pos": "n",
+      "meaning": "봉투"
+    },
+    {
+      "id": 68,
+      "word": "envelope",
+      "pos": "v",
+      "meaning": "감싸다, 뒤덮다"
+    },
+    {
+      "id": 69,
+      "word": "especially",
+      "pos": "ad",
+      "meaning": "특별히"
+    },
+    {
+      "id": 70,
+      "word": "evil",
+      "pos": "a",
+      "meaning": "나쁜, 사악한"
+    },
+    {
+      "id": 71,
+      "word": "expect",
+      "pos": "v",
+      "meaning": "기대하다, 예기하다"
+    },
+    {
+      "id": 72,
+      "word": "explain",
+      "pos": "v",
+      "meaning": "설명하다, 해명하다"
+    },
+    {
+      "id": 73,
+      "word": "fact",
+      "pos": "n",
+      "meaning": "사실"
+    },
+    {
+      "id": 74,
+      "word": "fare",
+      "pos": "n",
+      "meaning": "운임 ; 승객"
+    },
+    {
+      "id": 75,
+      "word": "fault",
+      "pos": "n",
+      "meaning": "결점, 흠 ; 단층 (지질학)"
+    },
+    {
+      "id": 76,
+      "word": "fear",
+      "pos": "n",
+      "meaning": "두려움, 공포"
+    },
+    {
+      "id": 77,
+      "word": "fear",
+      "pos": "v",
+      "meaning": "두려워하다"
+    },
+    {
+      "id": 78,
+      "word": "flood",
+      "pos": "n",
+      "meaning": "홍수, 범람, 쇄도"
+    },
+    {
+      "id": 79,
+      "word": "flood",
+      "pos": "v",
+      "meaning": "범람하다, 침수하다"
+    },
+    {
+      "id": 80,
+      "word": "flute",
+      "pos": "n",
+      "meaning": "플룻, 피리"
+    },
+    {
+      "id": 81,
+      "word": "folk",
+      "pos": "n",
+      "meaning": "사람들"
+    },
+    {
+      "id": 82,
+      "word": "folk",
+      "pos": "a",
+      "meaning": "민속의, 전통의"
+    },
+    {
+      "id": 83,
+      "word": "follow",
+      "pos": "v",
+      "meaning": "뒤따르다 ; ~의 결과로 일어나다"
+    },
+    {
+      "id": 84,
+      "word": "foolish",
+      "pos": "a",
+      "meaning": "어리석은, 바보 같은"
+    },
+    {
+      "id": 85,
+      "word": "force",
+      "pos": "n",
+      "meaning": "힘, 세력"
+    },
+    {
+      "id": 86,
+      "word": "force",
+      "pos": "v",
+      "meaning": "강제하다, 강요하다"
+    },
+    {
+      "id": 87,
+      "word": "foreign",
+      "pos": "a",
+      "meaning": "외국의, 익숙치 않은"
+    },
+    {
+      "id": 88,
+      "word": "fortunately",
+      "pos": "ad",
+      "meaning": "운좋게, 다행히"
+    },
+    {
+      "id": 89,
+      "word": "french",
+      "pos": "n",
+      "meaning": "프랑스 사람, 프랑스어"
+    },
+    {
+      "id": 90,
+      "word": "frog",
+      "pos": "n",
+      "meaning": "개구리"
+    },
+    {
+      "id": 91,
+      "word": "fun",
+      "pos": "n",
+      "meaning": "재미, 즐거움"
+    },
+    {
+      "id": 92,
+      "word": "fun",
+      "pos": "a",
+      "meaning": "즐거운"
+    },
+    {
+      "id": 93,
+      "word": "furniture",
+      "pos": "n",
+      "meaning": "가구"
+    },
+    {
+      "id": 94,
+      "word": "further",
+      "pos": "a",
+      "meaning": "그 이상의, 여분의"
+    },
+    {
+      "id": 95,
+      "word": "further",
+      "pos": "ad",
+      "meaning": "더 멀리, 게다가"
+    },
+    {
+      "id": 96,
+      "word": "gesture",
+      "pos": "n",
+      "meaning": "몸짓"
+    },
+    {
+      "id": 97,
+      "word": "goal",
+      "pos": "n",
+      "meaning": "목적, 목표, 골"
+    },
+    {
+      "id": 98,
+      "word": "grab",
+      "pos": "v",
+      "meaning": "붙잡다"
+    },
+    {
+      "id": 99,
+      "word": "grave",
+      "pos": "n",
+      "meaning": "무덤"
+    },
+    {
+      "id": 100,
+      "word": "grave",
+      "pos": "a",
+      "meaning": "중대한, 근엄한 ; 엄숙한"
+    },
+    {
+      "id": 101,
+      "word": "greedy",
+      "pos": "a",
+      "meaning": "욕심 많은"
+    },
+    {
+      "id": 102,
+      "word": "greeting",
+      "pos": "n",
+      "meaning": "인사, 환영"
+    },
+    {
+      "id": 103,
+      "word": "ground",
+      "pos": "n",
+      "meaning": "기초, 근거 ; 지면, 땅, 운동장"
+    },
+    {
+      "id": 104,
+      "word": "ground",
+      "pos": "v",
+      "meaning": "근거를 두다"
+    },
+    {
+      "id": 105,
+      "word": "handshake",
+      "pos": "n",
+      "meaning": "악수"
+    },
+    {
+      "id": 106,
+      "word": "handsome",
+      "pos": "a",
+      "meaning": "잘생긴, 멋진"
+    },
+    {
+      "id": 107,
+      "word": "happy",
+      "pos": "a",
+      "meaning": "행복한, 기쁜"
+    },
+    {
+      "id": 108,
+      "word": "harmful",
+      "pos": "a",
+      "meaning": "해로운"
+    },
+    {
+      "id": 109,
+      "word": "heat",
+      "pos": "n",
+      "meaning": "열, 더위"
+    },
+    {
+      "id": 110,
+      "word": "heat",
+      "pos": "v",
+      "meaning": "가열하다, 데우다"
+    },
+    {
+      "id": 111,
+      "word": "hero",
+      "pos": "n",
+      "meaning": "영웅"
+    },
+    {
+      "id": 112,
+      "word": "hop",
+      "pos": "n",
+      "meaning": "깡충 뛰기"
+    },
+    {
+      "id": 113,
+      "word": "hop",
+      "pos": "v",
+      "meaning": "한발로 뛰다"
+    },
+    {
+      "id": 114,
+      "word": "howl",
+      "pos": "v",
+      "meaning": "울부짖다"
+    },
+    {
+      "id": 115,
+      "word": "hurt",
+      "pos": "v",
+      "meaning": "다치게 하다"
+    },
+    {
+      "id": 116,
+      "word": "hurt",
+      "pos": "n",
+      "meaning": "부상"
+    },
+    {
+      "id": 117,
+      "word": "iceberg",
+      "pos": "n",
+      "meaning": "빙산"
+    },
+    {
+      "id": 118,
+      "word": "important",
+      "pos": "a",
+      "meaning": "중요한"
+    },
+    {
+      "id": 119,
+      "word": "independent",
+      "pos": "a",
+      "meaning": "독립적인, 자주의 ; 독자적인"
+    },
+    {
+      "id": 120,
+      "word": "instrument",
+      "pos": "n",
+      "meaning": "기계, 기구"
+    },
+    {
+      "id": 121,
+      "word": "interest",
+      "pos": "n",
+      "meaning": "흥미, 이익 ; 이자"
+    },
+    {
+      "id": 122,
+      "word": "interest",
+      "pos": "v",
+      "meaning": "관심을 갖게 하다"
+    },
+    {
+      "id": 123,
+      "word": "invent",
+      "pos": "v",
+      "meaning": "발명하다"
+    },
+    {
+      "id": 124,
+      "word": "invite",
+      "pos": "v",
+      "meaning": "초대하다"
+    },
+    {
+      "id": 125,
+      "word": "joy",
+      "pos": "n",
+      "meaning": "기쁨"
+    },
+    {
+      "id": 126,
+      "word": "lantern",
+      "pos": "n",
+      "meaning": "랜턴"
+    },
+    {
+      "id": 127,
+      "word": "laundry",
+      "pos": "n",
+      "meaning": "세탁물"
+    },
+    {
+      "id": 128,
+      "word": "leap",
+      "pos": "v",
+      "meaning": "껑충 뛰다, 뛰어넘다"
+    },
+    {
+      "id": 129,
+      "word": "leap",
+      "pos": "n",
+      "meaning": "도약, 점프"
+    },
+    {
+      "id": 130,
+      "word": "library",
+      "pos": "n",
+      "meaning": "도서관"
+    },
+    {
+      "id": 131,
+      "word": "license",
+      "pos": "n",
+      "meaning": "면허"
+    },
+    {
+      "id": 132,
+      "word": "locate",
+      "pos": "v",
+      "meaning": "놓다 , 위치하다 ; 찾아내다"
+    },
+    {
+      "id": 133,
+      "word": "luck",
+      "pos": "n",
+      "meaning": "행운"
+    },
+    {
+      "id": 134,
+      "word": "mail",
+      "pos": "n",
+      "meaning": "우편물"
+    },
+    {
+      "id": 135,
+      "word": "mail",
+      "pos": "v",
+      "meaning": "발송하다"
+    },
+    {
+      "id": 136,
+      "word": "mankind",
+      "pos": "n",
+      "meaning": "인류, 인간"
+    },
+    {
+      "id": 137,
+      "word": "marble",
+      "pos": "n",
+      "meaning": "대리석"
+    },
+    {
+      "id": 138,
+      "word": "math",
+      "pos": "n",
+      "meaning": "수학"
+    },
+    {
+      "id": 139,
+      "word": "memory",
+      "pos": "n",
+      "meaning": "기억, 추억"
+    },
+    {
+      "id": 140,
+      "word": "merchant",
+      "pos": "n",
+      "meaning": "상인"
+    },
+    {
+      "id": 141,
+      "word": "merry",
+      "pos": "a",
+      "meaning": "명랑한, 즐거운"
+    },
+    {
+      "id": 142,
+      "word": "method",
+      "pos": "n",
+      "meaning": "방법, 방식, 체계"
+    },
+    {
+      "id": 143,
+      "word": "monk",
+      "pos": "n",
+      "meaning": "승려"
+    },
+    {
+      "id": 144,
+      "word": "musician",
+      "pos": "n",
+      "meaning": "음악가"
+    },
+    {
+      "id": 145,
+      "word": "neighbor",
+      "pos": "n",
+      "meaning": "이웃사람"
+    },
+    {
+      "id": 146,
+      "word": "none",
+      "pos": "pron",
+      "meaning": "아무도 ~않다"
+    },
+    {
+      "id": 147,
+      "word": "none",
+      "pos": "a",
+      "meaning": "아무도 ~않다"
+    },
+    {
+      "id": 148,
+      "word": "none",
+      "pos": "ad",
+      "meaning": "아무도 ~않다"
+    },
+    {
+      "id": 149,
+      "word": "occur",
+      "pos": "v",
+      "meaning": "일어나다, 생기다"
+    },
+    {
+      "id": 150,
+      "word": "ostrich",
+      "pos": "n",
+      "meaning": "타조"
+    },
+    {
+      "id": 151,
+      "word": "overhear",
+      "pos": "v",
+      "meaning": "우연히 듣다, 엿듣다"
+    },
+    {
+      "id": 152,
+      "word": "own",
+      "pos": "v",
+      "meaning": "소유하다"
+    },
+    {
+      "id": 153,
+      "word": "own",
+      "pos": "a",
+      "meaning": "자기자신의, 고유한"
+    },
+    {
+      "id": 154,
+      "word": "past",
+      "pos": "a",
+      "meaning": "과거의"
+    },
+    {
+      "id": 155,
+      "word": "past",
+      "pos": "prep",
+      "meaning": "~을 지나서"
+    },
+    {
+      "id": 156,
+      "word": "past",
+      "pos": "n",
+      "meaning": "과거"
+    },
+    {
+      "id": 157,
+      "word": "peaceful",
+      "pos": "a",
+      "meaning": "평온한, 조용한"
+    },
+    {
+      "id": 158,
+      "word": "photographer",
+      "pos": "n",
+      "meaning": "사진사"
+    },
+    {
+      "id": 159,
+      "word": "pick",
+      "pos": "v",
+      "meaning": "고르다, 선택하다, 줍다"
+    },
+    {
+      "id": 160,
+      "word": "pick",
+      "pos": "n",
+      "meaning": "선택권"
+    },
+    {
+      "id": 161,
+      "word": "pleasant",
+      "pos": "a",
+      "meaning": "기분 좋은, 유쾌한"
+    },
+    {
+      "id": 162,
+      "word": "possible",
+      "pos": "a",
+      "meaning": "가능한"
+    },
+    {
+      "id": 163,
+      "word": "powder",
+      "pos": "n",
+      "meaning": "가루, 화약"
+    },
+    {
+      "id": 164,
+      "word": "precious",
+      "pos": "a",
+      "meaning": "귀중한, 값어치 있는"
+    },
+    {
+      "id": 165,
+      "word": "prepare",
+      "pos": "v",
+      "meaning": "준비하다, 각오하다"
+    },
+    {
+      "id": 166,
+      "word": "president",
+      "pos": "n",
+      "meaning": "대통령, 장(長)"
+    },
+    {
+      "id": 167,
+      "word": "price",
+      "pos": "n",
+      "meaning": "가격, 가치"
+    },
+    {
+      "id": 168,
+      "word": "problem",
+      "pos": "n",
+      "meaning": "문제, 과제, 고민"
+    },
+    {
+      "id": 169,
+      "word": "promise",
+      "pos": "n",
+      "meaning": "약속"
+    },
+    {
+      "id": 170,
+      "word": "promise",
+      "pos": "v",
+      "meaning": "약속하다"
+    },
+    {
+      "id": 171,
+      "word": "pull",
+      "pos": "v",
+      "meaning": "잡아당기다, 끌다; 뽑다"
+    },
+    {
+      "id": 172,
+      "word": "pull",
+      "pos": "n",
+      "meaning": "끌기, 끌어당기기"
+    },
+    {
+      "id": 173,
+      "word": "purpose",
+      "pos": "n",
+      "meaning": "목적, 용도"
+    },
+    {
+      "id": 174,
+      "word": "puzzle",
+      "pos": "n",
+      "meaning": "수수께끼, 당황"
+    },
+    {
+      "id": 175,
+      "word": "puzzle",
+      "pos": "v",
+      "meaning": "당혹하게 하다"
+    },
+    {
+      "id": 176,
+      "word": "quarter",
+      "pos": "n",
+      "meaning": "4분의 1 ; 부분 ; 구역 ; 거주지"
+    },
+    {
+      "id": 177,
+      "word": "rainbow",
+      "pos": "n",
+      "meaning": "무지개"
+    },
+    {
+      "id": 178,
+      "word": "raise",
+      "pos": "n",
+      "meaning": "인상, 증가"
+    },
+    {
+      "id": 179,
+      "word": "raise",
+      "pos": "v",
+      "meaning": "기르다, 사육하다 ; 올리다 ; 야기하다"
+    },
+    {
+      "id": 180,
+      "word": "rat",
+      "pos": "n",
+      "meaning": "쥐, 들쥐"
+    },
+    {
+      "id": 181,
+      "word": "rate",
+      "pos": "v",
+      "meaning": "평가하다 , 등급을 매기다"
+    },
+    {
+      "id": 182,
+      "word": "rate",
+      "pos": "n",
+      "meaning": "속도 ; 비율 ; 가격, 요금"
+    },
+    {
+      "id": 183,
+      "word": "reason",
+      "pos": "n",
+      "meaning": "이유, 원인, 이성"
+    },
+    {
+      "id": 184,
+      "word": "reason",
+      "pos": "v",
+      "meaning": "추론하다, 사고하다"
+    },
+    {
+      "id": 185,
+      "word": "religious",
+      "pos": "a",
+      "meaning": "종교적인 ; 독실한"
+    },
+    {
+      "id": 186,
+      "word": "replace",
+      "pos": "v",
+      "meaning": "대체하다, 바꾸다"
+    },
+    {
+      "id": 187,
+      "word": "republic",
+      "pos": "n",
+      "meaning": "공화국"
+    },
+    {
+      "id": 188,
+      "word": "resource",
+      "pos": "n",
+      "meaning": "자원, 수단"
+    },
+    {
+      "id": 189,
+      "word": "return",
+      "pos": "v",
+      "meaning": "돌아오다; 돌려주다, 반납하다, 되돌아가다"
+    },
+    {
+      "id": 190,
+      "word": "return",
+      "pos": "n",
+      "meaning": "돌아옴, 귀환; 반납"
+    },
+    {
+      "id": 191,
+      "word": "revival",
+      "pos": "n",
+      "meaning": "재생, 회복, 부활"
+    },
+    {
+      "id": 192,
+      "word": "rope",
+      "pos": "n",
+      "meaning": "밧줄"
+    },
+    {
+      "id": 193,
+      "word": "route",
+      "pos": "n",
+      "meaning": "길, 노선, 항로"
+    },
+    {
+      "id": 194,
+      "word": "salt",
+      "pos": "n",
+      "meaning": "소금"
+    },
+    {
+      "id": 195,
+      "word": "scare",
+      "pos": "n",
+      "meaning": "공포"
+    },
+    {
+      "id": 196,
+      "word": "scare",
+      "pos": "v",
+      "meaning": "두려워하게 하다, 깜짝 놀라게 하다"
+    },
+    {
+      "id": 197,
+      "word": "section",
+      "pos": "n",
+      "meaning": "부분, 구역, 분할"
+    },
+    {
+      "id": 198,
+      "word": "semester",
+      "pos": "n",
+      "meaning": "학기"
+    },
+    {
+      "id": 199,
+      "word": "shadow",
+      "pos": "n",
+      "meaning": "그림자"
+    },
+    {
+      "id": 200,
+      "word": "shadow",
+      "pos": "v",
+      "meaning": "그늘지게 하다 ; 뒤를 따라가다"
+    },
+    {
+      "id": 201,
+      "word": "sharp",
+      "pos": "a",
+      "meaning": "날카로운 ; 급격한"
+    },
+    {
+      "id": 202,
+      "word": "sheet",
+      "pos": "n",
+      "meaning": "시트, 종이 한장 ; 평평한 지역"
+    },
+    {
+      "id": 203,
+      "word": "sick",
+      "pos": "a",
+      "meaning": "병든 ; 싫증난"
+    },
+    {
+      "id": 204,
+      "word": "sink",
+      "pos": "v",
+      "meaning": "아래로 가라앉다"
+    },
+    {
+      "id": 205,
+      "word": "site",
+      "pos": "n",
+      "meaning": "위치, 장소"
+    },
+    {
+      "id": 206,
+      "word": "skill",
+      "pos": "n",
+      "meaning": "기술"
+    },
+    {
+      "id": 207,
+      "word": "sleep",
+      "pos": "v",
+      "meaning": "자다"
+    },
+    {
+      "id": 208,
+      "word": "snake",
+      "pos": "n",
+      "meaning": "뱀"
+    },
+    {
+      "id": 209,
+      "word": "snake",
+      "pos": "v",
+      "meaning": "(뱀처럼) 구불구불 가다"
+    },
+    {
+      "id": 210,
+      "word": "sophomore",
+      "pos": "n",
+      "meaning": "2학년생"
+    },
+    {
+      "id": 211,
+      "word": "spade",
+      "pos": "n",
+      "meaning": "삽"
+    },
+    {
+      "id": 212,
+      "word": "stadium",
+      "pos": "n",
+      "meaning": "경기장"
+    },
+    {
+      "id": 213,
+      "word": "state",
+      "pos": "n",
+      "meaning": "상태 ; 나라, 국가"
+    },
+    {
+      "id": 214,
+      "word": "state",
+      "pos": "v",
+      "meaning": "진술하다, 주장하다"
+    },
+    {
+      "id": 215,
+      "word": "stay",
+      "pos": "v",
+      "meaning": "머무르다, 체류하다 ; 유지하다"
+    },
+    {
+      "id": 216,
+      "word": "step",
+      "pos": "n",
+      "meaning": "걸음 ; 정도, 수준"
+    },
+    {
+      "id": 217,
+      "word": "step",
+      "pos": "v",
+      "meaning": "걷다"
+    },
+    {
+      "id": 218,
+      "word": "store",
+      "pos": "n",
+      "meaning": "가게, 저장"
+    },
+    {
+      "id": 219,
+      "word": "store",
+      "pos": "v",
+      "meaning": "따로 떼어두다, 저장하다"
+    },
+    {
+      "id": 220,
+      "word": "subject",
+      "pos": "n",
+      "meaning": "주제 ; 실험대상 ; 신하"
+    },
+    {
+      "id": 221,
+      "word": "subject",
+      "pos": "v",
+      "meaning": "드러내다, 노출시키다"
+    },
+    {
+      "id": 222,
+      "word": "subject",
+      "pos": "a",
+      "meaning": "~하기 쉬운, 영향을 받는"
+    },
+    {
+      "id": 223,
+      "word": "surface",
+      "pos": "n",
+      "meaning": "표면"
+    },
+    {
+      "id": 224,
+      "word": "surface",
+      "pos": "v",
+      "meaning": "(어둠 속이나 숨어 있던 곳에서) 나오다 ,모습을 드러내다"
+    },
+    {
+      "id": 225,
+      "word": "surprise",
+      "pos": "v",
+      "meaning": "놀라게 하다"
+    },
+    {
+      "id": 226,
+      "word": "surprise",
+      "pos": "n",
+      "meaning": "놀람, 놀라운 일"
+    },
+    {
+      "id": 227,
+      "word": "symbol",
+      "pos": "n",
+      "meaning": "상징"
+    },
+    {
+      "id": 228,
+      "word": "system",
+      "pos": "n",
+      "meaning": "체계, 조직 ; 방식"
+    },
+    {
+      "id": 229,
+      "word": "tail",
+      "pos": "n",
+      "meaning": "꼬리, 끝"
+    },
+    {
+      "id": 230,
+      "word": "tail",
+      "pos": "v",
+      "meaning": "첨부하다 ; 미행하다"
+    },
+    {
+      "id": 231,
+      "word": "taste",
+      "pos": "n",
+      "meaning": "맛, 취향"
+    },
+    {
+      "id": 232,
+      "word": "taste",
+      "pos": "v",
+      "meaning": "맛보다"
+    },
+    {
+      "id": 233,
+      "word": "telephone",
+      "pos": "n",
+      "meaning": "전화"
+    },
+    {
+      "id": 234,
+      "word": "temperature",
+      "pos": "n",
+      "meaning": "온도, 열"
+    },
+    {
+      "id": 235,
+      "word": "though",
+      "pos": "conj",
+      "meaning": "~임에도 불구하고"
+    },
+    {
+      "id": 236,
+      "word": "though",
+      "pos": "ad",
+      "meaning": "그러나"
+    },
+    {
+      "id": 237,
+      "word": "throat",
+      "pos": "n",
+      "meaning": "목구멍"
+    },
+    {
+      "id": 238,
+      "word": "throw",
+      "pos": "v",
+      "meaning": "던지다"
+    },
+    {
+      "id": 239,
+      "word": "tooth",
+      "pos": "n",
+      "meaning": "이"
+    },
+    {
+      "id": 240,
+      "word": "torch",
+      "pos": "n",
+      "meaning": "횃불"
+    },
+    {
+      "id": 241,
+      "word": "torch",
+      "pos": "v",
+      "meaning": "방화하다"
+    },
+    {
+      "id": 242,
+      "word": "toward",
+      "pos": "prep",
+      "meaning": "~쪽으로, ~를 향하여"
+    },
+    {
+      "id": 243,
+      "word": "towel",
+      "pos": "n",
+      "meaning": "수건, 타월"
+    },
+    {
+      "id": 244,
+      "word": "track",
+      "pos": "v",
+      "meaning": "추적하다"
+    },
+    {
+      "id": 245,
+      "word": "track",
+      "pos": "n",
+      "meaning": "지나간 자취, 흔적"
+    },
+    {
+      "id": 246,
+      "word": "treat",
+      "pos": "v",
+      "meaning": "대접하다, 다루다"
+    },
+    {
+      "id": 247,
+      "word": "trick",
+      "pos": "n",
+      "meaning": "장난 ; 속임수 ; 묘기, 재주"
+    },
+    {
+      "id": 248,
+      "word": "trick",
+      "pos": "v",
+      "meaning": "속이다"
+    },
+    {
+      "id": 249,
+      "word": "turn",
+      "pos": "n",
+      "meaning": "차례, 전환"
+    },
+    {
+      "id": 250,
+      "word": "turn",
+      "pos": "v",
+      "meaning": "변하다, 달라지다 ; 방향을 바꾸다"
+    },
+    {
+      "id": 251,
+      "word": "umbrella",
+      "pos": "n",
+      "meaning": "우산"
+    },
+    {
+      "id": 252,
+      "word": "umbrella",
+      "pos": "a",
+      "meaning": "포괄적인"
+    },
+    {
+      "id": 253,
+      "word": "universe",
+      "pos": "n",
+      "meaning": "우주, 전세계"
+    },
+    {
+      "id": 254,
+      "word": "vacation",
+      "pos": "n",
+      "meaning": "휴가"
+    },
+    {
+      "id": 255,
+      "word": "voyage",
+      "pos": "n",
+      "meaning": "항해, 항행"
+    },
+    {
+      "id": 256,
+      "word": "voyage",
+      "pos": "v",
+      "meaning": "항해하다"
+    },
+    {
+      "id": 257,
+      "word": "weak",
+      "pos": "a",
+      "meaning": "약한, 허약한"
+    },
+    {
+      "id": 258,
+      "word": "wealth",
+      "pos": "n",
+      "meaning": "부, 재산 ; 풍부"
+    },
+    {
+      "id": 259,
+      "word": "weather",
+      "pos": "n",
+      "meaning": "날씨, 기후"
+    },
+    {
+      "id": 260,
+      "word": "weather",
+      "pos": "v",
+      "meaning": "(어려움 등을) 견디다 ; 풍화하다"
+    },
+    {
+      "id": 261,
+      "word": "weight",
+      "pos": "n",
+      "meaning": "무게 ; 중요성"
+    },
+    {
+      "id": 262,
+      "word": "without",
+      "pos": "prep",
+      "meaning": "~없이, 제외하고"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "word": "activity",
+      "pos": "n",
+      "meaning": "활동, 활기"
+    },
+    {
+      "id": 1,
+      "word": "activity",
+      "pos": "a",
+      "meaning": "활동적인"
+    },
+    {
+      "id": 2,
+      "word": "afraid",
+      "pos": "a",
+      "meaning": "두려운"
+    },
+    {
+      "id": 3,
+      "word": "angry",
+      "pos": "a",
+      "meaning": "성난, 노한"
+    },
+    {
+      "id": 259,
+      "word": "weather",
+      "pos": "n",
+      "meaning": "날씨, 기후"
+    },
+    {
+      "id": 260,
+      "word": "weather",
+      "pos": "v",
+      "meaning": "(어려움 등을) 견디다 ; 풍화하다"
+    },
+    {
+      "id": 261,
+      "word": "weight",
+      "pos": "n",
+      "meaning": "무게 ; 중요성"
+    },
+    {
+      "id": 262,
+      "word": "without",
+      "pos": "prep",
+      "meaning": "~없이, 제외하고"
+    }
+  ]
+}
