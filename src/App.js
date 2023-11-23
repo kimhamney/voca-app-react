@@ -19,11 +19,11 @@ class Word {
     this.word = data.word
     this.pos = data.pos
     this.meaning = getFilterArr(data.meaning)
+    this.isCorrect = false
   }
 }
 
 let correctCount = 0
-let dataList = []
 
 const getFilterArr = (input) => {
   let value = input.replace(/\s/g, '')
@@ -47,14 +47,17 @@ const getData = () => {
 }
 
 const App = () => {
+  const [dataList, setDataList] = useState([])
   const [isFinish, setFinish] = useState(false)
-  dataList = getData();
 
-  const submit = () => {
+  if (dataList.length === 0) {
+    setDataList(getData())
+  }
+
+  const onSubmit = () => {
     setFinish(true)
-
+    
     let inputList = document.getElementsByClassName('input')
-    let meaningList = document.getElementsByClassName('meaning')
     let counter = document.getElementsByClassName('counter')[0]
 
     correctCount = 0
@@ -65,26 +68,17 @@ const App = () => {
 
       let isCorrect = checkWord(meaningArr, inputArr);
       dataList[i].isCorrect = isCorrect;
-      inputList[i].style.borderColor = isCorrect ? "blue" : "red"
-      meaningList[i].style.display = isCorrect ? "none" : "inline"
 
       if (isCorrect)
         correctCount++
     }
 
-    const speech = new SpeechSynthesisUtterance();
-    speech.lang = 'en-US';
-    speech.text = 'Speech';
-    speech.volume = 1;
-    speech.rate = 0.8;
-    speech.pitch = 1;
-    window.speechSynthesis.speak(speech);
-
     counter.innerText = correctCount + "/" + dataList.length
   }
 
-  const refresh = () => {
+  const onRefresh = () => {
     setFinish(false)
+    dataList.sort(() => Math.random() - 0.5);
   }
 
   const checkWord = (words, inputs) => {
@@ -101,11 +95,20 @@ const App = () => {
     }
     return false
   }
-
+  
   return (
     <div className="App">
-      {dataList?.map((word, index) => <WordList key={index} word={word} />)}
-      <SubmitBtn onClick={isFinish ? refresh : submit}>{isFinish ? "Refresh" : "Submit"}</SubmitBtn>
+      {dataList?.map((word, index) => 
+        <WordList 
+          key={index} 
+          index={index} 
+          word={word} 
+          finish={isFinish}>
+        </WordList>)}
+      <SubmitBtn 
+        onClick={isFinish ? onRefresh : onSubmit}>
+        {isFinish ? "Refresh" : "Submit"}
+      </SubmitBtn>
       <Text className="counter"></Text>
     </div>
   );
