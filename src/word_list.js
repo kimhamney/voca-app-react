@@ -1,3 +1,5 @@
+import React, { useEffect, useState } from "react"
+
 import { HiMiniSpeakerWave } from "react-icons/hi2";
 import styled from 'styled-components';
 
@@ -41,10 +43,10 @@ const SpeackerBtn = styled.button`
   height:10px;
   width: 100px;
   top: 15px;
+  cursor:pointer;
 `;
 
 export default function WordList({index, word, finish}) {
-
   const onSpeech = () => {
     const speech = new SpeechSynthesisUtterance();
     speech.lang = 'en-US';
@@ -59,12 +61,12 @@ export default function WordList({index, word, finish}) {
     <List>
       <Text>{index + 1}</Text>
       <Text>{word.word}</Text>
-      <SpeackerBtn onClick={onSpeech}>
+      <SpeackerBtn onClick={onSpeech} tabIndex="-1">
         <HiMiniSpeakerWave />
       </SpeackerBtn>
       <Text>{word.pos}</Text>
       <MeanContainer>
-        <Input 
+        <Input
           className="input" 
           type="text" 
           style={!finish ? {borderColor : "black"} : 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 
 import WordList from "./word_list.js";
 import styled from 'styled-components';
@@ -6,8 +6,6 @@ import styled from 'styled-components';
 const SubmitBtn = styled.button`
 
 `;
-
-
 
 const Text = styled.p`
   margin: 10px;
@@ -20,10 +18,9 @@ class Word {
     this.pos = data.pos
     this.meaning = getFilterArr(data.meaning)
     this.isCorrect = false
+    this.isPlaying = false
   }
 }
-
-let correctCount = 0
 
 const getFilterArr = (input) => {
   let value = input.replace(/\s/g, '')
@@ -46,7 +43,38 @@ const getData = () => {
   return list
 }
 
+const checkWord = (words, inputs) => {
+  if (!inputs || inputs.length === 0)
+    return false;
+
+  for (let i = 0; i < words.length; i++)
+  {
+    for (let j = 0; j < inputs.length; j++)
+    {
+      if (words[i] === inputs[j])
+        return true
+    }
+  }
+  return false
+}
+
+const soundPlay = (dataList) => {
+  for (var i = 0; i < dataList.length; i++) {
+    for (var j = 0; j < 3; j++)
+    {
+      const speech = new SpeechSynthesisUtterance();
+      speech.lang = 'en-US';
+      speech.text = dataList[i].word;
+      speech.volume = 1;
+      speech.rate = 0.5;
+      speech.pitch = 1;
+      window.speechSynthesis.speak(speech);
+    }
+  }
+}
+
 const App = () => {
+  const [correctCount, setCorrectCount] = useState('')
   const [dataList, setDataList] = useState([])
   const [isFinish, setFinish] = useState(false)
 
@@ -54,13 +82,13 @@ const App = () => {
     setDataList(getData())
   }
 
+  soundPlay(dataList)
+  
   const onSubmit = () => {
     setFinish(true)
     
     let inputList = document.getElementsByClassName('input')
-    let counter = document.getElementsByClassName('counter')[0]
-
-    correctCount = 0
+    let count = 0
 
     for (let i = 0; i < dataList.length; i++) {
       let meaningArr = dataList[i].meaning
@@ -70,30 +98,16 @@ const App = () => {
       dataList[i].isCorrect = isCorrect;
 
       if (isCorrect)
-        correctCount++
+        count++
     }
 
-    counter.innerText = correctCount + "/" + dataList.length
+    setCorrectCount(count + "/" + dataList.length)
   }
 
   const onRefresh = () => {
     setFinish(false)
     dataList.sort(() => Math.random() - 0.5);
-  }
-
-  const checkWord = (words, inputs) => {
-    if (!inputs || inputs.length === 0)
-      return false;
-
-    for (let i = 0; i < words.length; i++)
-    {
-      for (let j = 0; j < inputs.length; j++)
-      {
-        if (words[i] === inputs[j])
-          return true
-      }
-    }
-    return false
+    setCorrectCount('')
   }
   
   return (
@@ -102,14 +116,14 @@ const App = () => {
         <WordList 
           key={index} 
           index={index} 
-          word={word} 
+          word={word}
           finish={isFinish}>
         </WordList>)}
       <SubmitBtn 
         onClick={isFinish ? onRefresh : onSubmit}>
         {isFinish ? "Refresh" : "Submit"}
       </SubmitBtn>
-      <Text className="counter"></Text>
+      <Text className="counter">{correctCount}</Text>
     </div>
   );
 }
