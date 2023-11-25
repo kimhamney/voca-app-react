@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-import WordList from "./word_list.js";
+import WordListItem from "./word_list_item.js";
 import styled from 'styled-components';
 
 const SubmitBtn = styled.button`
@@ -16,7 +16,8 @@ class Word {
     this.id = data.id
     this.word = data.word
     this.pos = data.pos
-    this.meaning = getFilterArr(data.meaning)
+    this.meaning = data.meaning
+    this.meaningArr = getFilterArr(data.meaning)
     this.isCorrect = false
     this.isPlaying = false
   }
@@ -73,7 +74,14 @@ const soundPlay = (dataList) => {
   }
 }
 
+export const TestMode = {
+  WORD: "word",
+  MEANING: "meaning",
+  SOUND: "sound",
+}
+
 const App = () => {
+  const [testMode, setTestMode] = useState(TestMode.WORD)
   const [correctCount, setCorrectCount] = useState('')
   const [dataList, setDataList] = useState([])
   const [isFinish, setFinish] = useState(false)
@@ -82,25 +90,40 @@ const App = () => {
     setDataList(getData())
   }
 
-  soundPlay(dataList)
+  // setTestMode(TestMode.WORD)
+  // soundPlay(dataList)
   
   const onSubmit = () => {
-    setFinish(true)
-    
-    let inputList = document.getElementsByClassName('input')
+    let wordInputList = document.getElementsByClassName('wordInput')
+    let meaningInputList = document.getElementsByClassName('meaningInput')
     let count = 0
-
+    
     for (let i = 0; i < dataList.length; i++) {
-      let meaningArr = dataList[i].meaning
-      let inputArr = getFilterArr(inputList[i].value)
+      let meaningArr = dataList[i].meaningArr
+      let inputArr = getFilterArr(meaningInputList[i].value)
 
-      let isCorrect = checkWord(meaningArr, inputArr);
+      let isCorrect = false
+      switch(testMode)
+      {
+        case "word":
+          isCorrect = checkWord(meaningArr, inputArr)
+          break
+        case "sound":
+          isCorrect = checkWord(meaningArr, inputArr) && 
+                      dataList[i].word === wordInputList[i].value;
+          break
+        case "meaning":
+          isCorrect = dataList[i].word === meaningInputList[i].value;
+          break
+        default: break
+      }
       dataList[i].isCorrect = isCorrect;
-
+      
       if (isCorrect)
         count++
     }
 
+    setFinish(true)
     setCorrectCount(count + "/" + dataList.length)
   }
 
@@ -112,18 +135,19 @@ const App = () => {
   
   return (
     <div className="App">
-      {dataList?.map((word, index) => 
-        <WordList 
-          key={index} 
-          index={index} 
-          word={word}
-          finish={isFinish}>
-        </WordList>)}
-      <SubmitBtn 
-        onClick={isFinish ? onRefresh : onSubmit}>
-        {isFinish ? "Refresh" : "Submit"}
-      </SubmitBtn>
-      <Text className="counter">{correctCount}</Text>
+        {dataList?.map((word, index) => 
+          <WordListItem 
+            key={index} 
+            testMode={testMode}
+            index={index} 
+            word={word}
+            isFinish={isFinish}>
+          </WordListItem>)}
+        <SubmitBtn 
+          onClick={isFinish ? onRefresh : onSubmit}>
+          {isFinish ? "Retry" : "Submit"}
+        </SubmitBtn>
+        <Text className="counter">{correctCount}</Text>
     </div>
   );
 }
