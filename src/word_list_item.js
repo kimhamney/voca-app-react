@@ -6,18 +6,25 @@ const List = styled.li`
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  justify-content: left;
 `;
 
 const Text = styled.label`
   margin: 10px;
   width: 50px;
-  text-align: center;
+  text-align: left;
 `;
 
 const PosText = styled.label`
   margin: 10px;
   width: 40px;
   text-align: center;
+`;
+
+const MeaningText = styled.label`
+  margin: 10px;
+  width: 30%;
+  text-align: left;
 `;
 
 const SpeackerBtn = styled.button`
@@ -50,15 +57,33 @@ export default function WordListItem({testMode, index, word, isFinish}) {
   const WordComponent = () => {
     switch(testMode)
     {
+      case "none":
       case "word":
       case "meaning":
           return <Text>{text}</Text>
       case "sound":
         return <WordListInput 
-        text={text} 
-        isWord={true} 
-        isCorrect={word.isCorrect} 
-        isFinish={isFinish} />
+          text={text} 
+          isWord={true} 
+          isCorrect={word.isCorrect} 
+          isFinish={isFinish} />
+      default: return
+    }
+  }
+
+  const MeaningComponent = () => {
+    switch(testMode)
+    {
+      case "word":
+      case "meaning":
+      case "sound":
+        return <WordListInput 
+          text={inputText} 
+          isWord={false} 
+          isCorrect={word.isCorrect} 
+          isFinish={isFinish} />
+      case "none":
+        return <MeaningText>{word.meaning}</MeaningText>
       default: return
     }
   }
@@ -71,11 +96,7 @@ export default function WordListItem({testMode, index, word, isFinish}) {
       </SpeackerBtn>) :<></>}
       {WordComponent()}
       <PosText>{word.pos}</PosText>
-      <WordListInput 
-        text={inputText} 
-        isWord={false} 
-        isCorrect={word.isCorrect} 
-        isFinish={isFinish} />
+      {MeaningComponent()}
     </List>
   </div>
     

@@ -1,10 +1,18 @@
-import React, { useState } from "react"
+import * as xlsx from 'xlsx';
+
+import React, { useEffect, useState } from "react"
 
 import WordListItem from "./word_list_item.js";
 import styled from 'styled-components';
 
-const SubmitBtn = styled.button`
-
+const TopContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 `;
 
 const Text = styled.p`
@@ -74,24 +82,53 @@ const soundPlay = (dataList) => {
   }
 }
 
+export const Mode = {
+  LIST: 'list',
+  INTERVAL: 'interval',
+  TEST: 'test',
+}
+
 export const TestMode = {
+  NONE: "none",
   WORD: "word",
   MEANING: "meaning",
   SOUND: "sound",
 }
 
 const App = () => {
-  const [testMode, setTestMode] = useState(TestMode.WORD)
+  const [testMode, setTestMode] = useState(TestMode.NONE)
   const [correctCount, setCorrectCount] = useState('')
   const [dataList, setDataList] = useState([])
   const [isFinish, setFinish] = useState(false)
+  const [count, setCount] = useState(5);
+  
+  let isInterval = false
 
   if (dataList.length === 0) {
     setDataList(getData())
   }
 
-  // setTestMode(TestMode.WORD)
+  isInterval = true
+  
   // soundPlay(dataList)
+
+  useEffect(() => {    
+    const id = setInterval(() => {
+      setCount((count) => count - 1);
+    }, 1000);
+    
+    if(isInterval && count === 0) {
+        clearInterval(id);
+        endInterval();
+    }
+
+    return () => clearInterval(id);
+  }, [count]);
+
+  const endInterval = () => {
+    isInterval = false;
+    setTestMode(TestMode.WORD)
+  }
   
   const onSubmit = () => {
     let wordInputList = document.getElementsByClassName('wordInput')
@@ -132,9 +169,65 @@ const App = () => {
     dataList.sort(() => Math.random() - 0.5);
     setCorrectCount('')
   }
+
+  const onUploadFile = (e) => {
+    e.preventDefault();
+    if (e.target.files) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            const data = e.target.result;
+            const workbook = xlsx.read(data, { type: "string" });
+            const sheetName = workbook.SheetNames[0];
+            const worksheet = workbook.Sheets[sheetName];
+            const datas = xlsx.utils.sheet_to_json(worksheet);
+
+            const dataArr = [...datas].sort(() => Math.random() - 0.5);
+            const list = []
+
+            for (let i = 0; i < datas.length; i++) {
+              let data = new Word(dataArr[i], false);
+              list.push(data)
+            }
+
+            setDataList(list)
+        };
+        reader.readAsArrayBuffer(e.target.files[0]);
+     }
+  }
+
+  const onModeSelect = (e) => {
+    setTestMode(e.target.value)
+    setFinish(false)
+    setCorrectCount('')
+  }
   
   return (
     <div className="App">
+        <TopContainer>
+          <Text className="counter">Test {correctCount}</Text>
+          <Text className="counter">{count}</Text>
+          <select name="TestMode" onChange={onModeSelect}>
+            <option value="none">List</option>
+            <option value="word">Word</option>
+            <option value="meaning">Meaning</option>
+            <option value="sound">Sound</option>
+          </select>
+          <button 
+            className='submitButton' 
+            onClick={isFinish ? onRefresh : onSubmit}
+            style={{display: testMode === TestMode.NONE ? "none" : "inline"}}>
+            {isFinish ? "Retry" : "Submit"}
+          </button>
+        </TopContainer>
+        {/* <form>
+          <label htmlFor="upload">Upload File</label>
+          <input
+              type="file"
+              name="upload"
+              id="upload"
+              onChange={onUploadFile}
+          />
+      </form> */}
         {dataList?.map((word, index) => 
           <WordListItem 
             key={index} 
@@ -143,11 +236,6 @@ const App = () => {
             word={word}
             isFinish={isFinish}>
           </WordListItem>)}
-        <SubmitBtn 
-          onClick={isFinish ? onRefresh : onSubmit}>
-          {isFinish ? "Retry" : "Submit"}
-        </SubmitBtn>
-        <Text className="counter">{correctCount}</Text>
     </div>
   );
 }

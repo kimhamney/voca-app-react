@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f7f8;
+}
+
+.submitButton {
+    width: 100px;
+    background-color: #0066ff;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    padding: 1em 1.5em;
+}
+  
+.submitButton:hover {
+    filter: brightness(1.1);
+}
