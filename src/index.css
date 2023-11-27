@@ -18,3 +18,17 @@
 .submitButton:hover {
     filter: brightness(1.1);
 }
+
+.prevButton {
+    width: 100px;
+    background-color: #0066ff;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    padding: 1em 1.5em;
+}
+  
+.prevButton:hover {
+    filter: brightness(1.1);
+}

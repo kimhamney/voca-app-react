@@ -9,15 +9,21 @@ const List = styled.li`
   justify-content: left;
 `;
 
-const Text = styled.label`
+const NumText = styled.label`
   margin: 10px;
-  width: 50px;
+  width: 10%;
+  text-align: left;
+`;
+
+const WordText = styled.label`
+  margin: 10px;
+  width: 20%;
   text-align: left;
 `;
 
 const PosText = styled.label`
   margin: 10px;
-  width: 40px;
+  width: 10%;
   text-align: center;
 `;
 
@@ -34,7 +40,7 @@ const SpeackerBtn = styled.button`
   border-radius: 20px;
   background-color: pink;
   height: 50px;
-  width: 50px;
+  width: 10%;
   text-align: center;
   cursor:pointer;
 `;
@@ -60,7 +66,7 @@ export default function WordListItem({testMode, index, word, isFinish}) {
       case "none":
       case "word":
       case "meaning":
-          return <Text>{text}</Text>
+          return <WordText>{text}</WordText>
       case "sound":
         return <WordListInput 
           text={text} 
@@ -88,16 +94,17 @@ export default function WordListItem({testMode, index, word, isFinish}) {
     }
   }
 
-  return <div>
-    <List>
-      <Text>{index + 1}</Text>
-      {!isMeaning ? (<SpeackerBtn onClick={onSpeech} tabIndex="-1">
-        <HiMiniSpeakerWave />
-      </SpeackerBtn>) :<></>}
-      {WordComponent()}
-      <PosText>{word.pos}</PosText>
-      {MeaningComponent()}
-    </List>
-  </div>
-    
+  return (
+    <div>
+      <List>
+        <NumText>{index + 1}</NumText>
+        {!isMeaning ? (
+        <SpeackerBtn onClick={onSpeech} tabIndex="-1">
+          <HiMiniSpeakerWave />
+        </SpeackerBtn>) :<></>}
+        {WordComponent()}
+        <PosText>{word.pos}</PosText>
+        {MeaningComponent()}
+      </List>
+    </div>)
 }

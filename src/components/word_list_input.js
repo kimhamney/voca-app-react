@@ -9,7 +9,6 @@ const Input = styled.input`
   margin: 10px;
   border-radius: 5px;
   height: 20px;
-  width: 200px;
 `;
 
 const Meaning = styled.p`
@@ -23,7 +22,8 @@ const Meaning = styled.p`
 `;
 
 export default function WordListInput({text, isWord, isCorrect, isFinish}) {
-    return <Container>
+    return (
+      <Container>
         <Input
           className={isWord ? "wordInput" : "meaningInput"}
           type="text" 
@@ -35,5 +35,5 @@ export default function WordListInput({text, isWord, isCorrect, isFinish}) {
           style={{display : !isFinish || isCorrect ? "none" : "inline"}}>
             {text}
         </Meaning>
-    </Container>
+      </Container>)
 }
