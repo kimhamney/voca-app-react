@@ -5,6 +5,11 @@ import styled from 'styled-components';
 
 const Container = styled.div`
     display: flex;
+    flex-direction: column;
+`;
+
+const TabContainer = styled.div`
+    display: flex;
     flex-direction: row;
 `;
 
@@ -33,12 +38,13 @@ export default function Home() {
         setTestMode(testMode)
     }
     
-    return <>
+    return (
         <Container>
-            <Button onClick={() => onClickButton(TestMode.NONE)}>List</Button>
-            <Button onClick={() => onClickButton(TestMode.MEANING)}>Interval</Button>
-            <Button onClick={() => onClickButton(TestMode.SOUND)}>Test</Button>
-        </Container>
-        <WordList testMode={testMode} isInterval={false} />
-    </>
+            <TabContainer>
+                <Button onClick={() => onClickButton(TestMode.NONE)}>List</Button>
+                <Button onClick={() => onClickButton(TestMode.MEANING)}>Interval</Button>
+                <Button onClick={() => onClickButton(TestMode.SOUND)}>Test</Button>
+            </TabContainer>
+            <WordList testMode={testMode} isInterval={false} />
+        </Container>)
 }

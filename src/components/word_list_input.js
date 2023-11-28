@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  width: 30%;
 `;
 
 const Input = styled.input`

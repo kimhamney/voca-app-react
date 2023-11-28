@@ -3,6 +3,8 @@ import * as xlsx from 'xlsx';
 import React, { useEffect, useState } from "react"
 
 import FlipCard from "./flip_card.js";
+import { LiaListOlSolid } from "react-icons/lia";
+import { PiCardsDuotone } from "react-icons/pi";
 import WordListItem from "./word_list_item.js";
 import styled from 'styled-components';
 
@@ -18,6 +20,36 @@ const TopContainer = styled.div`
 
 const Text = styled.p`
   margin: 10px;
+`;
+
+const ListContainer = styled.div`
+  height: 75vh;
+  overflow-y: scroll;
+`;
+
+const RightContainer = styled.div`
+  display: flex;
+`;
+
+const FlipBtn = styled.button`
+  width: 50px;
+  height: 50px;
+  background-color: #0066ff;
+  border: 0;
+  border-radius: 10px;
+  margin-right: 10px;
+  color: #fff;
+  cursor: pointer;
+`;
+
+const SubmitButton = styled.button`
+  width: 100px;
+  height: 50px;
+  background-color: #0066ff;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
 `;
 
 class Word {
@@ -206,21 +238,22 @@ export default function WordList({testMode, isInterval}) {
         <TopContainer>
           <Text className="counter">Test {correctCount}</Text>
           {count > 0 ? (<Text>{count}</Text>) : <></>}
-          <select name="TestMode" onChange={onModeSelect}>
-            <option value="none">List</option>
-            <option value="word">Word</option>
-            <option value="meaning">Meaning</option>
-            <option value="sound">Sound</option>
-          </select>
-          <button onClick={onShowFlip}>
-            Flip
-          </button>
-          <button 
-            className='submitButton' 
-            onClick={isFinish ? onRefresh : onSubmit}
-            style={{display: testMode === TestMode.NONE ? "none" : "inline"}}>
-            {isFinish ? "Retry" : "Submit"}
-          </button>
+          <RightContainer>
+            <FlipBtn onClick={onShowFlip}>
+              {!isFlipCard ? <PiCardsDuotone 
+                fontSize="1.8em" 
+                style={{backgroundColor: "transparent"}}/> :
+              <LiaListOlSolid
+                fontSize="1.8rem" 
+                style={{backgroundColor: "transparent"}}/>}
+            </FlipBtn>
+            <SubmitButton 
+              className='submitButton' 
+              onClick={isFinish ? onRefresh : onSubmit}
+              style={{display: testMode === TestMode.NONE ? "none" : "inline"}}>
+              {isFinish ? "Retry" : "Submit"}
+            </SubmitButton>
+          </RightContainer>
         </TopContainer>
         {/* <form>
           <label htmlFor="upload">Upload File</label>
@@ -233,15 +266,16 @@ export default function WordList({testMode, isInterval}) {
       </form> */}
         {isFlipCard ? 
         <FlipCard dataList={dataList}></FlipCard> : 
-        dataList?.map((word, index) => 
-          <WordListItem 
-            key={index} 
-            testMode={testMode}
-            index={index} 
-            word={word}
-            isFinish={isFinish}>
-          </WordListItem>)}     
-        
+        <ListContainer>
+          {dataList?.map((word, index) => 
+            <WordListItem 
+              key={index} 
+              testMode={testMode}
+              index={index} 
+              word={word}
+              isFinish={isFinish}>
+            </WordListItem>)}
+        </ListContainer>}
     </div>
   );
 }

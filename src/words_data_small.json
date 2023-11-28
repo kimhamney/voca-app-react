@@ -47,6 +47,54 @@
       "word": "without",
       "pos": "prep",
       "meaning": "~없이, 제외하고"
+    },
+    {
+      "id": 9,
+      "word": "background",
+      "pos": "n",
+      "meaning": "배경"
+    },
+    {
+      "id": 10,
+      "word": "badly",
+      "pos": "ad",
+      "meaning": "나쁘게, 심하게 ; 서투르게"
+    },
+    {
+      "id": 11,
+      "word": "bathroom",
+      "pos": "n",
+      "meaning": "욕실"
+    },
+    {
+      "id": 12,
+      "word": "battle",
+      "pos": "n",
+      "meaning": "전투"
+    },
+    {
+      "id": 13,
+      "word": "battle",
+      "pos": "v",
+      "meaning": "싸우다"
+    },
+    {
+      "id": 14,
+      "word": "beach",
+      "pos": "n",
+      "meaning": "해안"
+    },
+    {
+      "id": 15,
+      "word": "beast",
+      "pos": "n",
+      "meaning": "짐승"
+    },
+    {
+      "id": 16,
+      "word": "beer",
+      "pos": "n",
+      "meaning": "맥주"
     }
   ]
 }

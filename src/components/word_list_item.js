@@ -7,23 +7,27 @@ const List = styled.li`
   display: flex;
   flex-direction: row;
   justify-content: left;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 10px;
 `;
 
 const NumText = styled.label`
   margin: 10px;
-  width: 10%;
-  text-align: left;
+  width: 50px;
+  min-width: 50px;
+  text-align: center;
 `;
 
 const WordText = styled.label`
   margin: 10px;
-  width: 20%;
-  text-align: left;
+  padding-left: 10px;
+  width: 100px;
+  text-align: center;
 `;
 
 const PosText = styled.label`
   margin: 10px;
-  width: 10%;
+  width: 50px;
   text-align: center;
 `;
 
@@ -35,13 +39,12 @@ const MeaningText = styled.label`
 
 const SpeackerBtn = styled.button`
   position: relative;
-  border: 1px;
-  border-color: black;
-  border-radius: 20px;
-  background-color: pink;
-  height: 50px;
-  width: 10%;
-  text-align: center;
+  border: 0;
+  border-radius: 10%;
+  height: 30px;
+  width: 30px;
+  top: 5px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   cursor:pointer;
 `;
 
@@ -100,7 +103,9 @@ export default function WordListItem({testMode, index, word, isFinish}) {
         <NumText>{index + 1}</NumText>
         {!isMeaning ? (
         <SpeackerBtn onClick={onSpeech} tabIndex="-1">
-          <HiMiniSpeakerWave />
+          <HiMiniSpeakerWave 
+            fontSize="1.5em" 
+            style={{backgroundColor: "transparent"}}/>
         </SpeackerBtn>) :<></>}
         {WordComponent()}
         <PosText>{word.pos}</PosText>
