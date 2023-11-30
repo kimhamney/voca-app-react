@@ -1,5 +1,5 @@
 import { HiMiniSpeakerWave } from "react-icons/hi2";
-import WordListInput from "./word_list_input.js";
+import ListInputComponent from "./list_input_component.js";
 import styled from 'styled-components';
 
 const List = styled.li`
@@ -41,6 +41,7 @@ const SpeackerBtn = styled.button`
   position: relative;
   border: 0;
   border-radius: 10%;
+  background-color: white;
   height: 30px;
   width: 30px;
   top: 5px;
@@ -71,7 +72,7 @@ export default function WordListItem({testMode, index, word, isFinish}) {
       case "meaning":
           return <WordText>{text}</WordText>
       case "sound":
-        return <WordListInput 
+        return <ListInputComponent 
           text={text} 
           isWord={true} 
           isCorrect={word.isCorrect} 
@@ -86,7 +87,7 @@ export default function WordListItem({testMode, index, word, isFinish}) {
       case "word":
       case "meaning":
       case "sound":
-        return <WordListInput 
+        return <ListInputComponent 
           text={inputText} 
           isWord={false} 
           isCorrect={word.isCorrect} 

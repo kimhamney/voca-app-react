@@ -19,7 +19,7 @@ const FrontCard = styled.div`
     position: relative;
     width: 400px;
     height: 40vh;
-    background-color: white;
+    background-color: #F0F8FF;
     border: 0;
     border-radius: .5rem;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -30,7 +30,7 @@ const BackCard = styled.div`
     position: relative;
     width: 400px;
     height: 40vh;
-    background-color: white;
+    background-color: #AFDBF5;
     border: 0;
     border-radius: .5rem;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -64,6 +64,8 @@ const CardText = styled.label`
     height: 100%;
     text-align: center;
     font-size: 3rem;
+    font-weight: 600 !important;
+    padding: 0 10px 0 10px;
     justify-content: center;
     align-items: center;
 `;

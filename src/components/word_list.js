@@ -1,12 +1,26 @@
-import * as xlsx from 'xlsx';
-
 import React, { useEffect, useState } from "react"
 
 import FlipCard from "./flip_card.js";
 import { LiaListOlSolid } from "react-icons/lia";
+import ListComponent from "./list_component.js";
 import { PiCardsDuotone } from "react-icons/pi";
-import WordListItem from "./word_list_item.js";
 import styled from 'styled-components';
+
+const TabContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+`;
+
+const Tab = styled.button`
+    width: 100px;
+    background-color: #0066ff;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1em 1.5em;
+    margin: 20px;
+    cursor: pointer;
+`;
 
 const TopContainer = styled.div`
   display: flex;
@@ -22,11 +36,6 @@ const Text = styled.p`
   margin: 10px;
 `;
 
-const ListContainer = styled.div`
-  height: 75vh;
-  overflow-y: scroll;
-`;
-
 const RightContainer = styled.div`
   display: flex;
 `;
@@ -34,7 +43,7 @@ const RightContainer = styled.div`
 const FlipBtn = styled.button`
   width: 50px;
   height: 50px;
-  background-color: #0066ff;
+  background-color: #3457D5;
   border: 0;
   border-radius: 10px;
   margin-right: 10px;
@@ -52,37 +61,10 @@ const SubmitButton = styled.button`
   cursor: pointer;
 `;
 
-class Word {
-  constructor(data) {
-    this.id = data.id
-    this.word = data.word
-    this.pos = data.pos
-    this.meaning = data.meaning
-    this.meaningArr = getFilterArr(data.meaning)
-    this.isCorrect = false
-    this.isPlaying = false
-  }
-}
-
 const getFilterArr = (input) => {
   let value = input.replace(/\s/g, '')
   let arr = value.split(/[^a-zA-Z가-힣]/).filter(Boolean)
   return arr
-}
-
-const getData = () => {
-  let obj = require('../words_data_small.json')
-  let json = JSON.parse(JSON.stringify(obj))
-  let datas = json['data']
-  let list = [];
-
-  const dataArr = [...datas].sort(() => Math.random() - 0.5);
-
-  for (let i = 0; i < dataArr.length; i++) {
-    let data = new Word(dataArr[i], false);
-    list.push(data)
-  }
-  return list
 }
 
 const checkWord = (words, inputs) => {
@@ -128,7 +110,7 @@ export const TestMode = {
   SOUND: "sound",
 }
 
-export default function WordList({testMode, isInterval}) {
+export default function WordList({testMode, isInterval, getDataList}) {
   const [correctCount, setCorrectCount] = useState('')
   const [dataList, setDataList] = useState([])
   const [isFinish, setFinish] = useState(false)
@@ -136,10 +118,10 @@ export default function WordList({testMode, isInterval}) {
 
   const [isFlipCard, setIsFlipCard] = useState(false)
 
-  // soundPlay(dataList)
-
   useEffect(() => {
-    setDataList(getData())
+    // console.log(getDataList)
+    let list = getDataList
+    setDataList(getDataList)
 
     // const id = setInterval(() => {
     //   setCount((count) => count - 1);
@@ -151,7 +133,7 @@ export default function WordList({testMode, isInterval}) {
     // }
 
     // return () => clearInterval(id);
-  }, [count]);
+  }, [dataList]);
 
   const endInterval = () => {
     isInterval = false;
@@ -196,31 +178,7 @@ export default function WordList({testMode, isInterval}) {
     setFinish(false)
     dataList.sort(() => Math.random() - 0.5);
     setCorrectCount('')
-  }
 
-  const onUploadFile = (e) => {
-    e.preventDefault();
-    if (e.target.files) {
-        const reader = new FileReader();
-        reader.onload = (e) => {
-            const data = e.target.result;
-            const workbook = xlsx.read(data, { type: "string" });
-            const sheetName = workbook.SheetNames[0];
-            const worksheet = workbook.Sheets[sheetName];
-            const datas = xlsx.utils.sheet_to_json(worksheet);
-
-            const dataArr = [...datas].sort(() => Math.random() - 0.5);
-            const list = []
-
-            for (let i = 0; i < datas.length; i++) {
-              let data = new Word(dataArr[i], false);
-              list.push(data)
-            }
-
-            setDataList(list)
-        };
-        reader.readAsArrayBuffer(e.target.files[0]);
-     }
   }
 
   const onModeSelect = (e) => {
@@ -234,9 +192,14 @@ export default function WordList({testMode, isInterval}) {
   }
   
   return (
-    <div className="App">
+    <>
+        <TabContainer>
+          <Tab>List</Tab>
+          <Tab>Interval</Tab>
+          <Tab>Test</Tab>
+        </TabContainer>
         <TopContainer>
-          <Text className="counter">Test {correctCount}</Text>
+          <Text className="counter">{correctCount}</Text>
           {count > 0 ? (<Text>{count}</Text>) : <></>}
           <RightContainer>
             <FlipBtn onClick={onShowFlip}>
@@ -255,28 +218,14 @@ export default function WordList({testMode, isInterval}) {
             </SubmitButton>
           </RightContainer>
         </TopContainer>
-        {/* <form>
-          <label htmlFor="upload">Upload File</label>
-          <input
-              type="file"
-              name="upload"
-              id="upload"
-              onChange={onUploadFile}
-          />
-      </form> */}
         {isFlipCard ? 
         <FlipCard dataList={dataList}></FlipCard> : 
-        <ListContainer>
-          {dataList?.map((word, index) => 
-            <WordListItem 
-              key={index} 
-              testMode={testMode}
-              index={index} 
-              word={word}
-              isFinish={isFinish}>
-            </WordListItem>)}
-        </ListContainer>}
-    </div>
+        <ListComponent
+          testMode={testMode}
+          dataList={dataList}
+          isFinish={isFinish}>
+        </ListComponent>}
+    </>
   );
 }
 

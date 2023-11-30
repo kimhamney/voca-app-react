@@ -2,7 +2,8 @@
 
 * {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f7f7f8;
+    font-weight: 500;
+    /* background-color: #f7f7f8; */
 }
 
 .submitButton {
