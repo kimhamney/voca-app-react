@@ -71,7 +71,7 @@ export default function WordListItem({testMode, index, word, isFinish}) {
       case "word":
       case "meaning":
           return <WordText>{text}</WordText>
-      case "sound":
+      case "listening":
         return <ListInputComponent 
           text={text} 
           isWord={true} 
@@ -86,7 +86,7 @@ export default function WordListItem({testMode, index, word, isFinish}) {
     {
       case "word":
       case "meaning":
-      case "sound":
+      case "listening":
         return <ListInputComponent 
           text={inputText} 
           isWord={false} 
@@ -100,7 +100,7 @@ export default function WordListItem({testMode, index, word, isFinish}) {
 
   return (
     <div>
-      <List>
+      <List className="list">
         <NumText>{index + 1}</NumText>
         {!isMeaning ? (
         <SpeackerBtn onClick={onSpeech} tabIndex="-1">

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react"
 
 import FlipCard from "./flip_card.js";
-import { LiaListOlSolid } from "react-icons/lia";
+import IntervalMode from "./interval_mode.js";
 import ListComponent from "./list_component.js";
-import { PiCardsDuotone } from "react-icons/pi";
+import SettingComponent from "./setting_component.js";
 import styled from 'styled-components';
 
 const TabContainer = styled.div`
@@ -107,7 +107,7 @@ export const TestMode = {
   NONE: "none",
   WORD: "word",
   MEANING: "meaning",
-  SOUND: "sound",
+  LISTENING: "listening",
 }
 
 export default function WordList({testMode, isInterval, getDataList}) {
@@ -115,12 +115,11 @@ export default function WordList({testMode, isInterval, getDataList}) {
   const [dataList, setDataList] = useState([])
   const [isFinish, setFinish] = useState(false)
   const [count, setCount] = useState(isInterval? 5 : 0);
-
+  const [currentTab, clickTab] = useState(Mode.LIST);
   const [isFlipCard, setIsFlipCard] = useState(false)
+  const [settings, setSettings] = useState()
 
   useEffect(() => {
-    // console.log(getDataList)
-    let list = getDataList
     setDataList(getDataList)
 
     // const id = setInterval(() => {
@@ -139,6 +138,12 @@ export default function WordList({testMode, isInterval, getDataList}) {
     isInterval = false;
     // setTestMode(TestMode.WORD)
   }
+
+  const onClickTab = (mode) => {
+    // setFlipVisible(mode === Mode.LIST)
+    setSettings(null)
+    clickTab(mode);
+  }
   
   const onSubmit = () => {
     let wordInputList = document.getElementsByClassName('wordInput')
@@ -155,7 +160,7 @@ export default function WordList({testMode, isInterval, getDataList}) {
         case "word":
           isCorrect = checkWord(meaningArr, inputArr)
           break
-        case "sound":
+        case "listening":
           isCorrect = checkWord(meaningArr, inputArr) && 
                       dataList[i].word === wordInputList[i].value;
           break
@@ -187,29 +192,43 @@ export default function WordList({testMode, isInterval, getDataList}) {
     setCorrectCount('')
   }
 
-  const onShowFlip = () => {
-    setIsFlipCard(!isFlipCard)
+  const ModeComponent = () => {
+    switch(currentTab)
+    {
+      case Mode.LIST:
+        return <ListComponent
+            testMode={testMode}
+            dataList={dataList}
+            isFinish={isFinish}>
+          </ListComponent>
+      case Mode.INTERVAL:
+      case Mode.TEST:
+        return (
+        settings ? 
+          <IntervalMode 
+            settings={settings}
+            dataList={dataList}>
+          </IntervalMode> :
+          <SettingComponent 
+              mode={Mode.INTERVAL} 
+              dataCount={dataList.length}
+              setSettings={setSettings}>
+          </SettingComponent>)
+        default: return;
+    }
   }
   
   return (
     <>
         <TabContainer>
-          <Tab>List</Tab>
-          <Tab>Interval</Tab>
-          <Tab>Test</Tab>
+          <Tab onClick={() => onClickTab(Mode.LIST)}>List</Tab>
+          <Tab onClick={() => onClickTab(Mode.INTERVAL)}>Interval</Tab>
+          <Tab onClick={() => onClickTab(Mode.TEST)}>Test</Tab>
         </TabContainer>
-        <TopContainer>
+        {ModeComponent()/* <TopContainer>
           <Text className="counter">{correctCount}</Text>
           {count > 0 ? (<Text>{count}</Text>) : <></>}
           <RightContainer>
-            <FlipBtn onClick={onShowFlip}>
-              {!isFlipCard ? <PiCardsDuotone 
-                fontSize="1.8em" 
-                style={{backgroundColor: "transparent"}}/> :
-              <LiaListOlSolid
-                fontSize="1.8rem" 
-                style={{backgroundColor: "transparent"}}/>}
-            </FlipBtn>
             <SubmitButton 
               className='submitButton' 
               onClick={isFinish ? onRefresh : onSubmit}
@@ -217,14 +236,8 @@ export default function WordList({testMode, isInterval, getDataList}) {
               {isFinish ? "Retry" : "Submit"}
             </SubmitButton>
           </RightContainer>
-        </TopContainer>
-        {isFlipCard ? 
-        <FlipCard dataList={dataList}></FlipCard> : 
-        <ListComponent
-          testMode={testMode}
-          dataList={dataList}
-          isFinish={isFinish}>
-        </ListComponent>}
+        </TopContainer> */}
+        
     </>
   );
 }
