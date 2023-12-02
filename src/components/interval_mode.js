@@ -15,23 +15,12 @@ const TopContainer = styled.div`
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 `;
 
-const Text = styled.p`
-  margin: 10px;
+const LeftContainer = styled.div`
+  display: flex;
 `;
 
 const RightContainer = styled.div`
   display: flex;
-`;
-
-const FlipBtn = styled.button`
-  width: 50px;
-  height: 50px;
-  background-color: #3457D5;
-  border: 0;
-  border-radius: 10px;
-  margin-right: 10px;
-  color: #fff;
-  cursor: pointer;
 `;
 
 const TopButton = styled.button`
@@ -44,6 +33,32 @@ const TopButton = styled.button`
   cursor: pointer;
 `;
 
+const StageContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #079ad9;
+    border-radius: 5px;
+`;
+
+const CountContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #079ad9;
+    border-radius: 5px;
+`;
+
+const InfoText = styled.label`
+    font-size: 0.8rem;
+    color: #079ad9;
+`;
+
 export default function IntervalMode({settings, dataList}) {
     const [isShowFlipCard, setIsShowFlipCard] = useState(false)
     const [isFinish, setFinish] = useState(false)
@@ -52,16 +67,38 @@ export default function IntervalMode({settings, dataList}) {
     const [showNextBtn, setShowNextBtn] = useState(false)
     const [isTest, setIsTest] = useState(false)
     const [testCount, setTestCount] = useState('')
+    const [seconds, setSeconds] = useState(0);
     const submitRef = useRef()
 
-    let stageCount = Math.ceil((settings.endIndex - settings.startIndex + 1) / settings.intervalCount);
+    const stageCount = Math.ceil((settings.endIndex - settings.startIndex + 1) / settings.intervalCount);
+    const timerCount = settings.minutes * 60;
 
     useEffect(() => {
         if (dataList) {
             setList();
             setNextBtn();
         }
-    }, [currentStage]);
+        
+        if (timerCount > 0) {
+            const id = setInterval(() => {
+            setSeconds((seconds) => seconds - 1);
+            }, 1000);
+        
+            if(seconds === 0) {
+                clearInterval(id);
+                endInterval();
+            }
+            return () => clearInterval(id);
+        }
+    }, [dataList, currentStage]);
+
+    const endInterval = () => {
+        // isInterval = false;
+        // setTestMode(TestMode.WORD)
+        // seconds = 0
+        console.log("endInterval")
+        onClickTest();
+      }
 
     const setList = () => {
         let list = [];
@@ -77,6 +114,9 @@ export default function IntervalMode({settings, dataList}) {
         }
         
         setShowDataList(list);
+        
+        console.log("setList")
+        setSeconds(timerCount);
     }
 
     const setNextBtn = () => {
@@ -109,30 +149,40 @@ export default function IntervalMode({settings, dataList}) {
 
     return (<>
         <TopContainer>
-          <Text>{currentStage + 1 + "/" + stageCount}</Text>
-          {isTest && testCount !== "" ? (<Text>{testCount}</Text>) : <></>}
-          <RightContainer>
-            {!isTest ? <FlipCardButton 
-                isFlipCard={isShowFlipCard} 
-                onShowFlip={onShowFlip}>
-            </FlipCardButton> : <></>}
-            <TopButton 
-                className='nextButton' 
-                onClick={onClickNext}
-                style={{display: isFinish && showNextBtn ? "inline" : "none"}}>다음
-            </TopButton>
-            <TopButton 
-                className='testButton' 
-                onClick={onClickTest}
-                style={{display: !isTest ? "inline" : "none"}}>Test
-            </TopButton>
-            <TopButton
-              className='submitButton' 
-              onClick={onSubmit}
-              style={{display: isTest && !isFinish ? "inline" : "none"}}>
-              {isFinish ? "Retry" : "Submit"}
-            </TopButton>
-          </RightContainer>
+            <LeftContainer>
+                <StageContainer>
+                    <InfoText>단계</InfoText>
+                    <InfoText>{currentStage + 1 + "/" + stageCount}</InfoText>
+                </StageContainer>
+                {isTest && testCount !== "" ?
+                <CountContainer>
+                    <InfoText>맞은갯수</InfoText>
+                    <InfoText>{testCount}</InfoText>
+                </CountContainer> : <></>}
+            </LeftContainer>
+            <InfoText>{seconds}</InfoText>
+            <RightContainer>
+                {!isTest ? <FlipCardButton 
+                    isFlipCard={isShowFlipCard} 
+                    onShowFlip={onShowFlip}>
+                </FlipCardButton> : <></>}
+                <TopButton 
+                    className='nextButton' 
+                    onClick={onClickNext}
+                    style={{display: isFinish && showNextBtn ? "inline" : "none"}}>다음
+                </TopButton>
+                <TopButton 
+                    className='testButton' 
+                    onClick={onClickTest}
+                    style={{display: !isTest ? "inline" : "none"}}>Test
+                </TopButton>
+                <TopButton
+                className='submitButton' 
+                onClick={onSubmit}
+                style={{display: isTest && !isFinish ? "inline" : "none"}}>
+                {isFinish ? "Retry" : "Submit"}
+                </TopButton>
+            </RightContainer>
         </TopContainer>
         {isShowFlipCard ?
         <FlipCard dataList={showDataList}></FlipCard> : 

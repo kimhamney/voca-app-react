@@ -28,22 +28,19 @@ const OptionText = styled.label`
 const ModeSelectBtn = styled.button`
     width: 70px;
     height: 70px;
-    border: 0;
-    border-radius: 10%;
-    background-color: #87CEFA;
+    border: 2px solid #079ad9;
+    border-radius: 5px;
     margin: 1px;
+    color: #079ad9;
 `;
 
 const Input = styled.input`
     border: 0;
-    background-color: #F0F8FF;
     width: 100px;
     height: 30px;
     margin: 0 10px 0 10px;
-    
-    &:focus {
-        background-color: #87CEFA;
-    }
+    border: 2px solid #079ad9;
+    border-radius: 5px;
 `;
 
 const SubmitContainer = styled.div`
