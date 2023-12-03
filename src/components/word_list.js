@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react"
 import IntervalMode from "./interval_mode.js";
 import ListComponent from "./list_component.js";
 import SettingComponent from "./setting_component.js";
+import TestModePage from "./test_mode.js"
 import styled from 'styled-components';
 
 const TabContainer = styled.div`
@@ -73,15 +74,24 @@ export default function WordList({testMode, isInterval, getDataList}) {
             isFinish={false}>
           </ListComponent>
       case Mode.INTERVAL:
-      case Mode.TEST:
-        return (
-        settings ? 
+        return (settings ? 
           <IntervalMode 
             settings={settings}
             dataList={dataList}>
           </IntervalMode> :
           <SettingComponent 
               mode={Mode.INTERVAL} 
+              dataCount={dataList.length}
+              setSettings={setSettings}>
+          </SettingComponent>)
+      case Mode.TEST:
+        return (settings ? 
+          <TestModePage 
+            settings={settings}
+            dataList={dataList}>
+          </TestModePage> :
+          <SettingComponent 
+              mode={Mode.TEST} 
               dataCount={dataList.length}
               setSettings={setSettings}>
           </SettingComponent>)

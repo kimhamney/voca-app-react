@@ -153,7 +153,8 @@ export default function SettingComponent({mode, dataCount, setSettings}) {
                 </Input>
             </OptionContainer>
 
-            <OptionContainer style={{display : mode === "interval" ? "flex" : "none"}}>
+            {mode === "interval" ?
+            <><OptionContainer style={{display : mode === "interval" ? "flex" : "none"}}>
                 <OptionText>인터벌 단어 갯수</OptionText>
                 <Input 
                     name="intervalCount"
@@ -173,7 +174,7 @@ export default function SettingComponent({mode, dataCount, setSettings}) {
                     onChange={onChange}
                     placeholder={DEFAULT_MINUTES}>
                 </Input>
-            </OptionContainer>
+            </OptionContainer></> : <></>}
             <SubmitContainer>
                 <SubmitBtn onClick={onSubmit}>시작</SubmitBtn>
             </SubmitContainer>

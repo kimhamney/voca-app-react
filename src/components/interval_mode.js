@@ -83,15 +83,15 @@ export default function IntervalMode({settings, dataList}) {
 
     useEffect(() => {
         if (timerCount > 0 && seconds >= 0) {
-            const id = setInterval(() => {
+            let timer = setInterval(() => {
             setSeconds((seconds) => seconds - 1);
             }, 1000);
         
             if(seconds === 0) {
-                clearInterval(id);
+                clearInterval(timer);
                 endInterval();
             }
-            return () => clearInterval(id);
+            return () => clearInterval(timer);
         }
     }, [seconds]);
 
@@ -143,6 +143,7 @@ export default function IntervalMode({settings, dataList}) {
     const onClickTest = () => {
         setIsTest(true)
         setIsShowFlipCard(false)
+        setSeconds(0)
         showDataList.sort(() => Math.random() - 0.5)
     }
 
