@@ -1,4 +1,4 @@
-import React, { forwardRef, useImperativeHandle, useState } from "react"
+import React, { forwardRef, useEffect, useImperativeHandle, useState } from "react"
 
 import ListItemComponent from "./list_item_component.js";
 import styled from 'styled-components';
@@ -31,16 +31,19 @@ const checkWord = (words, inputs) => {
 
 const ListComponent = forwardRef((props, ref) => {
   const [isFinish, setIsFinish] = useState(false)
+  // const [dataList, setDataList] = useState([])
+
+  // useEffect(() => {
+  //   if (!isFinish && props.testMode !== "none") {
+  //     props.dataList.sort(() => Math.random() - 0.5)
+  //   }
+  // }, [props.testMode]);
 
   useImperativeHandle(ref, () => ({
     submit() {
       checkData();
     }
   }));
-
-  if (!isFinish && props.testMode !== "none") {
-    props.dataList.sort(() => Math.random() - 0.5)
-  }
 
   const checkData = () => {
     let wordInputList = document.getElementsByClassName('wordInput')

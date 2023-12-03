@@ -67,7 +67,7 @@ export default function IntervalMode({settings, dataList}) {
     const [showNextBtn, setShowNextBtn] = useState(false)
     const [isTest, setIsTest] = useState(false)
     const [testCount, setTestCount] = useState('')
-    const [seconds, setSeconds] = useState(0);
+    const [seconds, setSeconds] = useState(-1);
     const submitRef = useRef()
 
     const stageCount = Math.ceil((settings.endIndex - settings.startIndex + 1) / settings.intervalCount);
@@ -78,8 +78,11 @@ export default function IntervalMode({settings, dataList}) {
             setList();
             setNextBtn();
         }
-        
-        if (timerCount > 0) {
+        setSeconds(timerCount);
+    }, [dataList, currentStage]);
+
+    useEffect(() => {
+        if (timerCount > 0 && seconds >= 0) {
             const id = setInterval(() => {
             setSeconds((seconds) => seconds - 1);
             }, 1000);
@@ -90,13 +93,21 @@ export default function IntervalMode({settings, dataList}) {
             }
             return () => clearInterval(id);
         }
-    }, [dataList, currentStage]);
+    }, [seconds]);
+
+    const getTimeText = (time) => {
+        const minutes = Number(Math.floor(time / 60));
+        const seconds = Number(time % 60);
+
+        const text = minutes + ":";
+        if(seconds < 10) {
+            return text + 0 + String(seconds);
+        } else {
+            return text + String(seconds);
+        }
+    }
 
     const endInterval = () => {
-        // isInterval = false;
-        // setTestMode(TestMode.WORD)
-        // seconds = 0
-        console.log("endInterval")
         onClickTest();
       }
 
@@ -113,10 +124,7 @@ export default function IntervalMode({settings, dataList}) {
             list.push(dataList[i]);
         }
         
-        setShowDataList(list);
-        
-        console.log("setList")
-        setSeconds(timerCount);
+        setShowDataList(list);        
     }
 
     const setNextBtn = () => {
@@ -135,6 +143,7 @@ export default function IntervalMode({settings, dataList}) {
     const onClickTest = () => {
         setIsTest(true)
         setIsShowFlipCard(false)
+        showDataList.sort(() => Math.random() - 0.5)
     }
 
     const onSubmit = () => {
@@ -160,7 +169,7 @@ export default function IntervalMode({settings, dataList}) {
                     <InfoText>{testCount}</InfoText>
                 </CountContainer> : <></>}
             </LeftContainer>
-            <InfoText>{seconds}</InfoText>
+            <InfoText>{seconds > 0 ? getTimeText(seconds) : ''}</InfoText>
             <RightContainer>
                 {!isTest ? <FlipCardButton 
                     isFlipCard={isShowFlipCard} 
