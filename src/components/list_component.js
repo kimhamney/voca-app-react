@@ -4,7 +4,7 @@ import ListItemComponent from "./list_item_component.js";
 import styled from 'styled-components';
 
 const ListContainer = styled.div`
-  height: 75vh;
+  height: 80vh;
   overflow-y: scroll;
 `;
 

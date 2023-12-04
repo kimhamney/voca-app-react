@@ -111,7 +111,7 @@ export default function SettingComponent({mode, dataCount, setSettings}) {
         // 범위를 올바로 입력해주세요 (1~count)
         // 단어 갯수를 올바로 입력해주세요 (최대 count)
         // 테스트 시간을 올바로 입력해주세요
-        console.log(settings)
+        // console.log(settings)
         setSettings(settings)
     }
     

@@ -10,7 +10,7 @@ const TopContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 50px;
+  height: 40px;
   margin-bottom: 10px;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 `;
@@ -25,7 +25,7 @@ const RightContainer = styled.div`
 
 const TopButton = styled.button`
   width: 100px;
-  height: 50px;
+  height: 40px;
   background-color: #0066ff;
   border: 0;
   border-radius: 10px;
@@ -108,8 +108,9 @@ export default function IntervalMode({settings, dataList}) {
     }
 
     const endInterval = () => {
-        onClickTest();
-      }
+        if (seconds === 0)
+            onClickTest();
+    }
 
     const setList = () => {
         let list = [];
@@ -143,7 +144,6 @@ export default function IntervalMode({settings, dataList}) {
     const onClickTest = () => {
         setIsTest(true)
         setIsShowFlipCard(false)
-        setSeconds(0)
         showDataList.sort(() => Math.random() - 0.5)
     }
 
@@ -170,7 +170,7 @@ export default function IntervalMode({settings, dataList}) {
                     <InfoText>{testCount}</InfoText>
                 </CountContainer> : <></>}
             </LeftContainer>
-            <InfoText>{seconds > 0 ? getTimeText(seconds) : ''}</InfoText>
+            <InfoText>{!isTest && seconds > 0 ? getTimeText(seconds) : ''}</InfoText>
             <RightContainer>
                 {!isTest ? <FlipCardButton 
                     isFlipCard={isShowFlipCard} 

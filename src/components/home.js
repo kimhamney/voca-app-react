@@ -9,6 +9,6 @@ export default function Home() {
     return (<>
         {!dataList ?
             <WordSelect getDataList={setDataList} /> : 
-            <WordList testMode={"none"} isInterval={false} getDataList={dataList} />}
+            <WordList getDataList={dataList} />}
         </>)
 }

@@ -8,7 +8,7 @@ const TopContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 50px;
+  height: 40px;
   margin-bottom: 10px;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 `;
@@ -23,7 +23,7 @@ const RightContainer = styled.div`
 
 const TopButton = styled.button`
   width: 100px;
-  height: 50px;
+  height: 40px;
   background-color: #0066ff;
   border: 0;
   border-radius: 10px;
@@ -65,7 +65,6 @@ export default function TestMode({settings, dataList}) {
             list.push(dataList[i]);
         }
         list.sort(() => Math.random() - 0.5)
-        
         setShowDataList(list);        
     }
 

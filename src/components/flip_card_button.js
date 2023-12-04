@@ -4,8 +4,8 @@ import React from "react"
 import styled from 'styled-components';
 
 const FlipBtn = styled.button`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: #3457D5;
   border: 0;
   border-radius: 10px;

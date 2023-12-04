@@ -1,41 +1,18 @@
 import React, { useEffect, useState } from "react"
 
 import IntervalMode from "./interval_mode.js";
-import ListComponent from "./list_component.js";
+import ListMode from "./list_mode.js"
 import SettingComponent from "./setting_component.js";
 import TestModePage from "./test_mode.js"
 import styled from 'styled-components';
 
-const TabContainer = styled.div`
-    display: flex;
-    flex-direction: row;
+const TopContainer = styled.div`
+  margin-bottom: 10px;
+  border-radius: 0.5rem;
+  background-color: #EEE;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
 `;
-
-const Tab = styled.button`
-    width: 100px;
-    background-color: #0066ff;
-    border: 0;
-    border-radius: 10px;
-    color: #fff;
-    padding: 1em 1.5em;
-    margin: 20px;
-    cursor: pointer;
-`;
-
-const soundPlay = (dataList) => {
-  for (var i = 0; i < dataList.length; i++) {
-    for (var j = 0; j < 3; j++)
-    {
-      const speech = new SpeechSynthesisUtterance();
-      speech.lang = 'en-US';
-      speech.text = dataList[i].word;
-      speech.volume = 1;
-      speech.rate = 0.5;
-      speech.pitch = 1;
-      window.speechSynthesis.speak(speech);
-    }
-  }
-}
 
 export const Mode = {
   LIST: 'list',
@@ -50,7 +27,7 @@ export const TestMode = {
   LISTENING: "listening",
 }
 
-export default function WordList({testMode, isInterval, getDataList}) {
+export default function WordList({getDataList}) {
   const [dataList, setDataList] = useState([])
   const [currentTab, clickTab] = useState(Mode.LIST);
   const [settings, setSettings] = useState()
@@ -68,11 +45,7 @@ export default function WordList({testMode, isInterval, getDataList}) {
     switch(currentTab)
     {
       case Mode.LIST:
-        return <ListComponent
-            testMode={testMode}
-            dataList={dataList}
-            isFinish={false}>
-          </ListComponent>
+        return <ListMode dataList={dataList} />
       case Mode.INTERVAL:
         return (settings ? 
           <IntervalMode 
@@ -101,12 +74,23 @@ export default function WordList({testMode, isInterval, getDataList}) {
   
   return (
     <>
-        <TabContainer>
-          <Tab onClick={() => onClickTab(Mode.LIST)}>List</Tab>
-          <Tab onClick={() => onClickTab(Mode.INTERVAL)}>Interval</Tab>
-          <Tab onClick={() => onClickTab(Mode.TEST)}>Test</Tab>
-        </TabContainer>
-        {ModeComponent()}
+      <TopContainer>
+        <div className="radio-inputs">
+          <label className="radio" onClick={() => onClickTab(Mode.LIST)}>
+            <input type="radio" name="radio" defaultChecked />
+            <span className="name">List</span>
+          </label>
+          <label className="radio" onClick={() => onClickTab(Mode.INTERVAL)}>
+            <input type="radio" name="radio"/>
+            <span className="name">Interval</span>
+          </label>
+          <label className="radio" onClick={() => onClickTab(Mode.TEST)}>
+            <input type="radio" name="radio"/>
+            <span className="name">Test</span>
+          </label>
+        </div>
+      </TopContainer>
+      {ModeComponent()}
     </>
   );
 }

@@ -98,8 +98,8 @@ const TOEFL_WORD_COUNT = 13
 const getLocalData = (index, isMiddle) => {
     let fileNum = index + 1;
     let folder = isMiddle ? 'middle_word' : 'toefl_word'
-    // let obj = require('../resources/' + folder + '/' + folder + '_' + fileNum + '.json')
-    let obj = require('../resources/words_data_small.json')
+    let obj = require('../resources/' + folder + '/' + folder + '_' + fileNum + '.json')
+    // let obj = require('../resources/words_data_small.json')
     let json = JSON.parse(JSON.stringify(obj))
     let datas = json['data']
     let list = [];
