@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 
 import IntervalMode from "./interval_mode.js";
+import { IoIosArrowBack } from "react-icons/io";
 import ListMode from "./list_mode.js"
 import SettingComponent from "./setting_component.js";
 import TestModePage from "./test_mode.js"
@@ -12,6 +13,14 @@ const TopContainer = styled.div`
   background-color: #EEE;
   box-sizing: border-box;
   box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+`;
+
+const BackButton = styled.div`
+  width: 30px;
+  height: 30px;
+  color: blue;
+  text-align: center;
+  padding-top: 7px;
 `;
 
 export const Mode = {
@@ -39,6 +48,10 @@ export default function WordList({getDataList}) {
   const onClickTab = (mode) => {
     setSettings(null)
     clickTab(mode);
+  }
+
+  const onClickBack = () => {
+    window.location.reload();
   }
 
   const ModeComponent = () => {
@@ -76,6 +89,10 @@ export default function WordList({getDataList}) {
     <>
       <TopContainer>
         <div className="radio-inputs">
+        <BackButton onClick={onClickBack}>
+          <IoIosArrowBack fontSize="1.5em" 
+            style={{backgroundColor: "transparent"}}/>
+        </BackButton>
           <label className="radio" onClick={() => onClickTab(Mode.LIST)}>
             <input type="radio" name="radio" defaultChecked />
             <span className="name">List</span>
