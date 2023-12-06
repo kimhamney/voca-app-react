@@ -1,6 +1,7 @@
 import * as xlsx from 'xlsx';
 
-import { HiOutlineUpload } from "react-icons/hi";
+import { FaCloudUploadAlt } from "react-icons/fa";
+import { MdFileDownload } from "react-icons/md";
 import React from "react"
 import styled from 'styled-components';
 
@@ -35,6 +36,7 @@ const WordText = styled.label`
     color: #13274F;
     margin: 10px 0 0 10px;
     text-align: center;
+    font-weight: 600;
 `;
 
 const WordCard = styled.button`
@@ -69,6 +71,25 @@ const InputLabel = styled.label`
     &:hover {
         filter: brightness(1.1);
     }
+`;
+
+const DownloadContainer = styled.a`
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+`;
+
+const DownloadText = styled.label`
+    color: gray;
+    font-size: 0.8rem;
+    cursor: pointer;
+`;
+
+const DownloadButton = styled.div`
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
 `;
 
 class Word {
@@ -154,26 +175,26 @@ export default function WordSelect(props) {
             reader.readAsArrayBuffer(e.target.files[0]);
          }
       }
-    
+
     return (
         <Container>
             <WordContainer>
-                <WordText>중고등 단어</WordText>
+                <WordText>BASIC WORDS</WordText>
                 <ListContainer>
                     {setList(true)}
                 </ListContainer>
             </WordContainer>
             <WordContainer>
-                <WordText>토플 단어</WordText>
+                <WordText>TOEFL WORDS</WordText>
                 <ListContainer>
                     {setList(false)}
                 </ListContainer>
             </WordContainer>
             <WordContainer>
-                <WordText>엑셀 업로드</WordText>
+                <WordText>EXCEL UPLOAD</WordText>
                 <InputLabel htmlFor="upload">
-                    <HiOutlineUpload 
-                        fontSize="2rem" 
+                    <FaCloudUploadAlt  
+                        fontSize="3rem" 
                         style={{backgroundColor: "transparent", color: "white"}}/>
                     <input
                         type="file"
@@ -184,6 +205,17 @@ export default function WordSelect(props) {
                         hidden
                     />
                 </InputLabel>
+                
+                <DownloadContainer 
+                    href='https://docs.google.com/spreadsheets/d/16FFN9jngsyKoV-e4Z6q9F3RFFMJlfHXA/edit?usp=drive_link&ouid=110786975650612637774&rtpof=true&sd=true' 
+                    download
+                    target='_blank' 
+                    rel="noreferrer">
+                    <DownloadButton>
+                        <MdFileDownload style={{backgroundColor: "transparent", color: "gray"}}/>
+                        <DownloadText>Form</DownloadText>
+                    </DownloadButton>
+                </DownloadContainer>
             </WordContainer>
         </Container>)
 }
