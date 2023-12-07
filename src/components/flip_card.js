@@ -59,11 +59,22 @@ const NextBtn = styled.button`
     cursor: pointer;
 `;
 
-const CardText = styled.label`
+const FrontCardText = styled.label`
     display: flex;
     height: 100%;
     text-align: center;
     font-size: 3rem;
+    font-weight: 600 !important;
+    padding: 0 10px 0 10px;
+    justify-content: center;
+    align-items: center;
+`;
+
+const BackCardText = styled.label`
+    display: flex;
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
     font-weight: 600 !important;
     padding: 0 10px 0 10px;
     justify-content: center;
@@ -111,12 +122,12 @@ export default function FlipCard({dataList}) {
             <FrontCard 
                 onClick={onCardClick}
                 style={{display: isFlip ? "none" : "block"}}>
-                <CardText>{card?.word}</CardText>
+                <FrontCardText>{card?.word}</FrontCardText>
             </FrontCard>
             <BackCard 
                 onClick={onCardClick} 
                 style={{display: !isFlip ? "none" : "block"}}>
-                <CardText>{card?.meaning}</CardText>
+                <BackCardText>{card?.pos}. {card?.meaning}</BackCardText>
             </BackCard>
         </Container>
         <BottomContainer>

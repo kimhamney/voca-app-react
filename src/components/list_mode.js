@@ -6,10 +6,13 @@ import ListComponent from "./list_component.js";
 import styled from 'styled-components';
 
 const TopContainer = styled.div`
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 100%;
+  height: 40px;
+  padding-bottom: 5px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 `;
 
 export default function ListMode({dataList}) {
@@ -31,6 +34,6 @@ export default function ListMode({dataList}) {
             testMode={"none"}
             dataList={dataList}
             isFinish={false}>
-          </ListComponent>}
+        </ListComponent>}
     </>)
 }

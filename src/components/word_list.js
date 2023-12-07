@@ -7,8 +7,14 @@ import SettingComponent from "./setting_component.js";
 import TestModePage from "./test_mode.js"
 import styled from 'styled-components';
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+`;
+
 const TopContainer = styled.div`
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   border-radius: 0.5rem;
   background-color: #EEE;
   box-sizing: border-box;
@@ -21,6 +27,12 @@ const BackButton = styled.div`
   color: blue;
   text-align: center;
   padding-top: 7px;
+  cursor: pointer;
+`;
+
+const ListContainer = styled.div`
+  height: 90vh;
+  overflow-y: scroll;
 `;
 
 export const Mode = {
@@ -36,7 +48,7 @@ export const TestMode = {
   LISTENING: "listening",
 }
 
-export default function WordList({getDataList}) {
+export default function WordList({getDataList, clearData}) {
   const [dataList, setDataList] = useState([])
   const [currentTab, clickTab] = useState(Mode.LIST);
   const [settings, setSettings] = useState()
@@ -51,7 +63,7 @@ export default function WordList({getDataList}) {
   }
 
   const onClickBack = () => {
-    window.location.reload();
+    clearData();
   }
 
   const ModeComponent = () => {
@@ -87,10 +99,12 @@ export default function WordList({getDataList}) {
   
   return (
     <>
+    <Container>
       <TopContainer>
         <div className="radio-inputs">
         <BackButton onClick={onClickBack}>
-          <IoIosArrowBack fontSize="1.5em" 
+          <IoIosArrowBack 
+            fontSize="1.5em" 
             style={{backgroundColor: "transparent"}}/>
         </BackButton>
           <label className="radio" onClick={() => onClickTab(Mode.LIST)}>
@@ -107,7 +121,10 @@ export default function WordList({getDataList}) {
           </label>
         </div>
       </TopContainer>
-      {ModeComponent()}
+      <ListContainer>
+        {ModeComponent()}
+      </ListContainer>
+      </Container>
     </>
   );
 }
