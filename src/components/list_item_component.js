@@ -7,7 +7,7 @@ const List = styled.li`
   display: flex;
   flex-direction: row;
   justify-content: left;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   margin-bottom: 10px;
 `;
 
@@ -41,7 +41,7 @@ const SpeackerBtn = styled.button`
   position: relative;
   border: 0;
   border-radius: 10%;
-  background-color: white;
+  background-color: transparent;
   height: 30px;
   width: 30px;
   top: 5px;
@@ -59,7 +59,7 @@ export default function WordListItem({testMode, index, word, isFinish}) {
     speech.lang = 'en-US';
     speech.text = word.word;
     speech.volume = 1;
-    speech.rate = 0.5;
+    speech.rate = 1;
     speech.pitch = 1;
     window.speechSynthesis.speak(speech);
   }

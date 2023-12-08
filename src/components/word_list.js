@@ -24,15 +24,10 @@ const TopContainer = styled.div`
 const BackButton = styled.div`
   width: 30px;
   height: 30px;
-  color: blue;
+  color: #0066ff;
   text-align: center;
   padding-top: 7px;
   cursor: pointer;
-`;
-
-const ListContainer = styled.div`
-  height: 90vh;
-  overflow-y: scroll;
 `;
 
 export const Mode = {
@@ -121,9 +116,7 @@ export default function WordList({getDataList, clearData}) {
           </label>
         </div>
       </TopContainer>
-      <ListContainer>
-        {ModeComponent()}
-      </ListContainer>
+      {ModeComponent()}
       </Container>
     </>
   );

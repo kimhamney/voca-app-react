@@ -4,8 +4,9 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import styled from 'styled-components';
 
-const Text = styled.div`
-    font-size: 1.5rem;
+const Text = styled.label`
+    font-size: 1.4rem;
+    color: #888888;
 `;
 
 const Container = styled.div`
@@ -13,13 +14,14 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin-top: 10px;
 `;
 
 const FrontCard = styled.div`
     position: relative;
     width: 400px;
     height: 40vh;
-    background-color: #F0F8FF;
+    background-color: #AFDBF5;
     border: 0;
     border-radius: .5rem;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -30,11 +32,19 @@ const BackCard = styled.div`
     position: relative;
     width: 400px;
     height: 40vh;
-    background-color: #AFDBF5;
+    background-color: #F0F8FF;
     border: 0;
     border-radius: .5rem;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     user-select: none;
+`;
+
+const BackCardContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 `;
 
 const PrevBtn = styled.button`
@@ -71,14 +81,9 @@ const FrontCardText = styled.label`
 `;
 
 const BackCardText = styled.label`
-    display: flex;
-    height: 100%;
-    text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600 !important;
     padding: 0 10px 0 10px;
-    justify-content: center;
-    align-items: center;
 `;
 
 const BottomContainer = styled.div`
@@ -87,6 +92,12 @@ const BottomContainer = styled.div`
     justify-content: center;
     flex-direction: row;
     margin: 10px;
+`
+
+const Line = styled.hr`
+    border: 0;
+    width: 70%;
+    border-top: 1px solid gray;
 `;
 
 export default function FlipCard({dataList}) {
@@ -127,7 +138,11 @@ export default function FlipCard({dataList}) {
             <BackCard 
                 onClick={onCardClick} 
                 style={{display: !isFlip ? "none" : "block"}}>
-                <BackCardText>{card?.pos}. {card?.meaning}</BackCardText>
+                <BackCardContainer>
+                    <BackCardText>{card?.word}</BackCardText>
+                    <Line></Line>
+                    <BackCardText>{card?.pos}. {card?.meaning}</BackCardText>
+                </BackCardContainer>
             </BackCard>
         </Container>
         <BottomContainer>

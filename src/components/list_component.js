@@ -3,6 +3,11 @@ import React, { forwardRef, useImperativeHandle } from "react"
 import ListItemComponent from "./list_item_component.js";
 import styled from 'styled-components';
 
+const ListContainer = styled.div`
+  height: 80vh;
+  overflow-y: scroll;
+`;
+
 const getFilterArr = (input) => {
   let value = input.replace(/\s/g, '')
   let arr = value.split(/[^a-zA-Z가-힣]/).filter(Boolean)
@@ -65,7 +70,7 @@ const ListComponent = forwardRef((props, ref) => {
   }
 
   return (
-        <>
+        <ListContainer>
           {props.dataList?.map((word, index) => 
             <ListItemComponent 
               key={index} 
@@ -74,7 +79,7 @@ const ListComponent = forwardRef((props, ref) => {
               word={word}
               isFinish={props.isFinish}>
             </ListItemComponent>)}
-        </>
+        </ListContainer>
   );
 })
 

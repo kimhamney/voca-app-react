@@ -14,7 +14,7 @@ const Container = styled.div`
 const WordContainer = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: #E1EBEE;
+    background-color: #EEE;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -33,7 +33,7 @@ const WordText = styled.label`
     width: 100%;
     font-weight: 600;
     font-size: 1.2rem;
-    color: #13274F;
+    color: #888888;
     margin: 10px 0 0 10px;
     text-align: center;
     font-weight: 600;
@@ -75,21 +75,19 @@ const InputLabel = styled.label`
 
 const DownloadContainer = styled.a`
     display: flex;
-    align-self: center;
     justify-content: center;
     align-items: center;
+    text-decoration-line: none;
 `;
 
 const DownloadText = styled.label`
     color: gray;
     font-size: 0.8rem;
-    cursor: pointer;
 `;
 
-const DownloadButton = styled.div`
-    width: 50px;
+const DownloadButton = styled.button`
+    width: 70px;
     height: 30px;
-    cursor: pointer;
 `;
 
 class Word {

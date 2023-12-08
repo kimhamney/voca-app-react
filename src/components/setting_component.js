@@ -14,20 +14,23 @@ const Container = styled.div`
 
 const OptionContainer = styled.div`
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 10px;
 `;
 
 const OptionText = styled.label`
-    font-size: 1rem;
+    font-size: .9rem;
     margin: 0 10px 0 10px;
-    width: 150px;
+    text-align: center;
+    color: #079ad9;
+    margin: 10px;
 `;
 
 const ModeSelectBtn = styled.button`
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border: 2px solid #079ad9;
     border-radius: 5px;
     margin: 1px;
@@ -38,9 +41,9 @@ const Input = styled.input`
     border: 0;
     width: 100px;
     height: 30px;
-    margin: 0 10px 0 10px;
     border: 2px solid #079ad9;
     border-radius: 5px;
+    background-color: transparent;
 `;
 
 const SubmitContainer = styled.div`
@@ -119,43 +122,48 @@ export default function SettingComponent({mode, dataCount, setSettings}) {
         <Wrapper>
         <Container>
             <OptionContainer>
-                <OptionText>모드</OptionText>
-                <ModeSelectBtn 
-                    className={testMode === TestMode.WORD ? "tabActive" : ""} 
-                    onClick={() => setTestMode(TestMode.WORD)}>단어
-                </ModeSelectBtn>
-                <ModeSelectBtn
-                    className={testMode === TestMode.MEANING ? "tabActive" : ""} 
-                    onClick={() => setTestMode(TestMode.MEANING)}>뜻
-                </ModeSelectBtn>
-                <ModeSelectBtn
-                    className={testMode === TestMode.LISTENING ? "tabActive" : ""} 
-                    onClick={() => setTestMode(TestMode.LISTENING)}>듣기
-                </ModeSelectBtn>
+                <OptionText>Mode</OptionText>
+                <div>
+                    <ModeSelectBtn 
+                        className={testMode === TestMode.WORD ? "tabActive" : ""} 
+                        onClick={() => setTestMode(TestMode.WORD)}>Word
+                    </ModeSelectBtn>
+                    <ModeSelectBtn
+                        className={testMode === TestMode.MEANING ? "tabActive" : ""} 
+                        onClick={() => setTestMode(TestMode.MEANING)}>Meaning
+                    </ModeSelectBtn>
+                    <ModeSelectBtn
+                        className={testMode === TestMode.LISTENING ? "tabActive" : ""} 
+                        onClick={() => setTestMode(TestMode.LISTENING)}>Listening
+                    </ModeSelectBtn>
+                </div>
             </OptionContainer>
             
             <OptionContainer>
-                <OptionText>범위</OptionText>
-                <Input 
-                    name="startIndex" 
-                    type="number" 
-                    min="1"
-                    onChange={onChange}
-                    placeholder={DEFAULT_START_INDEX}>
-                </Input>~
-                <Input 
-                    name="endIndex" 
-                    type="number" 
-                    min="1" 
-                    max={dataCount}
-                    onChange={onChange}
-                    placeholder={dataCount}>
-                </Input>
+                <OptionText>Range</OptionText>
+                <div>
+                    <Input 
+                        name="startIndex" 
+                        type="number" 
+                        min="1"
+                        onChange={onChange}
+                        placeholder={DEFAULT_START_INDEX}>
+                    </Input>
+                    <OptionText>~</OptionText>
+                    <Input 
+                        name="endIndex" 
+                        type="number" 
+                        min="1" 
+                        max={dataCount}
+                        onChange={onChange}
+                        placeholder={dataCount}>
+                    </Input>
+                </div>
             </OptionContainer>
 
             {mode === "interval" ?
             <><OptionContainer style={{display : mode === "interval" ? "flex" : "none"}}>
-                <OptionText>인터벌 단어 갯수</OptionText>
+                <OptionText>Interval word count</OptionText>
                 <Input 
                     name="intervalCount"
                     type="number" 
@@ -166,7 +174,7 @@ export default function SettingComponent({mode, dataCount, setSettings}) {
                 </Input>
             </OptionContainer>
             <OptionContainer>
-                <OptionText>테스트 시간(분)</OptionText>
+                <OptionText>Interval Time(minutes)</OptionText>
                 <Input
                     name="minutes"
                     type="number" 
@@ -176,7 +184,7 @@ export default function SettingComponent({mode, dataCount, setSettings}) {
                 </Input>
             </OptionContainer></> : <></>}
             <SubmitContainer>
-                <SubmitBtn onClick={onSubmit}>시작</SubmitBtn>
+                <SubmitBtn onClick={onSubmit}>Start</SubmitBtn>
             </SubmitContainer>
         </Container>
         </Wrapper>

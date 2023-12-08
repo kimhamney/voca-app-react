@@ -31,19 +31,19 @@ const TopButton = styled.button`
   cursor: pointer;
 `;
 
-const CountContainer = styled.div`
+const ResultContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    border: 2px solid #079ad9;
+    border: 2px solid #e62c51;
     border-radius: 5px;
 `;
 
-const InfoText = styled.label`
+const ResultText = styled.label`
     font-size: 0.8rem;
-    color: #079ad9;
+    color: #e62c51;
 `;
 
 export default function TestMode({settings, dataList}) {
@@ -61,9 +61,13 @@ export default function TestMode({settings, dataList}) {
     const setList = () => {
         let list = [];
 
-        for (let i = 0; i < dataList.length; i++) {
+        let startIndex = settings.startIndex;
+        let endIndex = settings.endIndex + 1;
+
+        for (let i = startIndex; i < endIndex; i++) {
             list.push(dataList[i]);
         }
+
         list.sort(() => Math.random() - 0.5)
         setShowDataList(list);        
     }
@@ -81,10 +85,10 @@ export default function TestMode({settings, dataList}) {
         <TopContainer>
             <LeftContainer>
                 {isFinish ?
-                <CountContainer>
-                    <InfoText>맞은갯수</InfoText>
-                    <InfoText>{testCount}</InfoText>
-                </CountContainer> : <></>}
+                <ResultContainer>
+                    <ResultText>Result</ResultText>
+                    <ResultText>{testCount}</ResultText>
+                </ResultContainer> : <></>}
             </LeftContainer>
             <RightContainer>
                 <TopButton

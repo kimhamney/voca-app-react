@@ -14,7 +14,6 @@ const Input = styled.input`
 
 const Meaning = styled.p`
   position : relative;
-  height: 10px;
   top: -10px;
   left: 10px;
   font-size: 0.8rem;

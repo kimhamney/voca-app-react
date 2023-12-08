@@ -21,10 +21,10 @@ export default function FlipCardButton({isFlipCard, onShowFlip}) {
             {!isFlipCard ? 
                 <PiCardsDuotone 
                     fontSize="1.5em" 
-                    style={{backgroundColor: "transparent"}}/> :
+                    style={{backgroundColor: "transparent", marginTop: "3px"}}/> :
                 <LiaListOlSolid
                     fontSize="1.5rem" 
-                    style={{backgroundColor: "transparent"}}/>}
+                    style={{backgroundColor: "transparent", marginTop: "3px"}}/>}
         </FlipBtn>
     )
 }

@@ -44,19 +44,31 @@ const StageContainer = styled.div`
     border-radius: 5px;
 `;
 
-const CountContainer = styled.div`
+const ResultContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    border: 2px solid #079ad9;
+    border: 2px solid #e62c51;
     border-radius: 5px;
+`;
+
+const TimerText = styled.label`
+    font-size: 0.9rem;
+    color: #079ad9;
+    margin-top: 10px;
+    text-align: center;
 `;
 
 const InfoText = styled.label`
     font-size: 0.8rem;
     color: #079ad9;
+`;
+
+const ResultText = styled.label`
+    font-size: 0.8rem;
+    color: #e62c51;
 `;
 
 export default function IntervalMode({settings, dataList}) {
@@ -161,16 +173,16 @@ export default function IntervalMode({settings, dataList}) {
         <TopContainer>
             <LeftContainer>
                 <StageContainer>
-                    <InfoText>단계</InfoText>
-                    <InfoText>{currentStage + 1 + "/" + stageCount}</InfoText>
+                    <InfoText>Step</InfoText>
+                    <InfoText>{currentStage + 1} / {stageCount}</InfoText>
                 </StageContainer>
                 {isTest && testCount !== "" ?
-                <CountContainer>
-                    <InfoText>맞은갯수</InfoText>
-                    <InfoText>{testCount}</InfoText>
-                </CountContainer> : <></>}
+                <ResultContainer>
+                    <ResultText>Result</ResultText>
+                    <ResultText>{testCount}</ResultText>
+                </ResultContainer> : <></>}
             </LeftContainer>
-            <InfoText>{!isTest && seconds > 0 ? getTimeText(seconds) : ''}</InfoText>
+            <TimerText>{!isTest && seconds > 0 ? getTimeText(seconds) : ''}</TimerText>
             <RightContainer>
                 {!isTest ? <FlipCardButton 
                     isFlipCard={isShowFlipCard} 
@@ -179,7 +191,7 @@ export default function IntervalMode({settings, dataList}) {
                 <TopButton 
                     className='nextButton' 
                     onClick={onClickNext}
-                    style={{display: isFinish && showNextBtn ? "inline" : "none"}}>다음
+                    style={{display: isFinish && showNextBtn ? "inline" : "none"}}>Next
                 </TopButton>
                 <TopButton 
                     className='testButton' 
