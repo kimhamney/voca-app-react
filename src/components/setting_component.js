@@ -131,9 +131,10 @@ export default function SettingComponent({mode, dataCount, setSettings}) {
         if (settings.startIndex >= settings.endIndex)
             return false;
 
-        if (settings.intervalCount <= 0 || 
+        if (mode === "interval" &&
+            (settings.intervalCount <= 0 || 
             settings.intervalCount > dataCount ||
-            settings.intervalCount > settings.endIndex - settings.startIndex)
+            settings.intervalCount > settings.endIndex - settings.startIndex))
             return false;
 
         return true;
