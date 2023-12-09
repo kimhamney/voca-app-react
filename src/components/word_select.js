@@ -1,8 +1,9 @@
 import * as xlsx from 'xlsx';
 
+import React, { useState } from "react"
+
 import { FaCloudUploadAlt } from "react-icons/fa";
 import { MdFileDownload } from "react-icons/md";
-import React from "react"
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -30,11 +31,8 @@ const ListContainer = styled.div`
 `;
 
 const WordText = styled.label`
-    width: 100%;
-    font-weight: 600;
     font-size: 1.2rem;
     color: #888888;
-    margin: 10px 0 0 10px;
     text-align: center;
     font-weight: 600;
 `;
@@ -75,6 +73,7 @@ const InputLabel = styled.label`
 
 const DownloadContainer = styled.a`
     display: flex;
+    align-self: center;
     justify-content: center;
     align-items: center;
     text-decoration-line: none;
@@ -88,6 +87,13 @@ const DownloadText = styled.label`
 const DownloadButton = styled.button`
     width: 70px;
     height: 30px;
+`;
+
+const ErrorMessageText = styled.label`
+    align-self: center;
+    color: red;
+    font-size: .8rem;
+    margin-top: 5px;
 `;
 
 class Word {
@@ -131,6 +137,8 @@ const getLocalData = (index, isMiddle) => {
 }
 
 export default function WordSelect(props) {
+    const [errorMessage, setErrorMessage] = useState('')
+
     const setList = (isMiddle) => {
         let list = [];
         let count = isMiddle ? MIDDLE_WORD_COUNT : TOEFL_WORD_COUNT;
@@ -153,43 +161,57 @@ export default function WordSelect(props) {
         if (e.target.files) {
             const reader = new FileReader();
             reader.onload = (e) => {
-                const data = e.target.result;
-                const workbook = xlsx.read(data, { type: "string" });
-                const sheetName = workbook.SheetNames[0];
-                const worksheet = workbook.Sheets[sheetName];
-                const datas = xlsx.utils.sheet_to_json(worksheet);
-                const list = []
-                for (let i = 0; i < datas.length; i++) {
-                  if (!datas[i].word) {
-                    console.log("excel error")
+                try {
+                    const data = e.target.result;
+                    const workbook = xlsx.read(data, { type: "string" });
+                    const sheetName = workbook.SheetNames[0];
+                    const worksheet = workbook.Sheets[sheetName];
+                    const datas = xlsx.utils.sheet_to_json(worksheet);
+                    const list = []
+                    for (let i = 0; i < datas.length; i++) {
+                      if (!datas[i].word) {
+                        ShowErrorMessage();
+                        return;
+                      }
+                      
+                      let data = new Word(datas[i], false);
+                      list.push(data)
+                    }
+                    props.getDataList(list)
+                } catch(e) {
+                    ShowErrorMessage();
                     return;
-                  }
-                  
-                  let data = new Word(datas[i], false);
-                  list.push(data)
-                }
-                props.getDataList(list)
+                }                
             };
+            
+            if (e.target.files.length === 0) {
+                ShowErrorMessage();
+                return;
+            }
             reader.readAsArrayBuffer(e.target.files[0]);
          }
+      }
+
+      const ShowErrorMessage = () => {
+        setErrorMessage("Please select the file again")
       }
 
     return (
         <Container>
             <WordContainer>
-                <WordText>BASIC WORDS</WordText>
+                <WordText>BASIC</WordText>
                 <ListContainer>
                     {setList(true)}
                 </ListContainer>
             </WordContainer>
             <WordContainer>
-                <WordText>TOEFL WORDS</WordText>
+                <WordText>TOEFL</WordText>
                 <ListContainer>
                     {setList(false)}
                 </ListContainer>
             </WordContainer>
             <WordContainer>
-                <WordText>EXCEL UPLOAD</WordText>
+                <WordText>EXCEL</WordText>
                 <InputLabel htmlFor="upload">
                     <FaCloudUploadAlt  
                         fontSize="3rem" 
@@ -214,6 +236,7 @@ export default function WordSelect(props) {
                         <DownloadText>Form</DownloadText>
                     </DownloadButton>
                 </DownloadContainer>
+                <ErrorMessageText>{errorMessage}</ErrorMessageText>
             </WordContainer>
         </Container>)
 }

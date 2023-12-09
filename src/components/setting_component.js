@@ -51,6 +51,7 @@ const SubmitContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin: 10px;
+    flex-direction: column;
 `;
 
 const SubmitBtn = styled.button`
@@ -61,6 +62,13 @@ const SubmitBtn = styled.button`
     border-radius: 10px;
     color: #fff;
     cursor: pointer;
+`;
+
+const ErrorMessageText = styled.label`
+    align-self: center;
+    color: red;
+    font-size: .8rem;
+    margin-top: 5px;
 `;
 
 export const TestMode = {
@@ -76,6 +84,7 @@ const DEFAULT_MINUTES = 10;
 
 export default function SettingComponent({mode, dataCount, setSettings}) {
     const [testMode, setTestMode] = useState(TestMode.WORD);
+    const [errorMessage, setErrorMessage] = useState('')
 
     const [settings, setSetting] = useState({  
         testMode: TestMode.WORD,
@@ -96,27 +105,43 @@ export default function SettingComponent({mode, dataCount, setSettings}) {
      }
 
     const onSubmit = () => {
-        settings.testMode = testMode
+        if (checkSettings()) {
+            setSettings(settings)
+        } else {
+            ShowErrorMessage();
+        }
+    }
+
+    const checkSettings = () => {
+        settings.testMode = testMode;
 
         settings.startIndex--;
         settings.endIndex--;
 
-        if (settings.startIndex < 1) {
+        if (settings.startIndex < 0) {
             settings.startIndex = 0;
         } else if (settings.startIndex >= dataCount) {
             settings.startIndex = dataCount - 1;
         }
 
-        if (settings.endIndex < 1) {
-            settings.endIndex = 0;
+        if (settings.endIndex >= dataCount) {
+            settings.endIndex = dataCount - 1;
         }
-        
-        // 범위를 올바로 입력해주세요 (1~count)
-        // 단어 갯수를 올바로 입력해주세요 (최대 count)
-        // 테스트 시간을 올바로 입력해주세요
-        // console.log(settings)
-        setSettings(settings)
+
+        if (settings.startIndex >= settings.endIndex)
+            return false;
+
+        if (settings.intervalCount <= 0 || 
+            settings.intervalCount > dataCount ||
+            settings.intervalCount > settings.endIndex - settings.startIndex)
+            return false;
+
+        return true;
     }
+
+    const ShowErrorMessage = () => {
+        setErrorMessage("Please enter a valid value")
+      }
     
     return (
         <Wrapper>
@@ -185,6 +210,7 @@ export default function SettingComponent({mode, dataCount, setSettings}) {
             </OptionContainer></> : <></>}
             <SubmitContainer>
                 <SubmitBtn onClick={onSubmit}>Start</SubmitBtn>
+                <ErrorMessageText>{errorMessage}</ErrorMessageText>
             </SubmitContainer>
         </Container>
         </Wrapper>
