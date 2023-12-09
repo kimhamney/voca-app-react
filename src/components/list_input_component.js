@@ -10,6 +10,8 @@ const Input = styled.input`
   margin: 10px;
   border-radius: 5px;
   height: 20px;
+  margin-right: 10px;
+  padding-right: 10px;
 `;
 
 const Meaning = styled.p`
@@ -18,7 +20,6 @@ const Meaning = styled.p`
   left: 10px;
   font-size: 0.8rem;
   color: red;
-  display: none;
 `;
 
 export default function WordListInput({text, isWord, isCorrect, isFinish}) {

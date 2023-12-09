@@ -9,6 +9,7 @@ const List = styled.li`
   justify-content: left;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   margin-bottom: 10px;
+  min-width: 300px;
 `;
 
 const NumText = styled.label`
