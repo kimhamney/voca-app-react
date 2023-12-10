@@ -227,7 +227,7 @@ export default function WordSelect(props) {
                 </InputLabel>
                 
                 <DownloadContainer 
-                    href='https://docs.google.com/spreadsheets/d/16FFN9jngsyKoV-e4Z6q9F3RFFMJlfHXA/edit?usp=drive_link&ouid=110786975650612637774&rtpof=true&sd=true' 
+                    href='https://docs.google.com/uc?export=download&id=16FFN9jngsyKoV-e4Z6q9F3RFFMJlfHXA' 
                     download
                     target='_blank' 
                     rel="noreferrer">
