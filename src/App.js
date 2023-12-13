@@ -1,7 +1,7 @@
-import Home from "./components/home.js";
+import Home from './components/home.js'
 
 const App = () => {
-  return <Home />
+    return <Home />
 }
 
-export default App;
+export default App
