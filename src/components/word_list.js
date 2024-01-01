@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import ReactGA from 'react-ga4'
 
 import IntervalMode from './interval_mode.js'
 import { IoIosArrowBack } from 'react-icons/io'
@@ -55,6 +56,11 @@ export default function WordList({ getDataList, clearData }) {
     const onClickTab = (mode) => {
         setSettings(null)
         clickTab(mode)
+
+        ReactGA.event({
+            category: 'Tab',
+            action: 'Clicked ' + mode,
+        })
     }
 
     const onClickBack = () => {
