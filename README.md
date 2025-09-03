@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Voca App React 📚
+## https://voca-kimham.netlify.app/
+A modern vocabulary learning application built with React to help users expand their vocabulary in an interactive and engaging way.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🌟 Features
 
-## Available Scripts
+- **Interactive Vocabulary Learning**: Practice and learn new words with an intuitive interface
+- **Word Management**: Add, edit, and organize your personal vocabulary collection
+- **Practice Modes**: Multiple learning modes to reinforce vocabulary retention
+- **Progress Tracking**: Monitor your learning progress and achievements
+- **Responsive Design**: Seamless experience across desktop and mobile devices
+- **Local Storage**: Your vocabulary data is saved locally in your browser
 
-In the project directory, you can run:
+## 🛠 Technologies Used
 
-### `npm start`
+- **React** - Frontend framework
+- **JavaScript (ES6+)** - Programming language
+- **CSS3** - Styling and animations
+- **HTML5** - Markup structure
+- **Local Storage** - Data persistence
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🔮 Future Enhancements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [ ] User authentication and cloud synchronization
+- [ ] Audio pronunciation for words
+- [ ] Spaced repetition algorithm
+- [ ] Multiple language support
+- [ ] Export/import vocabulary lists
+- [ ] Advanced statistics and analytics
 
-### `npm test`
+## 👤 Author
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Kim Hamney**
+- GitHub: [@kimhamney](https://github.com/kimhamney)
+- Project Link: [https://github.com/kimhamney/voca-app-react](https://github.com/kimhamney/voca-app-react)
