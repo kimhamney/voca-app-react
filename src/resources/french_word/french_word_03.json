@@ -1,0 +1,1254 @@
+{
+  "data": [
+    {
+      "word": "passé",
+      "meaning": "past",
+      "example": "j'étais prisonnier de mon passé"
+    },
+    {
+      "word": "âge",
+      "meaning": "age",
+      "example": "il a simplement demandé mon âge"
+    },
+    {
+      "word": "déclarer",
+      "meaning": "to declare",
+      "example": "il déclare que cette méthode était utile à l'époque"
+    },
+    {
+      "word": "oublier",
+      "meaning": "to forget",
+      "example": "je ne t'oublierai jamais"
+    },
+    {
+      "word": "propos",
+      "meaning": "remark",
+      "example": "ces propos ne sont pas les miens"
+    },
+    {
+      "word": "troisième",
+      "meaning": "third",
+      "example": "la troisième et dernière tentative fut la bonne"
+    },
+    {
+      "word": "quitter",
+      "meaning": "to leave",
+      "example": "vous êtes priés de quitter l'hôpital sans précipitation"
+    },
+    {
+      "word": "bout",
+      "meaning": "bit, tip, end",
+      "example": "ils marchèrent en silence jusqu'au bout de la rue"
+    },
+    {
+      "word": "population",
+      "meaning": "population",
+      "example": "une partie de la population s'enfonce dans la précarité"
+    },
+    {
+      "word": "toi",
+      "meaning": "you, yourself",
+      "example": "on est là, toi et moi, deux types ordinaires"
+    },
+    {
+      "word": "responsable",
+      "meaning": "responsible",
+      "example": "je ne suis pas le seul responsable"
+    },
+    {
+      "word": "route",
+      "meaning": "road",
+      "example": "le reste de la route était en construction"
+    },
+    {
+      "word": "tôt",
+      "meaning": "early",
+      "example": "plus tôt on partira, mieux ce sera"
+    },
+    {
+      "word": "lancer",
+      "meaning": "to throw, launch",
+      "example": "je lance des mots au hasard"
+    },
+    {
+      "word": "limite",
+      "meaning": "limit",
+      "example": "elle atteint les limites de ses possibilités"
+    },
+    {
+      "word": "fonction",
+      "meaning": "function",
+      "example": "vous êtes relevé de vos fonctions"
+    },
+    {
+      "word": "emploi",
+      "meaning": "employment, work, use",
+      "example": "leur emploi exige qu'ils fournissent leurs propres outils"
+    },
+    {
+      "word": "objectif",
+      "meaning": "objective, aim, goal; lens",
+      "example": "je ne me suis jamais fixé d'objectifs précis"
+    },
+    {
+      "word": "paraître",
+      "meaning": "to appear",
+      "example": "il paraît qu'il est à la bibliothèque maintenant"
+    },
+    {
+      "word": "journal",
+      "meaning": "newspaper, paper",
+      "example": "je vais acheter le journal pour ma mère"
+    },
+    {
+      "word": "annoncer",
+      "meaning": "to announce",
+      "example": "l'année 1993 s'annonce donc difficile"
+    },
+    {
+      "word": "lui-même",
+      "meaning": "himself",
+      "example": "il ne s'est pas sauvé lui-même"
+    },
+    {
+      "word": "tour",
+      "meaning": "tower; turn; tour",
+      "example": "je passais ma vie à faire le tour du monde"
+    },
+    {
+      "word": "voilà",
+      "meaning": "right, there, here",
+      "example": "tiens, c'est pour toi. voilà"
+    },
+    {
+      "word": "volonté",
+      "meaning": "will",
+      "example": "par ta seule volonté, tu peux le faire"
+    },
+    {
+      "word": "envoyer",
+      "meaning": "to send",
+      "example": "les deux femmes envoyèrent la lettre"
+    },
+    {
+      "word": "partager",
+      "meaning": "to share",
+      "example": "je ne peux pas te partager"
+    },
+    {
+      "word": "puisque",
+      "meaning": "since",
+      "example": "je ne lui répondais pas puisque j'étais muet"
+    },
+    {
+      "word": "établir",
+      "meaning": "to establish",
+      "example": "avant d'attaquer, établissons les règles"
+    },
+    {
+      "word": "changement",
+      "meaning": "change",
+      "example": "nous savons qu'il faut effectuer des changements"
+    },
+    {
+      "word": "garder",
+      "meaning": "to keep",
+      "example": "je la gardais dans mes bras"
+    },
+    {
+      "word": "réalité",
+      "meaning": "reality",
+      "example": "c'est un rêve devenu réalité pour plusieurs"
+    },
+    {
+      "word": "interdire",
+      "meaning": "to forbid, prohibit, ban",
+      "example": "je m'interdis d'écrire et de prononcer votre nom"
+    },
+    {
+      "word": "finir",
+      "meaning": "to finish",
+      "example": "je dois finir de nettoyer les droïdes"
+    },
+    {
+      "word": "placer",
+      "meaning": "to place",
+      "example": "la famille a été placée en détention"
+    },
+    {
+      "word": "sentir",
+      "meaning": "to feel, smell",
+      "example": "tu ne sens pas son parfum?"
+    },
+    {
+      "word": "payer",
+      "meaning": "to pay",
+      "example": "c'est moi qui paie votre salaire"
+    },
+    {
+      "word": "esprit",
+      "meaning": "mind, spirit",
+      "example": "t'as l'esprit vif, toi"
+    },
+    {
+      "word": "domaine",
+      "meaning": "domain, field",
+      "example": "là, nous sommes dans le domaine de l'expérience mystique"
+    },
+    {
+      "word": "diriger",
+      "meaning": "to lead, direct",
+      "example": "nous ne sommes dirigés que par nos désirs"
+    },
+    {
+      "word": "noter",
+      "meaning": "to note, notice",
+      "example": "tu as tout noté?"
+    },
+    {
+      "word": "nature",
+      "meaning": "nature",
+      "example": "vous venez de découvrir votre vraie nature"
+    },
+    {
+      "word": "régime",
+      "meaning": "regime",
+      "example": "Pravda, la voix de l'ancien régime communiste, ferme ses portes"
+    },
+    {
+      "word": "charger",
+      "meaning": "to load, charge",
+      "example": "le juge chargé du dossier refuse de convoquer le maire"
+    },
+    {
+      "word": "court",
+      "meaning": "short",
+      "example": "j'inscris mes objectifs long terme, court terme"
+    },
+    {
+      "word": "parent",
+      "meaning": "parent",
+      "example": "il faudrait que je te présente mes parents"
+    },
+    {
+      "word": "tomber",
+      "meaning": "to fall",
+      "example": "il s'arrêta, tomba à genoux pour remercier Dieu"
+    },
+    {
+      "word": "départ",
+      "meaning": "departure",
+      "example": "on avait les heures de départ et les heures d'arrivée"
+    },
+    {
+      "word": "mondial",
+      "meaning": "world, global",
+      "example": "nous vivons dans une économie mondiale qui évolue très rapidement"
+    },
+    {
+      "word": "entraîner",
+      "meaning": "to carry along, train",
+      "example": "tu es trop jeune pour t'entraîner"
+    },
+    {
+      "word": "disposer",
+      "meaning": "to arrange, set",
+      "example": "la France dispose d'unités navales basées à Djibouti"
+    },
+    {
+      "word": "parole",
+      "meaning": "word",
+      "example": "je regrette mes paroles, moi aussi"
+    },
+    {
+      "word": "fond",
+      "meaning": "bottom",
+      "example": "le fond des cœurs ne change pas"
+    },
+    {
+      "word": "publique",
+      "meaning": "public",
+      "example": "la morale publique ne peut être sacrifiée au progrès"
+    },
+    {
+      "word": "faux",
+      "meaning": "false; scythe",
+      "example": "ce ne sont pas là de fausses accusations"
+    },
+    {
+      "word": "genre",
+      "meaning": "type, kind, sort",
+      "example": "je dénonce ce genre de choses"
+    },
+    {
+      "word": "retenir",
+      "meaning": "to retain, hold back, remember",
+      "example": "depuis ma blessure, je ne retiens rien"
+    },
+    {
+      "word": "communauté",
+      "meaning": "community",
+      "example": "la communauté internationale l'a en grande partie rejeté"
+    },
+    {
+      "word": "intéresser",
+      "meaning": "to interest, involve",
+      "example": "leur avis ne m'intéresse pas"
+    },
+    {
+      "word": "c'est-à-dire",
+      "meaning": "in other words",
+      "example": "il s'agit de vivre, c'est-à-dire d'avancer"
+    },
+    {
+      "word": "corps",
+      "meaning": "body",
+      "example": "tout mon corps en était secoué"
+    },
+    {
+      "word": "matière",
+      "meaning": "matter, subject, material",
+      "example": "la matière est parfaite pour les peaux sensibles"
+    },
+    {
+      "word": "sein",
+      "meaning": "breast, bosom",
+      "example": "le cancer du sein est rare chez l'homme"
+    },
+    {
+      "word": "difficulté",
+      "meaning": "difficulty",
+      "example": "j'avais quelque difficulté à lui parler"
+    },
+    {
+      "word": "parvenir",
+      "meaning": "to reach, achieve",
+      "example": "je suis content d'être parvenu au bout"
+    },
+    {
+      "word": "secteur",
+      "meaning": "sector",
+      "example": "la police a décrété le secteur «zone interdite»"
+    },
+    {
+      "word": "appel",
+      "meaning": "call",
+      "example": "il a reçu des appels téléphoniques menaçants"
+    },
+    {
+      "word": "cœur",
+      "meaning": "heart",
+      "example": "j'aimerais vous féliciter du fond du cœur"
+    },
+    {
+      "word": "père",
+      "meaning": "father",
+      "example": "je suis père célibataire"
+    },
+    {
+      "word": "organisation",
+      "meaning": "organisation",
+      "example": "plus grande devient l'organisation, plus il y a de règles"
+    },
+    {
+      "word": "unité",
+      "meaning": "unity; unit",
+      "example": "vous partez inspecter nos unités de désinfection"
+    },
+    {
+      "word": "noir",
+      "meaning": "black",
+      "example": "seule la police roule en noir et blanc?"
+    },
+    {
+      "word": "événement",
+      "meaning": "event",
+      "example": "je me souviens de ces événements avec précision"
+    },
+    {
+      "word": "double",
+      "meaning": "double",
+      "example": "on parle beaucoup de la double peine pour les délinquants étrangers"
+    },
+    {
+      "word": "convaincre",
+      "meaning": "to convince",
+      "example": "c'est bon, tu m'as convaincue"
+    },
+    {
+      "word": "nation",
+      "meaning": "nation",
+      "example": "elle bouscule sérieusement les droits des nations"
+    },
+    {
+      "word": "conseil",
+      "meaning": "advice, counsel, council",
+      "example": "les militaires ont formé un Conseil de salut national"
+    },
+    {
+      "word": "soutenir",
+      "meaning": "to sustain, support",
+      "example": "nous avons été nombreux à soutenir son innocence"
+    },
+    {
+      "word": "paix",
+      "meaning": "peace",
+      "example": "laissez ma famille en paix"
+    },
+    {
+      "word": "nuit",
+      "meaning": "night",
+      "example": "je n'ai pas dormi cette nuit"
+    },
+    {
+      "word": "partout",
+      "meaning": "everywhere",
+      "example": "je t'ai cherché partout"
+    },
+    {
+      "word": "direction",
+      "meaning": "direction, management",
+      "example": "je n'osais aller dans cette direction"
+    },
+    {
+      "word": "manquer",
+      "meaning": "to miss",
+      "example": "la Chine manque d'argent, et manque de savants"
+    },
+    {
+      "word": "actuel",
+      "meaning": "current, present",
+      "example": "les gens ont peur du gouvernement actuel"
+    },
+    {
+      "word": "opposer",
+      "meaning": "to oppose",
+      "example": "comment peut-il maintenant s'y opposer?"
+    },
+    {
+      "word": "signifier",
+      "meaning": "to mean",
+      "example": "cela ne signifiait rien pour moi"
+    },
+    {
+      "word": "journée",
+      "meaning": "day",
+      "example": "j'ai attendu toute la journée pour te voir"
+    },
+    {
+      "word": "d'ailleurs",
+      "meaning": "moreover, besides, for that matter",
+      "example": "je n'entends d'ailleurs pas le tenir secret"
+    },
+    {
+      "word": "traiter",
+      "meaning": "to treat, handle, deal with",
+      "example": "deux chapitres, enfin, traitent de la question"
+    },
+    {
+      "word": "indiquer",
+      "meaning": "to indicate, signal",
+      "example": "le contrôleur indique qu'il est prêt"
+    },
+    {
+      "word": "tuer",
+      "meaning": "to kill",
+      "example": "les fusils, ça tue"
+    },
+    {
+      "word": "technique",
+      "meaning": "technique, technics, technical",
+      "example": "parlons un peu de votre technique"
+    },
+    {
+      "word": "rapidement",
+      "meaning": "quickly, rapidly",
+      "example": "ils ont passé rapidement dans l'histoire"
+    },
+    {
+      "word": "autour",
+      "meaning": "around",
+      "example": "je t'emmènerai autour du monde"
+    },
+    {
+      "word": "réduire",
+      "meaning": "to reduce",
+      "example": "tu réduis les aliments graisseux et le chocolat"
+    },
+    {
+      "word": "d'après",
+      "meaning": "to",
+      "example": "qui a bâti les pyramides d'après vous?"
+    },
+    {
+      "word": "préférer",
+      "meaning": "to prefer",
+      "example": "préférez-vous que j'appelle la police?"
+    },
+    {
+      "word": "rue",
+      "meaning": "street",
+      "example": "je me promenais dans les rues, seule"
+    },
+    {
+      "word": "riche",
+      "meaning": "rich",
+      "example": "elle est jolie, riche, mince ... et amoureuse de mon mari"
+    },
+    {
+      "word": "bref",
+      "meaning": "brief",
+      "example": "le rapport était bref et précis"
+    },
+    {
+      "word": "nommer",
+      "meaning": "to call, name, appoint",
+      "example": "ses membres sont nommés par le premier ministre"
+    },
+    {
+      "word": "violence",
+      "meaning": "violence",
+      "example": "la violence a fait six nouveaux morts"
+    },
+    {
+      "word": "siècle",
+      "meaning": "century",
+      "example": "le XXe siècle a fait plus de martyrs chrétiens"
+    },
+    {
+      "word": "article",
+      "meaning": "article",
+      "example": "vous m'avez convaincue de finir l'article"
+    },
+    {
+      "word": "durer",
+      "meaning": "to last",
+      "example": "voilà quinze jours que ça dure"
+    },
+    {
+      "word": "qualité",
+      "meaning": "quality",
+      "example": "Renaud est quelqu'un d'une grande qualité humaine"
+    },
+    {
+      "word": "gauche",
+      "meaning": "left",
+      "example": "elle écrit de gauche à droite"
+    },
+    {
+      "word": "solution",
+      "meaning": "solution",
+      "example": "il n'existe pas de solution miracle"
+    },
+    {
+      "word": "voie",
+      "meaning": "road, lane, route, track, way",
+      "example": "il a toujours suivi sa voie, ton père"
+    },
+    {
+      "word": "capable",
+      "meaning": "able, capable",
+      "example": "je ne suis pas capable de répondre à votre question"
+    },
+    {
+      "word": "canadien",
+      "meaning": "Canadian",
+      "example": "75 p. 100 des Canadiens et des Canadiennes sont en bonne santé mentale"
+    },
+    {
+      "word": "erreur",
+      "meaning": "mistake, error",
+      "example": "certaines erreurs ont été commises"
+    },
+    {
+      "word": "livrer",
+      "meaning": "to deliver",
+      "example": "je pensais te faire livrer un plat chaud"
+    },
+    {
+      "word": "auprès",
+      "meaning": "nearby, close to",
+      "example": "il avait beaucoup de succès auprès des femmes"
+    },
+    {
+      "word": "simplement",
+      "meaning": "simply",
+      "example": "c'est tout simplement inacceptable"
+    },
+    {
+      "word": "souvenir",
+      "meaning": "memory; to remember",
+      "example": "je ne veux me souvenir de rien"
+    },
+    {
+      "word": "conséquence",
+      "meaning": "consequence",
+      "example": "il y a donc des conséquences extrêmement sérieuses"
+    },
+    {
+      "word": "large",
+      "meaning": "wide, width",
+      "example": "tes yeux sont devenus plus larges"
+    },
+    {
+      "word": "contraire",
+      "meaning": "opposite, contrary",
+      "example": "mais le contraire est vrai aussi"
+    },
+    {
+      "word": "succès",
+      "meaning": "success",
+      "example": "le succès prouve que mes livres avaient du mérite"
+    },
+    {
+      "word": "élément",
+      "meaning": "element",
+      "example": "trois éléments d'information présentent un intérêt particulier"
+    },
+    {
+      "word": "local",
+      "meaning": "local",
+      "example": "nous respectons l'autonomie de chaque groupe local"
+    },
+    {
+      "word": "été",
+      "meaning": "summer",
+      "example": "l'été constitue le pic de la consommation d'essence"
+    },
+    {
+      "word": "inviter",
+      "meaning": "to invite",
+      "example": "un soir, ils m'invitent à dîner"
+    },
+    {
+      "word": "extérieur",
+      "meaning": "exterior",
+      "example": "la porte extérieure s'ouvre"
+    },
+    {
+      "word": "pied",
+      "meaning": "foot",
+      "example": "tu n'iras pas assez vite à pied"
+    },
+    {
+      "word": "mission",
+      "meaning": "mission",
+      "example": "si quelqu'un apprend notre mission, on échoue"
+    },
+    {
+      "word": "débat",
+      "meaning": "debate",
+      "example": "il voulait simplement contribuer au débat"
+    },
+    {
+      "word": "fille",
+      "meaning": "girl, daughter",
+      "example": "c'est une jeune fille de seize ans"
+    },
+    {
+      "word": "répéter",
+      "meaning": "to repeat",
+      "example": "ce rêve se répète sans cesse"
+    },
+    {
+      "word": "texte",
+      "meaning": "text",
+      "example": "je donne un texte et l'artiste intervient comme il veut"
+    },
+    {
+      "word": "profiter",
+      "meaning": "to take advantage, profit",
+      "example": "je profitais de ces derniers jours de vraies vacances"
+    },
+    {
+      "word": "chambre",
+      "meaning": "bedroom, chamber",
+      "example": "avant d'entrer dans la chambre de mon fils j'entrai dans la mienne"
+    },
+    {
+      "word": "création",
+      "meaning": "creation",
+      "example": "nous nous battons depuis la création de notre parti"
+    },
+    {
+      "word": "prouver",
+      "meaning": "to prove",
+      "example": "je n'ai rien besoin de prouver à qui que ce soit"
+    },
+    {
+      "word": "acheter",
+      "meaning": "to buy",
+      "example": "achetez vos billets à un revendeur agréé"
+    },
+    {
+      "word": "justice",
+      "meaning": "justice",
+      "example": "vous rendrez la justice de manière impartiale"
+    },
+    {
+      "word": "production",
+      "meaning": "production",
+      "example": "ce serait une maison de production plutôt qu'une société"
+    },
+    {
+      "word": "ignorer",
+      "meaning": "to ignore",
+      "example": "j'ignorais pourquoi il jurait comme ça"
+    },
+    {
+      "word": "directeur",
+      "meaning": "director",
+      "example": "j'ai recu un mot du directeur"
+    },
+    {
+      "word": "santé",
+      "meaning": "health",
+      "example": "il est en bonne santé"
+    },
+    {
+      "word": "souffrir",
+      "meaning": "to suffer",
+      "example": "elle n'a pas souffert, elle s'est endormie"
+    },
+    {
+      "word": "précis",
+      "meaning": "precise",
+      "example": "c'est à cet instant précis que je suis devenu adulte"
+    },
+    {
+      "word": "fixer",
+      "meaning": "to fix, arrange, set",
+      "example": "nous avons fixé une date limite"
+    },
+    {
+      "word": "mère",
+      "meaning": "mother",
+      "example": "peut-être que tous les enfants déçoivent leur mère"
+    },
+    {
+      "word": "croissance",
+      "meaning": "growth",
+      "example": "les taux de croissance ont été importants"
+    },
+    {
+      "word": "risque",
+      "meaning": "risk",
+      "example": "vous prenez de sacrés risques"
+    },
+    {
+      "word": "arme",
+      "meaning": "weapon",
+      "example": "je suis un trafiquant d'armes"
+    },
+    {
+      "word": "estimer",
+      "meaning": "to estimate; to consider, deem",
+      "example": "j'estime que cela est inadmissible"
+    },
+    {
+      "word": "endroit",
+      "meaning": "place, spot",
+      "example": "on aime vraiment cet endroit"
+    },
+    {
+      "word": "comité",
+      "meaning": "committee",
+      "example": "les délibérations des comités peuvent être enregistrées"
+    },
+    {
+      "word": "impossible",
+      "meaning": "impossible",
+      "example": "je peux te rendre la vie impossible"
+    },
+    {
+      "word": "preuve",
+      "meaning": "proof",
+      "example": "vous nous donnez les preuves, et nous vous protégeons à vie"
+    },
+    {
+      "word": "véritable",
+      "meaning": "real, true",
+      "example": "les véritables coupables restaient en liberté"
+    },
+    {
+      "word": "amener",
+      "meaning": "to bring",
+      "example": "on pourrait les amener à changer leurs habitudes"
+    },
+    {
+      "word": "viser",
+      "meaning": "to aim",
+      "example": "quel but visez-vous en thérapie bioénergétique?"
+    },
+    {
+      "word": "retirer",
+      "meaning": "to remove, withdraw",
+      "example": "j'aimerais qu'il retire ce qu'il a dit"
+    },
+    {
+      "word": "total",
+      "meaning": "total",
+      "example": "Ming, c'est l'anarchiste total"
+    },
+    {
+      "word": "image",
+      "meaning": "picture, image",
+      "example": "certains films contiennent des images fameuses"
+    },
+    {
+      "word": "date",
+      "meaning": "date",
+      "example": "c'est la vraie date de ton anniversaire"
+    },
+    {
+      "word": "travers",
+      "meaning": "breadth, across; fault, amiss",
+      "example": "le héros se promenait à travers le monde"
+    },
+    {
+      "word": "contrôle",
+      "meaning": "control",
+      "example": "la situation est complètement sous contrôle"
+    },
+    {
+      "word": "énorme",
+      "meaning": "enormous",
+      "example": "je pense que c'est un énorme effort"
+    },
+    {
+      "word": "conserver",
+      "meaning": "to keep, preserve",
+      "example": "cette petite note, je la conserve comme un trésor"
+    },
+    {
+      "word": "réel",
+      "meaning": "real",
+      "example": "nous avons toutefois un problème réel"
+    },
+    {
+      "word": "campagne",
+      "meaning": "countryside",
+      "example": "les gens allaient dormir à la campagne"
+    },
+    {
+      "word": "naître",
+      "meaning": "to be born",
+      "example": "il était né lui-même dans une famille de onze enfants"
+    },
+    {
+      "word": "accorder",
+      "meaning": "to grant",
+      "example": "les banques ont cessé d'accorder des prêts"
+    },
+    {
+      "word": "tourner",
+      "meaning": "to turn",
+      "example": "je trouvai un commutateur et le tournai"
+    },
+    {
+      "word": "participer",
+      "meaning": "to participate",
+      "example": "elle a participé à la création du Mouvement"
+    },
+    {
+      "word": "vieux",
+      "meaning": "old",
+      "example": "ça fait trop longtemps, mon vieil ami"
+    },
+    {
+      "word": "rapide",
+      "meaning": "fast, quick",
+      "example": "elle parle d'une voix rapide et menue"
+    },
+    {
+      "word": "respecter",
+      "meaning": "to respect",
+      "example": "j'avais le pouvoir. j'étais respecté"
+    },
+    {
+      "word": "passage",
+      "meaning": "passage, way",
+      "example": "je lirai seulement un petit passage"
+    },
+    {
+      "word": "essentiel",
+      "meaning": "essential",
+      "example": "ils sont tous désignés comme employés essentiels"
+    },
+    {
+      "word": "adopter",
+      "meaning": "to adopt",
+      "example": "j'hésite pour ma part à adopter l'idée"
+    },
+    {
+      "word": "subir",
+      "meaning": "to undergo, be subjected to, suffer",
+      "example": "certaines autres ont subi de terribles ravages"
+    },
+    {
+      "word": "environ",
+      "meaning": "about, thereabouts, or so",
+      "example": "mon père et ma mère sont mariés depuis environ 60 ans"
+    },
+    {
+      "word": "expérience",
+      "meaning": "experience",
+      "example": "ça va te donner de l'expérience"
+    },
+    {
+      "word": "admettre",
+      "meaning": "to admit",
+      "example": "je dois admettre que je suis toujours célibataire"
+    },
+    {
+      "word": "découvrir",
+      "meaning": "to discover",
+      "example": "la sœur a découvert la fenêtre cassée"
+    },
+    {
+      "word": "couvrir",
+      "meaning": "to cover",
+      "example": "il était couvert de taches de sang"
+    },
+    {
+      "word": "assister",
+      "meaning": "to attend; to assist, help",
+      "example": "il assista à la dernière répétition"
+    },
+    {
+      "word": "sénateur",
+      "meaning": "senator",
+      "example": "les honorables sénateurs ont été si généreux"
+    },
+    {
+      "word": "dépasser",
+      "meaning": "to pass, go beyond",
+      "example": "personne ne dépasse son potentiel"
+    },
+    {
+      "word": "affirmer",
+      "meaning": "to affirm, maintain, declare, allege",
+      "example": "ce témoin a affirmé avoir vu trois hommes"
+    },
+    {
+      "word": "soumettre",
+      "meaning": "to submit",
+      "example": "de retour chez eux, elle l'a soumis à un ultime test"
+    },
+    {
+      "word": "financier",
+      "meaning": "financial, financier",
+      "example": "j'ai aussi travaillé dans le monde financier"
+    },
+    {
+      "word": "processus",
+      "meaning": "process",
+      "example": "j'ai été renseigné à chaque étape du processus"
+    },
+    {
+      "word": "militaire",
+      "meaning": "military",
+      "example": "la justice militaire me donne le droit à un avocat"
+    },
+    {
+      "word": "frais",
+      "meaning": "cool, fresh; fee, expense",
+      "example": "on me paie mes frais de déplacement"
+    },
+    {
+      "word": "industrie",
+      "meaning": "industry",
+      "example": "le tourisme est une industrie saisonnière"
+    },
+    {
+      "word": "apparaître",
+      "meaning": "to appear",
+      "example": "son nom apparaissait dans une autre liste"
+    },
+    {
+      "word": "responsabilité",
+      "meaning": "responsibility",
+      "example": "il porte la seule responsabilité"
+    },
+    {
+      "word": "réserver",
+      "meaning": "to reserve, keep",
+      "example": "je veux ce que l'avenir me réserve"
+    },
+    {
+      "word": "porte",
+      "meaning": "door",
+      "example": "veuillez fermer la porte derrière vous"
+    },
+    {
+      "word": "victime",
+      "meaning": "victim",
+      "example": "nos prières vont aux victimes"
+    },
+    {
+      "word": "territoire",
+      "meaning": "territory",
+      "example": "c'est eux autres qui occupent le territoire"
+    },
+    {
+      "word": "pauvre",
+      "meaning": "poor",
+      "example": "vous êtes idiote, ma pauvre femme, comme toujours"
+    },
+    {
+      "word": "taux",
+      "meaning": "rate",
+      "example": "les taux d'intérêt ont notablement haussé"
+    },
+    {
+      "word": "organiser",
+      "meaning": "to organize",
+      "example": "on pensait t'organiser une fête d'anniversaire"
+    },
+    {
+      "word": "posséder",
+      "meaning": "to possess, own, have",
+      "example": "je possède les coupures de presse vous concernant"
+    },
+    {
+      "word": "matériel",
+      "meaning": "material, equipment",
+      "example": "nous avons déjà du nouveau matériel en chantier"
+    },
+    {
+      "word": "cent",
+      "meaning": "one hundred, cent",
+      "example": "aucun des cinq cents voyageurs n'a été blessé"
+    },
+    {
+      "word": "constater",
+      "meaning": "to note, notice; to establish, certify",
+      "example": "je constate de ce fait"
+    },
+    {
+      "word": "prononcer",
+      "meaning": "to pronounce",
+      "example": "je ne devrais même pas prononcer ces mots"
+    },
+    {
+      "word": "signe",
+      "meaning": "sign",
+      "example": "cependant, il y a des signes encourageants"
+    },
+    {
+      "word": "blanc",
+      "meaning": "white",
+      "example": "tu es donc noir à rayures blanches. dilemme résolu"
+    },
+    {
+      "word": "origine",
+      "meaning": "origin, source",
+      "example": "la guérilla n'est pas à l'origine de la violence"
+    },
+    {
+      "word": "vendre",
+      "meaning": "to sell",
+      "example": "non, vous ne pouvez pas vendre votre bétail"
+    },
+    {
+      "word": "vite",
+      "meaning": "fast, quickly",
+      "example": "déployez les sentinelles ... vite!"
+    },
+    {
+      "word": "langue",
+      "meaning": "language, tongue",
+      "example": "tu maîtrises bien la langue"
+    },
+    {
+      "word": "dangereux",
+      "meaning": "dangerous",
+      "example": "ce type est dangereux"
+    },
+    {
+      "word": "déplacer",
+      "meaning": "to move, displace",
+      "example": "nous nous déplaçons librement entre les deux pays"
+    },
+    {
+      "word": "importance",
+      "meaning": "importance",
+      "example": "cela n'a pas d'importance"
+    },
+    {
+      "word": "suffire",
+      "meaning": "to be sufficient, suffice",
+      "example": "bon, ça suffit"
+    },
+    {
+      "word": "espoir",
+      "meaning": "hope",
+      "example": "hélas, ce n'était qu'un espoir"
+    },
+    {
+      "word": "davantage",
+      "meaning": "more",
+      "example": "nous sentons tous que nous devons travailler davantage"
+    },
+    {
+      "word": "saisir",
+      "meaning": "to take hold of, grab",
+      "example": "le reflet du miroir saisit son regard"
+    },
+    {
+      "word": "énergie",
+      "meaning": "energy",
+      "example": "l'énergie est le pivot de notre économie"
+    },
+    {
+      "word": "réseau",
+      "meaning": "network",
+      "example": "ce réseau peut me servir à établir des contacts"
+    },
+    {
+      "word": "mourir",
+      "meaning": "to die",
+      "example": "ma foi, je meurs de faim"
+    },
+    {
+      "word": "faible",
+      "meaning": "weak",
+      "example": "je devenais de plus en plus faible"
+    },
+    {
+      "word": "employer",
+      "meaning": "to use, employ",
+      "example": "vous en employez beaucoup, de ces intellos gonflants"
+    },
+    {
+      "word": "possibilité",
+      "meaning": "possibility",
+      "example": "il va avoir la possibilité d'influencer son passé"
+    },
+    {
+      "word": "spécial",
+      "meaning": "special",
+      "example": "je fais rien de spécial"
+    },
+    {
+      "word": "accompagner",
+      "meaning": "to accompany",
+      "example": "que Dieu vous accompagne"
+    },
+    {
+      "word": "actuellement",
+      "meaning": "at present, at the moment",
+      "example": "je suis très seul actuellement"
+    },
+    {
+      "word": "union",
+      "meaning": "union",
+      "example": "cette définition devrait comprendre les unions homosexuelles et lesbiennes"
+    },
+    {
+      "word": "supposer",
+      "meaning": "to suppose, assume",
+      "example": "je suppose qu'ils ont peur"
+    },
+    {
+      "word": "fournir",
+      "meaning": "to provide, supply",
+      "example": "elle ne souhaitait fournir aucun effort"
+    },
+    {
+      "word": "ceci",
+      "meaning": "this",
+      "example": "tout ceci est votre création"
+    },
+    {
+      "word": "exiger",
+      "meaning": "to require, demand",
+      "example": "une vie publique exige de nombreux sacrifices"
+    },
+    {
+      "word": "intervenir",
+      "meaning": "to intervene",
+      "example": "il doit intervenir sur le marché"
+    },
+    {
+      "word": "fils",
+      "meaning": "son",
+      "example": "votre fils est en entraînement pour devenir soldat"
+    },
+    {
+      "word": "d'accord",
+      "meaning": "okay, alright",
+      "example": "je m'en occupe, d'accord?"
+    },
+    {
+      "word": "discuter",
+      "meaning": "to discuss, debate; to question",
+      "example": "personne ne discute ses ordres"
+    },
+    {
+      "word": "différence",
+      "meaning": "difference",
+      "example": "il y a une différence entre les pommes et les hommes"
+    },
+    {
+      "word": "protéger",
+      "meaning": "to protect",
+      "example": "je suis ici pour te protéger, pas les cookies"
+    },
+    {
+      "word": "abandonner",
+      "meaning": "to give up, abandon",
+      "example": "la propriété semblait abandonnée"
+    },
+    {
+      "word": "avis",
+      "meaning": "opinion, mind",
+      "example": "j'ai changé d'avis"
+    },
+    {
+      "word": "battre",
+      "meaning": "to beat, hit",
+      "example": "ne nous battons pas l'un contre l'autre"
+    },
+    {
+      "word": "pire",
+      "meaning": "worse, worst",
+      "example": "c'est le pire jour de ma vie!"
+    },
+    {
+      "word": "adresser",
+      "meaning": "to address",
+      "example": "ces bourses s'adressent à des étudiants"
+    },
+    {
+      "word": "préciser",
+      "meaning": "to state, specify, clarify",
+      "example": "je préciserai seulement deux choses"
+    },
+    {
+      "word": "intervention",
+      "meaning": "intervention; talk",
+      "example": "je suis favorable aux interventions extérieures"
+    },
+    {
+      "word": "attirer",
+      "meaning": "to attract",
+      "example": "les attentats récents ont attiré trop d'attention"
+    },
+    {
+      "word": "demeurer",
+      "meaning": "to remain, live",
+      "example": "les crimes économiques demeurent largement impunis"
+    },
+    {
+      "word": "chiffre",
+      "meaning": "figure, number",
+      "example": "j'ignore si ce chiffre est exact"
+    },
+    {
+      "word": "consacrer",
+      "meaning": "to devote, consecrate",
+      "example": "j'ai consacré beaucoup de temps à la recherche"
+    }
+  ]
+}

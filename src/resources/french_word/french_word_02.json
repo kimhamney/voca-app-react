@@ -1,0 +1,1254 @@
+{
+  "data": [
+    {
+      "word": "français",
+      "meaning": "French",
+      "example": "il faut leur parler en français"
+    },
+    {
+      "word": "expliquer",
+      "meaning": "to explain",
+      "example": "je vous en prie, expliquez-moi tout"
+    },
+    {
+      "word": "quatre",
+      "meaning": "four",
+      "example": "nous sommes quatre étudiants dans la maison"
+    },
+    {
+      "word": "compte",
+      "meaning": "account, count",
+      "example": "cette ville a eu son compte de désastres"
+    },
+    {
+      "word": "considérer",
+      "meaning": "to consider",
+      "example": "la présidence considère cela comme une priorité majeure"
+    },
+    {
+      "word": "lorsque",
+      "meaning": "when",
+      "example": "que se passe-t-il lorsque nous manquons de sucre?"
+    },
+    {
+      "word": "ouvrir",
+      "meaning": "to open",
+      "example": "s'il vous plaît, ouvrez les yeux"
+    },
+    {
+      "word": "gagner",
+      "meaning": "to win, earn",
+      "example": "que le meilleur gagne"
+    },
+    {
+      "word": "exemple",
+      "meaning": "example",
+      "example": "ces exemples sont encore bien pauvres"
+    },
+    {
+      "word": "ville",
+      "meaning": "city",
+      "example": "nous étions de la même ville"
+    },
+    {
+      "word": "économique",
+      "meaning": "economic, economical",
+      "example": "le rétablissement économique de l'Asie est plus rapide que prévu"
+    },
+    {
+      "word": "mesure",
+      "meaning": "measure",
+      "example": "écrire me libère dans une certaine mesure"
+    },
+    {
+      "word": "histoire",
+      "meaning": "history, story",
+      "example": "on a raconté d'amusantes histoires"
+    },
+    {
+      "word": "haut",
+      "meaning": "top, high",
+      "example": "voilà qui vous lancera dans la haute société"
+    },
+    {
+      "word": "ensuite",
+      "meaning": "next",
+      "example": "ensuite il va au restaurant"
+    },
+    {
+      "word": "guerre",
+      "meaning": "war",
+      "example": "c'est nul, la guerre!"
+    },
+    {
+      "word": "loi",
+      "meaning": "law",
+      "example": "je vais voter contre le projet de loi"
+    },
+    {
+      "word": "président",
+      "meaning": "president",
+      "example": "j'ai rencontré le président des Etats-Unis"
+    },
+    {
+      "word": "exister",
+      "meaning": "to exist",
+      "example": "le risque n'existe plus"
+    },
+    {
+      "word": "sûr",
+      "meaning": "sure",
+      "example": "tu m'attends? bien sûr, poupée"
+    },
+    {
+      "word": "refuser",
+      "meaning": "to refuse",
+      "example": "attendez...vous refusez d'obéir?"
+    },
+    {
+      "word": "plutôt",
+      "meaning": "rather",
+      "example": "ce jet vole plutôt bas"
+    },
+    {
+      "word": "bureau",
+      "meaning": "office, desk",
+      "example": "il veut vous voir dans son bureau immédiatement"
+    },
+    {
+      "word": "mauvais",
+      "meaning": "bad, wrong",
+      "example": "il constitue un pas dans la mauvaise direction"
+    },
+    {
+      "word": "quant",
+      "meaning": "as for",
+      "example": "les vents tempêtueux ont modifié la situation quant aux avalanches"
+    },
+    {
+      "word": "mort",
+      "meaning": "dead; death",
+      "example": "la mort ne m'effraye pas"
+    },
+    {
+      "word": "mal",
+      "meaning": "bad",
+      "example": "autrement dit, la journée a plutôt mal commencé"
+    },
+    {
+      "word": "lire",
+      "meaning": "to read; lira",
+      "example": "je ne voulais pas lire mes poèmes"
+    },
+    {
+      "word": "réussir",
+      "meaning": "to succeed",
+      "example": "il ne réussit pas à vendre un seul dessin"
+    },
+    {
+      "word": "marché",
+      "meaning": "market",
+      "example": "le marché des maisons est resté stable"
+    },
+    {
+      "word": "condition",
+      "meaning": "condition",
+      "example": "l'unité de la condition humaine"
+    },
+    {
+      "word": "international",
+      "meaning": "international",
+      "example": "elle jouit également d'une excellente réputation internationale"
+    },
+    {
+      "word": "changer",
+      "meaning": "to change",
+      "example": "ensemble, ils ont changé beaucoup de choses"
+    },
+    {
+      "word": "oui",
+      "meaning": "yes",
+      "example": "oui, oui, je sais!"
+    },
+    {
+      "word": "public",
+      "meaning": "public, audience",
+      "example": "je dois beaucoup au public"
+    },
+    {
+      "word": "humain",
+      "meaning": "human",
+      "example": "vous savez, on est humains, nous aussi"
+    },
+    {
+      "word": "souvent",
+      "meaning": "often",
+      "example": "mais alors souvent en fin de soirée c'est la fête"
+    },
+    {
+      "word": "cinq",
+      "meaning": "five",
+      "example": "j'ai cinq minutes, je dois rencontrer quelqu'un à midi"
+    },
+    {
+      "word": "système",
+      "meaning": "system",
+      "example": "j'ai décrit le système idéal"
+    },
+    {
+      "word": "travailler",
+      "meaning": "to work",
+      "example": "nous devons travailler ensemble"
+    },
+    {
+      "word": "jeu",
+      "meaning": "game",
+      "example": "nous n'entrons pas dans le jeu de la politique"
+    },
+    {
+      "word": "vrai",
+      "meaning": "true",
+      "example": "ah, oui, c'est vrai"
+    },
+    {
+      "word": "représenter",
+      "meaning": "to represent",
+      "example": "il représente bien le sport français"
+    },
+    {
+      "word": "madame",
+      "meaning": "madam, lady",
+      "example": "et je suis au service de madame"
+    },
+    {
+      "word": "société",
+      "meaning": "society",
+      "example": "on vit dans une société où tout s'accélère"
+    },
+    {
+      "word": "difficile",
+      "meaning": "difficult",
+      "example": "c'est difficile, monsieur, très difficile d'être un homme"
+    },
+    {
+      "word": "quoi",
+      "meaning": "what",
+      "example": "je ne sais pas de quoi vous parlez"
+    },
+    {
+      "word": "entreprise",
+      "meaning": "enterprise, business",
+      "example": "j'ai moi-même l'esprit d'entreprise"
+    },
+    {
+      "word": "coup",
+      "meaning": "coup, blow, knock, stroke",
+      "example": "je lui donne juste un coup de main. je le lui dois"
+    },
+    {
+      "word": "or",
+      "meaning": "gold; hence, thus",
+      "example": "je ne suis pas chercheuse d'or"
+    },
+    {
+      "word": "social",
+      "meaning": "social",
+      "example": "elle a une dimension sociale autant que biologique"
+    },
+    {
+      "word": "assurer",
+      "meaning": "to assure, insure",
+      "example": "le contrat assure une pension à l'époux survivant"
+    },
+    {
+      "word": "essayer",
+      "meaning": "to try",
+      "example": "je vais essayer de vous convaincre"
+    },
+    {
+      "word": "juste",
+      "meaning": "just, only; fair",
+      "example": "vous êtes juste et impartial, comme toujours"
+    },
+    {
+      "word": "étranger",
+      "meaning": "foreigner; foreign",
+      "example": "la situation est bien différente à l'étranger"
+    },
+    {
+      "word": "empêcher",
+      "meaning": "to prevent",
+      "example": "cela n'aurait évidemment rien empêché"
+    },
+    {
+      "word": "million",
+      "meaning": "million",
+      "example": "un quart de million d'articles ont été distribués"
+    },
+    {
+      "word": "manière",
+      "meaning": "manner, way",
+      "example": "de cette manière, nous serons ensemble"
+    },
+    {
+      "word": "sortir",
+      "meaning": "to go out, leave",
+      "example": "sortez ou j'appelle la police"
+    },
+    {
+      "word": "prix",
+      "meaning": "price; prize",
+      "example": "il y a un prix pour les gagnants"
+    },
+    {
+      "word": "terme",
+      "meaning": "term, deadline",
+      "example": "l'éducation sur le long terme paiera"
+    },
+    {
+      "word": "longtemps",
+      "meaning": "a long time, a long while",
+      "example": "pendant longtemps il ne bougea pas de son lit"
+    },
+    {
+      "word": "reprendre",
+      "meaning": "to resume, recover, start again, take back",
+      "example": "on peut les arrêter, leur reprendre cette ville"
+    },
+    {
+      "word": "courant",
+      "meaning": "current",
+      "example": "je suis au courant, il a téléphoné"
+    },
+    {
+      "word": "intérêt",
+      "meaning": "interest",
+      "example": "l'avenir ne présente guère d'intérêt"
+    },
+    {
+      "word": "mener",
+      "meaning": "to lead",
+      "example": "la police mène une enquête pour arrêter les assaillants"
+    },
+    {
+      "word": "information",
+      "meaning": "information",
+      "example": "ces dirigeants ont décidé de taire ces informations"
+    },
+    {
+      "word": "détail",
+      "meaning": "detail",
+      "example": "vous devriez tout me raconter en détails"
+    },
+    {
+      "word": "appartenir",
+      "meaning": "to belong",
+      "example": "cet argent n'appartient pas au gouvernement"
+    },
+    {
+      "word": "liberté",
+      "meaning": "liberty, freedom",
+      "example": "on se bat pour la liberté d'expression"
+    },
+    {
+      "word": "assez",
+      "meaning": "enough",
+      "example": "les journées ne sont plus assez longues"
+    },
+    {
+      "word": "risquer",
+      "meaning": "to risk",
+      "example": "un avocat ne viendra pas risquer sa vie"
+    },
+    {
+      "word": "chacun",
+      "meaning": "each",
+      "example": "ils ont chacun leurs intérêts, leurs passions"
+    },
+    {
+      "word": "concerner",
+      "meaning": "to concern",
+      "example": "en ce qui me concerne, je voudrais te féliciter"
+    },
+    {
+      "word": "maison",
+      "meaning": "house",
+      "example": "elle est revenue habiter à la maison"
+    },
+    {
+      "word": "d'abord",
+      "meaning": "first of all",
+      "example": "je voudrais d'abord savoir quel métier tu exerces"
+    },
+    {
+      "word": "apprendre",
+      "meaning": "to learn",
+      "example": "où as-tu appris le métier?"
+    },
+    {
+      "word": "niveau",
+      "meaning": "level",
+      "example": "ce niveau de collaboration ne sera pas maintenu"
+    },
+    {
+      "word": "rencontrer",
+      "meaning": "to meet",
+      "example": "il rencontrera le pape au Vatican vendredi"
+    },
+    {
+      "word": "ton",
+      "meaning": "your; tone",
+      "example": "le ton était donné"
+    },
+    {
+      "word": "œuvre",
+      "meaning": "work, task",
+      "example": "peu d'auteurs font référence à son œuvre"
+    },
+    {
+      "word": "créer",
+      "meaning": "to create",
+      "example": "des malentendus nous créent des problèmes terribles"
+    },
+    {
+      "word": "état",
+      "meaning": "state",
+      "example": "la police était en état d'alerte maximum"
+    },
+    {
+      "word": "obtenir",
+      "meaning": "to get, obtain",
+      "example": "j'essaierai d'obtenir la réponse pour demain"
+    },
+    {
+      "word": "clair",
+      "meaning": "clear",
+      "example": "la nuit était froide et claire, sous la lune"
+    },
+    {
+      "word": "chercher",
+      "meaning": "to look for",
+      "example": "je ne cherche pas la richesse"
+    },
+    {
+      "word": "entrer",
+      "meaning": "to enter, go in, come in",
+      "example": "faut trouver le moyen d' entrer dans le soussol"
+    },
+    {
+      "word": "proposer",
+      "meaning": "to propose",
+      "example": "le jeune Français propose une promenade au parc"
+    },
+    {
+      "word": "apporter",
+      "meaning": "to bring",
+      "example": "je vous ai apportée des fleurs de mon jardin"
+    },
+    {
+      "word": "programme",
+      "meaning": "program",
+      "example": "utilisons ce programme comme il se doit"
+    },
+    {
+      "word": "loin",
+      "meaning": "far",
+      "example": "tu es venu de si loin"
+    },
+    {
+      "word": "ligne",
+      "meaning": "line",
+      "example": "il ne compte qu'une seule ligne de texte"
+    },
+    {
+      "word": "tête",
+      "meaning": "head",
+      "example": "ma tête me gratte"
+    },
+    {
+      "word": "libre",
+      "meaning": "free",
+      "example": "demain je suis libre toute la journée"
+    },
+    {
+      "word": "utiliser",
+      "meaning": "to use",
+      "example": "il utilisait une sorte de rasoir"
+    },
+    {
+      "word": "atteindre",
+      "meaning": "to reach",
+      "example": "leur fortune atteindrait des milliards"
+    },
+    {
+      "word": "tenter",
+      "meaning": "to tempt, try",
+      "example": "il tente de sortir de l'Italie"
+    },
+    {
+      "word": "tard",
+      "meaning": "late",
+      "example": "retournez au lit, il est tard"
+    },
+    {
+      "word": "enfin",
+      "meaning": "at last, finally",
+      "example": "elle avait enfin la réponse"
+    },
+    {
+      "word": "différent",
+      "meaning": "different",
+      "example": "c'est un bruit complètement différent"
+    },
+    {
+      "word": "sorte",
+      "meaning": "sort, kind",
+      "example": "la boisson est une sorte de drogue"
+    },
+    {
+      "word": "cependant",
+      "meaning": "however",
+      "example": "cette sécurité se trouve cependant menacée"
+    },
+    {
+      "word": "sujet",
+      "meaning": "subject, topic",
+      "example": "je cherchais un sujet de mémoire"
+    },
+    {
+      "word": "importer",
+      "meaning": "to import; to be important",
+      "example": "il importait de ne pas répéter l'erreur"
+    },
+    {
+      "word": "action",
+      "meaning": "action",
+      "example": "le président devrait éviter des actions irréfléchies"
+    },
+    {
+      "word": "relation",
+      "meaning": "relationship",
+      "example": "il y a là une relation intéressante à explorer"
+    },
+    {
+      "word": "recherche",
+      "meaning": "research, search",
+      "example": "la recherche en santé peut se révéler extrêmement bénéfique"
+    },
+    {
+      "word": "livre",
+      "meaning": "book",
+      "example": "je me mis à feuilleter les livres"
+    },
+    {
+      "word": "ajouter",
+      "meaning": "to add",
+      "example": "il ajouta à sa lettre une note"
+    },
+    {
+      "word": "ailleurs",
+      "meaning": "elsewhere, somewhere else",
+      "example": "les négociations décisives se tiennent ailleurs"
+    },
+    {
+      "word": "vraiment",
+      "meaning": "truly, really, very",
+      "example": "très mauvais, c'est pas vraiment sexy"
+    },
+    {
+      "word": "doute",
+      "meaning": "doubt",
+      "example": "il n'y a sans doute rien à voir"
+    },
+    {
+      "word": "reste",
+      "meaning": "rest",
+      "example": "c'est tout. le reste, je m'en fous"
+    },
+    {
+      "word": "début",
+      "meaning": "beginning",
+      "example": "je l'ai expliqué au début de mon discours"
+    },
+    {
+      "word": "présence",
+      "meaning": "presence",
+      "example": "j'ai besoin de sa présence; elle est mon ange"
+    },
+    {
+      "word": "nombreux",
+      "meaning": "numerous",
+      "example": "j'ai participé à de nombreux débats de ce genre"
+    },
+    {
+      "word": "produire",
+      "meaning": "to product",
+      "example": "nous devons produire quelque chose sur les terres en jachère"
+    },
+    {
+      "word": "préparer",
+      "meaning": "to prepare",
+      "example": "je vous prépare à manger?"
+    },
+    {
+      "word": "forme",
+      "meaning": "form",
+      "example": "les électrons ne sont plus sous forme de gaz"
+    },
+    {
+      "word": "décision",
+      "meaning": "decision",
+      "example": "parfois, vos décisions nous déçoivent"
+    },
+    {
+      "word": "rôle",
+      "meaning": "role",
+      "example": "il joue un rôle actif sur la scène internationale"
+    },
+    {
+      "word": "dix",
+      "meaning": "ten",
+      "example": "je patiente depuis dix minutes"
+    },
+    {
+      "word": "produit",
+      "meaning": "product",
+      "example": "de nouveaux marchés s'ouvrent ainsi aux produits français"
+    },
+    {
+      "word": "américain",
+      "meaning": "American",
+      "example": "c'est la voie que les Américains ont choisie"
+    },
+    {
+      "word": "minute",
+      "meaning": "minute",
+      "example": "vous ne pouvez pas attendre deux minutes"
+    },
+    {
+      "word": "relever",
+      "meaning": "to raise",
+      "example": "elle relevait la tête pour croiser mon regard"
+    },
+    {
+      "word": "autant",
+      "meaning": "as much, as many",
+      "example": "il a une bonne raison pour tarder autant"
+    },
+    {
+      "word": "peuple",
+      "meaning": "people",
+      "example": "ma vengeance va s'abattre sur votre peuple!"
+    },
+    {
+      "word": "second",
+      "meaning": "second",
+      "example": "j'ai écrit la seconde partie du roman avant la première"
+    },
+    {
+      "word": "prochain",
+      "meaning": "next",
+      "example": "je vous offre 50% sur votre billet prochain"
+    },
+    {
+      "word": "particulier",
+      "meaning": "particular, peculiar; person",
+      "example": "j'ai un regard un peu particulier"
+    },
+    {
+      "word": "écrire",
+      "meaning": "to write",
+      "example": "c'est pour cela que j'écris"
+    },
+    {
+      "word": "position",
+      "meaning": "position",
+      "example": "ils ne changent pas de position à ce sujet"
+    },
+    {
+      "word": "développement",
+      "meaning": "development",
+      "example": "nous allons poursuivre le développement de nos activités"
+    },
+    {
+      "word": "défendre",
+      "meaning": "to defend, forbid",
+      "example": "je pensais que je pouvais me défendre"
+    },
+    {
+      "word": "chef",
+      "meaning": "head, leader, chief",
+      "example": "vous surestimez le pouvoir des chefs d'Etat"
+    },
+    {
+      "word": "économie",
+      "meaning": "economy",
+      "example": "les exportations sont le moteur de notre économie"
+    },
+    {
+      "word": "effort",
+      "meaning": "effort",
+      "example": "ils doivent faire un effort pour nous comprendre"
+    },
+    {
+      "word": "parmi",
+      "meaning": "among",
+      "example": "il y en a un parmi vous qui est un démon"
+    },
+    {
+      "word": "membre",
+      "meaning": "member",
+      "example": "j'espère que tous les membres seront présents"
+    },
+    {
+      "word": "tirer",
+      "meaning": "to pull, fire",
+      "example": "à mon ordre, tirez sur ce câble"
+    },
+    {
+      "word": "ancien",
+      "meaning": "ancient; former",
+      "example": "je dis merci à tous les anciens combattants"
+    },
+    {
+      "word": "beau",
+      "meaning": "handsome, fine, right",
+      "example": "ce sont là de belles paroles, mais des paroles creuses"
+    },
+    {
+      "word": "plein",
+      "meaning": "full",
+      "example": "l'église est pleine"
+    },
+    {
+      "word": "juger",
+      "meaning": "to judge",
+      "example": "ce n'est pas à moi de juger ça"
+    },
+    {
+      "word": "éviter",
+      "meaning": "to avoid",
+      "example": "on ne peut évidemment pas l'éviter"
+    },
+    {
+      "word": "soir",
+      "meaning": "evening",
+      "example": "il est environ neuf heures du soir"
+    },
+    {
+      "word": "personnel",
+      "meaning": "personnel, personal",
+      "example": "vous semblez vous inspirer de votre vie personnelle pour écrire"
+    },
+    {
+      "word": "titre",
+      "meaning": "title",
+      "example": "ils nous accuseront à juste titre"
+    },
+    {
+      "word": "parti",
+      "meaning": "party",
+      "example": "il n'y a qu'un parti à blâmer"
+    },
+    {
+      "word": "objet",
+      "meaning": "objective; object",
+      "example": "Mathias remit l'objet dans sa poche"
+    },
+    {
+      "word": "unique",
+      "meaning": "unique",
+      "example": "j'ai longtemps cru que tu étais unique"
+    },
+    {
+      "word": "souhaiter",
+      "meaning": "to wish",
+      "example": "l'équipage vous souhaite un bon voyage"
+    },
+    {
+      "word": "afin",
+      "meaning": "order to, so that",
+      "example": "fixer des cordes afin de descendre en rappel"
+    },
+    {
+      "word": "peine",
+      "meaning": "effort, trouble",
+      "example": "mes jambes ne me soutenaient qu'à peine"
+    },
+    {
+      "word": "malgré",
+      "meaning": "despite, in spite of",
+      "example": "nous serons bons amis malgré tout"
+    },
+    {
+      "word": "période",
+      "meaning": "period",
+      "example": "j'étais amoureuse pendant une brève période de ma vie"
+    },
+    {
+      "word": "engager",
+      "meaning": "to hire, involve",
+      "example": "nous sommes engagés dans un travail de réflexion"
+    },
+    {
+      "word": "réaliser",
+      "meaning": "to realize, achieve",
+      "example": "je réaliserai ton rêve"
+    },
+    {
+      "word": "parfois",
+      "meaning": "sometimes",
+      "example": "il est parfois sage d'être un peu fou"
+    },
+    {
+      "word": "lors",
+      "meaning": "at the time of",
+      "example": "je vous ai vu lors de votre dernière visite"
+    },
+    {
+      "word": "sérieux",
+      "meaning": "serious",
+      "example": "mon thème est sérieux, mais mon texte est rigolo"
+    },
+    {
+      "word": "aider",
+      "meaning": "to help, assist",
+      "example": "bonjour, je peux vous aider?"
+    },
+    {
+      "word": "voix",
+      "meaning": "voice",
+      "example": "viens, me dit-elle d'une voix brève"
+    },
+    {
+      "word": "terminer",
+      "meaning": "to finish, end,",
+      "example": "va terminer ton petit déjeuner"
+    },
+    {
+      "word": "base",
+      "meaning": "base",
+      "example": "les matériaux de base sont toujours les mêmes"
+    },
+    {
+      "word": "espérer",
+      "meaning": "to hope",
+      "example": "j'espère obtenir une réponse claire"
+    },
+    {
+      "word": "main",
+      "meaning": "hand",
+      "example": "nous avons marché main dans la main"
+    },
+    {
+      "word": "gros",
+      "meaning": "nadj(pl) big",
+      "example": "ce n'était pas un gros chien"
+    },
+    {
+      "word": "arrêter",
+      "meaning": "to stop, arrest",
+      "example": "les deux dirigeants ont été arrêtés par la police"
+    },
+    {
+      "word": "retour",
+      "meaning": "return",
+      "example": "votre retour pose énormément de problèmes"
+    },
+    {
+      "word": "prêt",
+      "meaning": "ready",
+      "example": "le dîner est prêt!"
+    },
+    {
+      "word": "occasion",
+      "meaning": "chance, opportunity",
+      "example": "quand l'occasion se présentera, elle reviendra souvent"
+    },
+    {
+      "word": "député",
+      "meaning": "deputy, parliamentary delegate",
+      "example": "j'ai écouté plusieurs interventions des députés"
+    },
+    {
+      "word": "regarder",
+      "meaning": "to look, watch",
+      "example": "je regarde les reportages depuis ce matin"
+    },
+    {
+      "word": "plupart",
+      "meaning": "the majority",
+      "example": "la plupart des jeux vidéo violents sont japonais"
+    },
+    {
+      "word": "deuxième",
+      "meaning": "second",
+      "example": "tout le monde a besoin d'une deuxième opinion"
+    },
+    {
+      "word": "résultat",
+      "meaning": "result, follow-up",
+      "example": "nous avons pu constater les résultats hier"
+    },
+    {
+      "word": "écouter",
+      "meaning": "to listen to",
+      "example": "je pouvais l'écouter pendant des heures"
+    },
+    {
+      "word": "terre",
+      "meaning": "earth, world, soil, land",
+      "example": "que la paix soit sur terre, dès maintenant"
+    },
+    {
+      "word": "valoir",
+      "meaning": "to be worth",
+      "example": "c'est fini. ça vaut pas la peine"
+    },
+    {
+      "word": "dollar",
+      "meaning": "dollar",
+      "example": "tu veux combien? 10 dollars"
+    },
+    {
+      "word": "intérieur",
+      "meaning": "interior, inside",
+      "example": "je sentais mon cœur battre à l'intérieur"
+    },
+    {
+      "word": "page",
+      "meaning": "page",
+      "example": "j'écrivis les premières pages d'un roman"
+    },
+    {
+      "word": "confiance",
+      "meaning": "confidence, trust",
+      "example": "je ne peux pas lui faire confiance"
+    },
+    {
+      "word": "choix",
+      "meaning": "choice",
+      "example": "elle n'a pas d'autres choix que de rester"
+    },
+    {
+      "word": "prévoir",
+      "meaning": "to foresee, anticipate",
+      "example": "son mandat présidentiel est prévu pour s'achever en 2007"
+    },
+    {
+      "word": "chance",
+      "meaning": "luck; chance",
+      "example": "c'est notre dernière chance"
+    },
+    {
+      "word": "notamment",
+      "meaning": "notably",
+      "example": "on ignore notamment si des gendarmes figurent parmi les victimes"
+    },
+    {
+      "word": "type",
+      "meaning": "type; guy",
+      "example": "ce type de pêche est en cours d'abandon"
+    },
+    {
+      "word": "but",
+      "meaning": "goal, aim, objective, purpose",
+      "example": "notre premier but est toujours de respecter l'intégrité de la famille"
+    },
+    {
+      "word": "matin",
+      "meaning": "morning",
+      "example": "ce matin, je me suis réveillée tôt"
+    },
+    {
+      "word": "grave",
+      "meaning": "serious, grave",
+      "example": "ce n'est peut-être pas si grave que ça"
+    },
+    {
+      "word": "prise",
+      "meaning": "grip, hold, seizure, catch",
+      "example": "il y a souvent des prises de becs entre les deux"
+    },
+    {
+      "word": "européen",
+      "meaning": "European",
+      "example": "vous avez fait une tournée européenne"
+    },
+    {
+      "word": "étude",
+      "meaning": "study",
+      "example": "il existe une vie après les études"
+    },
+    {
+      "word": "principe",
+      "meaning": "principle",
+      "example": "tel est le premier principe de l'existentialisme"
+    },
+    {
+      "word": "remplacer",
+      "meaning": "to replace",
+      "example": "tu dois être prêt à nous remplacer, le cas échéant"
+    },
+    {
+      "word": "avancer",
+      "meaning": "to advance, move forward",
+      "example": "c'est moi qui ai avancé les fonds"
+    },
+    {
+      "word": "six",
+      "meaning": "six",
+      "example": "elle était enceinte de six mois"
+    },
+    {
+      "word": "nécessaire",
+      "meaning": "necessary, required",
+      "example": "je ne pense pas qu'il soit nécessaire de la distribuer"
+    },
+    {
+      "word": "activité",
+      "meaning": "activity",
+      "example": "certains sont impliqués dans des activités terroristes"
+    },
+    {
+      "word": "valeur",
+      "meaning": "value, worth",
+      "example": "on a payé dix fois sa valeur"
+    },
+    {
+      "word": "marquer",
+      "meaning": "to mark",
+      "example": "cet épisode tragique marque la fin d'une aventure"
+    },
+    {
+      "word": "entier",
+      "meaning": "whole, full",
+      "example": "le monde entier est contre nous"
+    },
+    {
+      "word": "réponse",
+      "meaning": "answer, response",
+      "example": "il donne une réponse claire à cette question"
+    },
+    {
+      "word": "aide",
+      "meaning": "help, assistance",
+      "example": "j'ai besoin d'un peu d'aide"
+    },
+    {
+      "word": "principal",
+      "meaning": "principal",
+      "example": "trouver le rôle principal s'est révélé assez problématique"
+    },
+    {
+      "word": "élever",
+      "meaning": "to grow, lift, raise",
+      "example": "des murmures s'élevèrent autour de lui"
+    },
+    {
+      "word": "pourtant",
+      "meaning": "yet, nonetheless, nevertheless",
+      "example": "pourtant cette perspective aussi m'effrayait"
+    },
+    {
+      "word": "commission",
+      "meaning": "commission",
+      "example": "on a mis cette commission enplace pour revoir cette question importante"
+    },
+    {
+      "word": "cesser",
+      "meaning": "to cease, stop",
+      "example": "on ne doit pas cesser de poser des questions"
+    },
+    {
+      "word": "poursuivre",
+      "meaning": "to pursue",
+      "example": "je poursuis cette criminelle"
+    },
+    {
+      "word": "maintenir",
+      "meaning": "to maintain",
+      "example": "ce principe sera maintenu"
+    },
+    {
+      "word": "époque",
+      "meaning": "era, period",
+      "example": "ils ont vécu à la même époque"
+    },
+    {
+      "word": "exprimer",
+      "meaning": "to express",
+      "example": "encore une fois, j'exprime ma frustration"
+    },
+    {
+      "word": "ami",
+      "meaning": "friend",
+      "example": "je te présente mon ami"
+    },
+    {
+      "word": "bas",
+      "meaning": "low; stockings",
+      "example": "elle ajouta presque à voix basse, comme quelqu'un qui parle dans l'obscurité"
+    },
+    {
+      "word": "imposer",
+      "meaning": "to impose",
+      "example": "on leur impose des changements très rapides"
+    },
+    {
+      "word": "moitié",
+      "meaning": "half",
+      "example": "pendant la moitié de la nuit, je pleurai"
+    },
+    {
+      "word": "avenir",
+      "meaning": "future",
+      "example": "je me sens très optimiste pour l'avenir"
+    },
+    {
+      "word": "argent",
+      "meaning": "money; silver",
+      "example": "bon, c'est son argent que je veux"
+    },
+    {
+      "word": "mise",
+      "meaning": "putting, placing",
+      "example": "il annonce en effet la mise en place d' une police fédérale européenne"
+    },
+    {
+      "word": "œil",
+      "meaning": "eye",
+      "example": "ferme les yeux, et respire"
+    },
+    {
+      "word": "eau",
+      "meaning": "water",
+      "example": "faites chauffer une casserole d'eau"
+    },
+    {
+      "word": "sauf",
+      "meaning": "except; safe",
+      "example": "tout le monde rit sauf elle"
+    },
+    {
+      "word": "école",
+      "meaning": "school",
+      "example": "je n'aimais pas aller à l'école"
+    },
+    {
+      "word": "sécurité",
+      "meaning": "security, safety",
+      "example": "ils se sentaient plus en sécurité dans la rue qu'à la maison"
+    },
+    {
+      "word": "milieu",
+      "meaning": "middle",
+      "example": "elle hésita au milieu de la route"
+    },
+    {
+      "word": "lettre",
+      "meaning": "letter",
+      "example": "il écrivit une lettre de neuf pages"
+    },
+    {
+      "word": "presque",
+      "meaning": "almost",
+      "example": "il y a presque 10 millions de lignes téléphoniques"
+    },
+    {
+      "word": "attention",
+      "meaning": "attention",
+      "example": "il se lève pour attirer notre attention"
+    },
+    {
+      "word": "cadre",
+      "meaning": "frame, executive",
+      "example": "cette enquête s'inscrit dans le cadre d'une autre"
+    },
+    {
+      "word": "futur",
+      "meaning": "future",
+      "example": "un futur sans guerre, c'est cool, hein?"
+    },
+    {
+      "word": "mouvement",
+      "meaning": "movement",
+      "example": "il me serra la main d'un mouvement presque inconscient"
+    },
+    {
+      "word": "former",
+      "meaning": "to form",
+      "example": "ils ne parviennent pas à former un groupe"
+    },
+    {
+      "word": "conduire",
+      "meaning": "to lead, drive",
+      "example": "conduisons-la à l'hôpital"
+    },
+    {
+      "word": "règle",
+      "meaning": "rule",
+      "example": "ce jeu fonctionne avec une règle très simple"
+    },
+    {
+      "word": "poste",
+      "meaning": "post, position; post office",
+      "example": "le chef de poste haussa les épaules"
+    },
+    {
+      "word": "demande",
+      "meaning": "request, demand",
+      "example": "la demande des consommateurs a créé un marché"
+    },
+    {
+      "word": "centre",
+      "meaning": "center",
+      "example": "l'amour et ses conséquences sont au centre de ce roman"
+    },
+    {
+      "word": "acte",
+      "meaning": "act",
+      "example": "c'était un acte de guerre"
+    },
+    {
+      "word": "disparaître",
+      "meaning": "to disappear, vanish",
+      "example": "l'avion a subitement disparu des écrans"
+    },
+    {
+      "word": "priver",
+      "meaning": "to deprive",
+      "example": "je ne me serais pas privée de sommeil à cause de vous"
+    },
+    {
+      "word": "constituer",
+      "meaning": "to constitute",
+      "example": "le djihad et le sacrifice constituent donc un devoir"
+    },
+    {
+      "word": "accord",
+      "meaning": "agreement",
+      "example": "le gouvernement fédéral a signé un accord"
+    },
+    {
+      "word": "milliard",
+      "meaning": "billion, thousand million",
+      "example": "le déficit budgétaire a atteint 226,3 milliards de francs"
+    },
+    {
+      "word": "lier",
+      "meaning": "to link, join",
+      "example": "c'est le premier décès lié à l'épidémie"
+    },
+    {
+      "word": "obliger",
+      "meaning": "to require, force, oblige",
+      "example": "tu ne peux pas m'obliger à rester!"
+    },
+    {
+      "word": "craindre",
+      "meaning": "to fear, be afraid of",
+      "example": "il ne craignait rien"
+    }
+  ]
+}

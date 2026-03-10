@@ -1,0 +1,1254 @@
+{
+  "data": [
+    {
+      "word": "le",
+      "meaning": "pro the; him, her, it, them",
+      "example": "vive la politique, vive l'amour"
+    },
+    {
+      "word": "de",
+      "meaning": "prep of, from, some, any",
+      "example": "il ne rêve que d'argent et de plaisirs"
+    },
+    {
+      "word": "un",
+      "meaning": "det, nm, pro a, an, one",
+      "example": "je me suis cassé un ongle"
+    },
+    {
+      "word": "à",
+      "meaning": "to, at, in",
+      "example": "ils restent à l'école le plus longtemps possible"
+    },
+    {
+      "word": "être",
+      "meaning": "to be; being",
+      "example": "tout le monde veut être beau"
+    },
+    {
+      "word": "et",
+      "meaning": "and",
+      "example": "et les larmes se remirent à couler"
+    },
+    {
+      "word": "en",
+      "meaning": "in, by",
+      "example": "je suis retournée en Espagne en septembre"
+    },
+    {
+      "word": "avoir",
+      "meaning": "to have",
+      "example": "on était six donc tu peux pas avoir une conversation"
+    },
+    {
+      "word": "que",
+      "meaning": "that, which, who, whom",
+      "example": "c'est un soldat. mais que fait-il ici?"
+    },
+    {
+      "word": "pour",
+      "meaning": "for, in order to",
+      "example": "elle jouait pour gagner"
+    },
+    {
+      "word": "dans",
+      "meaning": "in, into, from",
+      "example": "je reviendrai dans dix minutes"
+    },
+    {
+      "word": "ce",
+      "meaning": "this, that",
+      "example": "je ne déteste pas cet homme"
+    },
+    {
+      "word": "il",
+      "meaning": "he, it",
+      "example": "allez voir s'il est blessé"
+    },
+    {
+      "word": "qui",
+      "meaning": "who, whom",
+      "example": "je ne sais pas à qui m'adresser"
+    },
+    {
+      "word": "ne",
+      "meaning": "not",
+      "example": "nous ne faisons pas du très bon travail"
+    },
+    {
+      "word": "sur",
+      "meaning": "on, upon",
+      "example": "t'avais une chance sur un million"
+    },
+    {
+      "word": "se",
+      "meaning": "oneself, himself, herself, itself, themselves",
+      "example": "avec ce traité, le Japon se rapproche des Etats-Unis"
+    },
+    {
+      "word": "pas",
+      "meaning": "not, n't; footstep",
+      "example": "non, ne touchez pas!"
+    },
+    {
+      "word": "plus",
+      "meaning": "more, no more",
+      "example": "il est considérablement plus jeune que moi"
+    },
+    {
+      "word": "pouvoir",
+      "meaning": "can, to be able to",
+      "example": "tu peux jouer de la guitare électrique"
+    },
+    {
+      "word": "par",
+      "meaning": "by",
+      "example": "il s'y trouvait par hasard"
+    },
+    {
+      "word": "je",
+      "meaning": "I",
+      "example": "je suis contente de vous revoir"
+    },
+    {
+      "word": "avec",
+      "meaning": "with",
+      "example": "vous voulez aller au ciné avec moi?"
+    },
+    {
+      "word": "tout",
+      "meaning": "all, very",
+      "example": "comme vous voyez, tout est propre"
+    },
+    {
+      "word": "faire",
+      "meaning": "to do, make",
+      "example": "qu'est-ce qu'il fait?"
+    },
+    {
+      "word": "son",
+      "meaning": "his, her, its; sound; bran",
+      "example": "un ami ingénieur du son m'aide pour les arrangements"
+    },
+    {
+      "word": "mettre",
+      "meaning": "to put, place",
+      "example": "je peux me mettre à votre table?"
+    },
+    {
+      "word": "autre",
+      "meaning": "other",
+      "example": "il y a un autre problème"
+    },
+    {
+      "word": "on",
+      "meaning": "one, we",
+      "example": "on tire et on pose les questions ensuite"
+    },
+    {
+      "word": "mais",
+      "meaning": "but",
+      "example": "je ne suis pas riche, mais je connais la vérité"
+    },
+    {
+      "word": "nous",
+      "meaning": "we, us",
+      "example": "nous devons nous défendre nous-mêmes"
+    },
+    {
+      "word": "comme",
+      "meaning": "like, as",
+      "example": "Tony et moi, on est comme des frères"
+    },
+    {
+      "word": "ou",
+      "meaning": "or",
+      "example": "il en reste du café ou pas?"
+    },
+    {
+      "word": "si",
+      "meaning": "if, whether",
+      "example": "aujourd'hui, notre économie va si mal"
+    },
+    {
+      "word": "leur",
+      "meaning": "them, their, theirs",
+      "example": "l'énergie solaire assurait leur survie"
+    },
+    {
+      "word": "y",
+      "meaning": "there",
+      "example": "c'est certain qu'on va y aller"
+    },
+    {
+      "word": "dire",
+      "meaning": "to say",
+      "example": "je décrochais le téléphone sans rien dire à personne"
+    },
+    {
+      "word": "elle",
+      "meaning": "she, her",
+      "example": "j'étais fou amoureux. elle m'aimait bien"
+    },
+    {
+      "word": "devoir",
+      "meaning": "to have to, owe; duty",
+      "example": "je dois travailler sans la moindre entrave"
+    },
+    {
+      "word": "avant",
+      "meaning": "before",
+      "example": "tu vas te pencher en avant"
+    },
+    {
+      "word": "deux",
+      "meaning": "two",
+      "example": "il prend le train deux fois par semaine pour affaires"
+    },
+    {
+      "word": "même",
+      "meaning": "same, even, self",
+      "example": "ils ne s'excusent même pas"
+    },
+    {
+      "word": "prendre",
+      "meaning": "to take",
+      "example": "elle lui prit la main"
+    },
+    {
+      "word": "aussi",
+      "meaning": "too, also, as",
+      "example": "je rêvais aussi de beaucoup voyager"
+    },
+    {
+      "word": "celui",
+      "meaning": "that, the one, he, him",
+      "example": "tu es celui que je respecte le plus"
+    },
+    {
+      "word": "donner",
+      "meaning": "to give",
+      "example": "j'aurais donné ma vie pour lui"
+    },
+    {
+      "word": "bien",
+      "meaning": "i,adv,nm well",
+      "example": "tout va bien maintenant"
+    },
+    {
+      "word": "où",
+      "meaning": "where",
+      "example": "on ne dit pas où il vit"
+    },
+    {
+      "word": "fois",
+      "meaning": "time, times",
+      "example": "lève la main une fois"
+    },
+    {
+      "word": "vous",
+      "meaning": "you",
+      "example": "ici, vous avez une personnalité publique"
+    },
+    {
+      "word": "encore",
+      "meaning": "again, yet",
+      "example": "tu as encore menti à ta femme"
+    },
+    {
+      "word": "nouveau",
+      "meaning": "new",
+      "example": "il a construit une nouvelle vie ici"
+    },
+    {
+      "word": "aller",
+      "meaning": "to go",
+      "example": "tu devrais aller te coucher, tu as l'air vanné"
+    },
+    {
+      "word": "cela",
+      "meaning": "that, it",
+      "example": "cela demande de l'intégrité et du courage"
+    },
+    {
+      "word": "entre",
+      "meaning": "between",
+      "example": "je marche entre les maisons"
+    },
+    {
+      "word": "premier",
+      "meaning": "first",
+      "example": "est-elle la première épouse, la deuxième?"
+    },
+    {
+      "word": "vouloir",
+      "meaning": "to want",
+      "example": "tu veux faire ton chemin. c'est bien"
+    },
+    {
+      "word": "déjà",
+      "meaning": "already",
+      "example": "les rues étaient déjà pleines de monde"
+    },
+    {
+      "word": "grand",
+      "meaning": "great, big, tall",
+      "example": "tu es plus grand que je pensais"
+    },
+    {
+      "word": "mon",
+      "meaning": "my",
+      "example": "t'aurais pu rencontrer mon copain"
+    },
+    {
+      "word": "me",
+      "meaning": "me, to me, myself",
+      "example": "reviens me voir dans cinq ou six ans"
+    },
+    {
+      "word": "moins",
+      "meaning": "less",
+      "example": "il avait moins d'excuses encore que ses complices"
+    },
+    {
+      "word": "aucun",
+      "meaning": "none, either, neither, not any",
+      "example": "trop d'argent et aucun goût"
+    },
+    {
+      "word": "lui",
+      "meaning": "him, her",
+      "example": "mais j'ai confiance qu'en lui"
+    },
+    {
+      "word": "temps",
+      "meaning": "time",
+      "example": "sur le plan spirituel, le temps n'existe pas"
+    },
+    {
+      "word": "très",
+      "meaning": "very",
+      "example": "j'ai été bonne? très, très bonne"
+    },
+    {
+      "word": "savoir",
+      "meaning": "to know",
+      "example": "je ne savais plus quoi dire"
+    },
+    {
+      "word": "falloir",
+      "meaning": "to take, require, need",
+      "example": "il ne faut pas être raciste, point"
+    },
+    {
+      "word": "voir",
+      "meaning": "to see",
+      "example": "je tenais seulement à te voir pour te dire ... bonne chance"
+    },
+    {
+      "word": "quelque",
+      "meaning": "some",
+      "example": "il restera pour quelques mois"
+    },
+    {
+      "word": "sans",
+      "meaning": "without",
+      "example": "je fais plus jeune sans maquillage"
+    },
+    {
+      "word": "raison",
+      "meaning": "reason",
+      "example": "elle a raison, tu sais"
+    },
+    {
+      "word": "notre",
+      "meaning": "our",
+      "example": "notre ville a le sens de la communauté"
+    },
+    {
+      "word": "dont",
+      "meaning": "whose, of which",
+      "example": "on a tout ce dont tu rêvais en ville"
+    },
+    {
+      "word": "non",
+      "meaning": "no, not",
+      "example": "non, je ne peux pas parler maintenant"
+    },
+    {
+      "word": "an",
+      "meaning": "year",
+      "example": "j'avais un an à la mort de mon père"
+    },
+    {
+      "word": "monde",
+      "meaning": "world, people",
+      "example": "notre ultime but est de reconstruire le monde"
+    },
+    {
+      "word": "jour",
+      "meaning": "day",
+      "example": "un jour, je retrouverais mes vrais parents"
+    },
+    {
+      "word": "monsieur",
+      "meaning": "mister, sir, gentleman",
+      "example": "comment allez-vous , monsieur?"
+    },
+    {
+      "word": "demander",
+      "meaning": "to ask for",
+      "example": "j'ai un service à vous demander"
+    },
+    {
+      "word": "alors",
+      "meaning": "then, so",
+      "example": "et alors? vous revenez quand?"
+    },
+    {
+      "word": "après",
+      "meaning": "after",
+      "example": "il a succombé à ses blessures peu après"
+    },
+    {
+      "word": "trouver",
+      "meaning": "to find",
+      "example": "j'ai trouvé du sang. sur le siège avant"
+    },
+    {
+      "word": "personne",
+      "meaning": "person, people, anybody, anyone, nobody",
+      "example": "il ne parlait à personne en particulier"
+    },
+    {
+      "word": "rendre",
+      "meaning": "to render, return, yield, give up",
+      "example": "je m'y rendis à 4 heures du matin"
+    },
+    {
+      "word": "part",
+      "meaning": "share",
+      "example": "je voudrais vous faire part de quelques données"
+    },
+    {
+      "word": "dernier",
+      "meaning": "last",
+      "example": "c'est le dernier endroit où vous auriez dû vous rencontrer"
+    },
+    {
+      "word": "venir",
+      "meaning": "to come",
+      "example": "venez rencontrer les autres"
+    },
+    {
+      "word": "pendant",
+      "meaning": "during; pendant",
+      "example": "où t'étais pendant tout ce temps?"
+    },
+    {
+      "word": "passer",
+      "meaning": "to pass",
+      "example": "nous sommes passées devant la maison de ma grand-mère"
+    },
+    {
+      "word": "peu",
+      "meaning": "little",
+      "example": "un secret se dévoile peu à peu"
+    },
+    {
+      "word": "lequel",
+      "meaning": "who, whom, which",
+      "example": "il y a bien des points sur lesquels je voudrais faire des commentaires"
+    },
+    {
+      "word": "suite",
+      "meaning": "result, follow-up, rest",
+      "example": "deux, trois et ainsi de suite"
+    },
+    {
+      "word": "bon",
+      "meaning": "good",
+      "example": "ce n'est pas le bon moment"
+    },
+    {
+      "word": "comprendre",
+      "meaning": "to understand",
+      "example": "je comprends que vous soyez fâché"
+    },
+    {
+      "word": "depuis",
+      "meaning": "since, for",
+      "example": "je le connais depuis le lycée"
+    },
+    {
+      "word": "point",
+      "meaning": "point; at all",
+      "example": "je suis d'accord avec ce point de vue"
+    },
+    {
+      "word": "ainsi",
+      "meaning": "thus",
+      "example": "qu'est-ce qui le pousse à agir ainsi?"
+    },
+    {
+      "word": "heure",
+      "meaning": "hour",
+      "example": "a quelle heure sont-ils partis?"
+    },
+    {
+      "word": "rester",
+      "meaning": "to stay",
+      "example": "le temps qu'il te reste, trouve une solution"
+    },
+    {
+      "word": "seul",
+      "meaning": "alone, only",
+      "example": "parler tout seul était signe d'aliénation"
+    },
+    {
+      "word": "année",
+      "meaning": "year",
+      "example": "il devait se présenter l'année suivante"
+    },
+    {
+      "word": "toujours",
+      "meaning": "always",
+      "example": "tu es toujours en retard"
+    },
+    {
+      "word": "tenir",
+      "meaning": "to hold",
+      "example": "c'est une porte de sécurité. tiens ça"
+    },
+    {
+      "word": "porter",
+      "meaning": "to wear, carry",
+      "example": "il a porté le maillot jaune un jour"
+    },
+    {
+      "word": "parler",
+      "meaning": "to speak",
+      "example": "je sais de quoi je parle"
+    },
+    {
+      "word": "fort",
+      "meaning": "strong",
+      "example": "c'est une femme forte"
+    },
+    {
+      "word": "montrer",
+      "meaning": "to show",
+      "example": "c'est une étrange façon de montrer votre reconnaissance"
+    },
+    {
+      "word": "là",
+      "meaning": "there, here",
+      "example": "je n'étais pas passé par là"
+    },
+    {
+      "word": "certain",
+      "meaning": "certain, sure",
+      "example": "certains ont affirmé que le gouvernement était trop faible"
+    },
+    {
+      "word": "fin",
+      "meaning": "end; gist; clever person",
+      "example": "la fin est importante en toutes choses"
+    },
+    {
+      "word": "tu",
+      "meaning": "you",
+      "example": "a ma place, tu ne le ferais pas"
+    },
+    {
+      "word": "continuer",
+      "meaning": "to continue",
+      "example": "tu continues de m'impressionner"
+    },
+    {
+      "word": "pays",
+      "meaning": "country",
+      "example": "ils vivent dans ce beau pays"
+    },
+    {
+      "word": "trois",
+      "meaning": "three",
+      "example": "les trois chasseurs étaient en pleine lumière"
+    },
+    {
+      "word": "penser",
+      "meaning": "to think",
+      "example": "je pense que vous le connaissez bien"
+    },
+    {
+      "word": "lieu",
+      "meaning": "place",
+      "example": "je suis né dans un lieu public"
+    },
+    {
+      "word": "partie",
+      "meaning": "part",
+      "example": "il garde la majeure partie de cet argent"
+    },
+    {
+      "word": "quand",
+      "meaning": "when",
+      "example": "tu aurais dû me tuer quand tu en as eu l'occasion"
+    },
+    {
+      "word": "suivre",
+      "meaning": "to follow",
+      "example": "les autres, suivez-moi!"
+    },
+    {
+      "word": "contre",
+      "meaning": "against",
+      "example": "je vois, tu es en colère contre moi"
+    },
+    {
+      "word": "sous",
+      "meaning": "under",
+      "example": "juste sous ton nez"
+    },
+    {
+      "word": "côté",
+      "meaning": "side",
+      "example": "il s'arrête à côté du fauteuil"
+    },
+    {
+      "word": "ensemble",
+      "meaning": "together",
+      "example": "on n'a jamais été si bien ensemble"
+    },
+    {
+      "word": "chose",
+      "meaning": "thing",
+      "example": "les choses pourraient bien changer à l'avenir"
+    },
+    {
+      "word": "enfant",
+      "meaning": "child",
+      "example": "mes enfants sont en vie"
+    },
+    {
+      "word": "cause",
+      "meaning": "cause",
+      "example": "ces hallucinations ont une cause"
+    },
+    {
+      "word": "politique",
+      "meaning": "politics; political",
+      "example": "elle se spécialise en sciences politiques"
+    },
+    {
+      "word": "place",
+      "meaning": "room, space, square, place",
+      "example": "je n'aimerais pas être à votre place"
+    },
+    {
+      "word": "seulement",
+      "meaning": "only",
+      "example": "on va seulement rester quelques jours, ma chérie"
+    },
+    {
+      "word": "moi",
+      "meaning": "me",
+      "example": "tu sors avec moi ce soir?"
+    },
+    {
+      "word": "vie",
+      "meaning": "life",
+      "example": "je suis sûr qu'elle est en vie"
+    },
+    {
+      "word": "connaître",
+      "meaning": "to know",
+      "example": "je le connaissais depuis vingt ans"
+    },
+    {
+      "word": "jusque",
+      "meaning": "to, up to, until",
+      "example": "ils me poursuivirent jusque dans la rue"
+    },
+    {
+      "word": "croire",
+      "meaning": "to believe",
+      "example": "je n'arrive pas à y croire"
+    },
+    {
+      "word": "homme",
+      "meaning": "man",
+      "example": "l'homme est plus important que l'État"
+    },
+    {
+      "word": "cas",
+      "meaning": "case",
+      "example": "en tout cas, moi, je ne l'ai pas"
+    },
+    {
+      "word": "petit",
+      "meaning": "small, little",
+      "example": "ce petit drogué n'a pas tort"
+    },
+    {
+      "word": "commencer",
+      "meaning": "to begin, start",
+      "example": "il est important que ces entretiens commencent immédiatement"
+    },
+    {
+      "word": "compter",
+      "meaning": "to count",
+      "example": "je peux compter sur toi"
+    },
+    {
+      "word": "fait",
+      "meaning": "done, fact",
+      "example": "dans les faits, il a raison"
+    },
+    {
+      "word": "tel",
+      "meaning": "such",
+      "example": "je vais m'abstenir d'employer un tel langage"
+    },
+    {
+      "word": "droit",
+      "meaning": "right",
+      "example": "elle a le droit de tout savoir"
+    },
+    {
+      "word": "question",
+      "meaning": "question",
+      "example": "je suis gêné de répondre à cette question"
+    },
+    {
+      "word": "donc",
+      "meaning": "so, then, therefore, thus",
+      "example": "nous avons donc dû faire les calculs nous-mêmes"
+    },
+    {
+      "word": "quel",
+      "meaning": "which, what",
+      "example": "quel livre cherchiez-vous?"
+    },
+    {
+      "word": "général",
+      "meaning": "general",
+      "example": "voici quelques conseils généraux"
+    },
+    {
+      "word": "moment",
+      "meaning": "moment",
+      "example": "arrête de parler pour un moment"
+    },
+    {
+      "word": "entendre",
+      "meaning": "to hear",
+      "example": "j'ai entendu la nouvelle"
+    },
+    {
+      "word": "beaucoup",
+      "meaning": "much, a lot of, many",
+      "example": "il est en mesure de révéler beaucoup de choses"
+    },
+    {
+      "word": "chaque",
+      "meaning": "each",
+      "example": "chaque entreprise doit avoir sa propre organisation"
+    },
+    {
+      "word": "jeune",
+      "meaning": "young",
+      "example": "le gouvernement cherche à exploiter les jeunes"
+    },
+    {
+      "word": "travail",
+      "meaning": "work",
+      "example": "je ne prenais pas mon travail au sérieux"
+    },
+    {
+      "word": "femme",
+      "meaning": "woman, wife",
+      "example": "je vous déclare maintenant mari et femme"
+    },
+    {
+      "word": "attendre",
+      "meaning": "to wait",
+      "example": "ma mère m'attend dans la grande salle"
+    },
+    {
+      "word": "remettre",
+      "meaning": "to deliver, replace, set, put",
+      "example": "on s'est remis à marcher"
+    },
+    {
+      "word": "appeler",
+      "meaning": "to call",
+      "example": "comment s'appelle-t-il?"
+    },
+    {
+      "word": "permettre",
+      "meaning": "to allow",
+      "example": "vous permettez que j'utilise votre téléphone?"
+    },
+    {
+      "word": "occuper",
+      "meaning": "to occupy",
+      "example": "sa main droite était occupée à tenir la petite valise"
+    },
+    {
+      "word": "gouvernement",
+      "meaning": "government",
+      "example": "le gouvernement a augmenté les impôts"
+    },
+    {
+      "word": "eux",
+      "meaning": "them",
+      "example": "c'est eux qui comptent"
+    },
+    {
+      "word": "devenir",
+      "meaning": "to become",
+      "example": "je suis très heureux que vous deveniez ma voisine"
+    },
+    {
+      "word": "partir",
+      "meaning": "to leave",
+      "example": "il est parti à présent"
+    },
+    {
+      "word": "plan",
+      "meaning": "plan",
+      "example": "achetez donc un plan de la ville"
+    },
+    {
+      "word": "décider",
+      "meaning": "to decide",
+      "example": "j'ai décidé d'écrire un roman"
+    },
+    {
+      "word": "soit",
+      "meaning": "either...or",
+      "example": "il a pas le choix: soit il est une star soit il est rien"
+    },
+    {
+      "word": "ici",
+      "meaning": "here",
+      "example": "moi je reste ici"
+    },
+    {
+      "word": "rien",
+      "meaning": "nothing",
+      "example": "moi, je n'en sais rien"
+    },
+    {
+      "word": "cours",
+      "meaning": "course",
+      "example": "ils organisaient des petits cours et des séminaires"
+    },
+    {
+      "word": "affaire",
+      "meaning": "business, matter",
+      "example": "occupe-toi de tes affaires"
+    },
+    {
+      "word": "nom",
+      "meaning": "name",
+      "example": "quel est son nom?"
+    },
+    {
+      "word": "famille",
+      "meaning": "family",
+      "example": "il provient sûrement d'une excellente famille"
+    },
+    {
+      "word": "effet",
+      "meaning": "effect",
+      "example": "il s'agit, en effet, d'une question cruciale"
+    },
+    {
+      "word": "arriver",
+      "meaning": "to arrive, happen",
+      "example": "cela ne m'était pas arrivé depuis"
+    },
+    {
+      "word": "possible",
+      "meaning": "possible",
+      "example": "nous avons donc deux scénarios possibles"
+    },
+    {
+      "word": "car",
+      "meaning": "because; bus",
+      "example": "c'est dommage, car tu vas perdre un gros client"
+    },
+    {
+      "word": "servir",
+      "meaning": "to serve",
+      "example": "il m'a servi une coupe de champagne"
+    },
+    {
+      "word": "mois",
+      "meaning": "month",
+      "example": "il a écrit ce livre en deux mois"
+    },
+    {
+      "word": "jamais",
+      "meaning": "never",
+      "example": "je jure de ne plus jamais te contacter"
+    },
+    {
+      "word": "sembler",
+      "meaning": "to seem",
+      "example": "le processus semble irréversible"
+    },
+    {
+      "word": "tant",
+      "meaning": "so much, so many",
+      "example": "mais vous avez tant à enseigner"
+    },
+    {
+      "word": "vers",
+      "meaning": "toward; verse",
+      "example": "un tram se dirige vers toi. monte dedans"
+    },
+    {
+      "word": "besoin",
+      "meaning": "need",
+      "example": "nous avons vraiment besoin d'aide"
+    },
+    {
+      "word": "revenir",
+      "meaning": "to come back",
+      "example": "je sais qu'elle ne reviendra jamais"
+    },
+    {
+      "word": "dès",
+      "meaning": "from, as soon",
+      "example": "on me fera signe dès que vous descendrez"
+    },
+    {
+      "word": "moyen",
+      "meaning": "means, way; medium",
+      "example": "il songeait aux moyens de profiter de sa victoire"
+    },
+    {
+      "word": "groupe",
+      "meaning": "group",
+      "example": "on va commencer avec le premier groupe"
+    },
+    {
+      "word": "problème",
+      "meaning": "problem",
+      "example": "nous avons osé soulever le problème"
+    },
+    {
+      "word": "rapport",
+      "meaning": "relationship, report",
+      "example": "je propose que le rapport du comité soit adopté"
+    },
+    {
+      "word": "peut-être",
+      "meaning": "perhaps, maybe",
+      "example": "j'ai peut-être une idée"
+    },
+    {
+      "word": "vue",
+      "meaning": "view",
+      "example": "la vue est belle, de cette fenêtre"
+    },
+    {
+      "word": "maintenant",
+      "meaning": "now",
+      "example": "je ne peux pas partir maintenant"
+    },
+    {
+      "word": "pourquoi",
+      "meaning": "why",
+      "example": "pourquoi tu ne m'invites pas?"
+    },
+    {
+      "word": "meilleur",
+      "meaning": "better, best",
+      "example": "j'apprends à être un meilleur mari"
+    },
+    {
+      "word": "trop",
+      "meaning": "too much, too many",
+      "example": "la vie est trop courte. essayez d'être heureuse"
+    },
+    {
+      "word": "laisser",
+      "meaning": "to leave",
+      "example": "il va nous laisser tranquilles"
+    },
+    {
+      "word": "ordre",
+      "meaning": "order",
+      "example": "ce sont des scientifiques de premier ordre"
+    },
+    {
+      "word": "devant",
+      "meaning": "in front, ahead",
+      "example": "une fumée montait devant nous sur l'horizon"
+    },
+    {
+      "word": "recevoir",
+      "meaning": "to receive",
+      "example": "il n'a plus reçu de lettres de moi"
+    },
+    {
+      "word": "répondre",
+      "meaning": "to answer",
+      "example": "j'aimerais y répondre par une autre question"
+    },
+    {
+      "word": "vivre",
+      "meaning": "to live",
+      "example": "aucune Marocaine ne vit seule dans le quartier"
+    },
+    {
+      "word": "long",
+      "meaning": "long, lengthy",
+      "example": "l'éducation sur le long terme paiera, j'en suis convaincu"
+    },
+    {
+      "word": "service",
+      "meaning": "service",
+      "example": "je faisais mon service militaire"
+    },
+    {
+      "word": "ministre",
+      "meaning": "minister",
+      "example": "les ministres se sont réunis dans la nuit"
+    },
+    {
+      "word": "face",
+      "meaning": "front, side, face",
+      "example": "on s'est trouvés face à face"
+    },
+    {
+      "word": "chez",
+      "meaning": "at, with",
+      "example": "elle ira peut être vivre définitivement chez lui"
+    },
+    {
+      "word": "te",
+      "meaning": "you, to you, from you",
+      "example": "je vais t'emmener chez un médecin"
+    },
+    {
+      "word": "rappeler",
+      "meaning": "to recall, call back",
+      "example": "je ne me rappelle pas avoir été aussi heureux"
+    },
+    {
+      "word": "présenter",
+      "meaning": "to present",
+      "example": "papa je te présente Claire"
+    },
+    {
+      "word": "accepter",
+      "meaning": "to accept",
+      "example": "j'accepte avec plaisir votre aimable invitation"
+    },
+    {
+      "word": "agir",
+      "meaning": "to act",
+      "example": "c'est le moment d'agir"
+    },
+    {
+      "word": "simple",
+      "meaning": "simple",
+      "example": "on préférerait une réponse simple"
+    },
+    {
+      "word": "plusieurs",
+      "meaning": "several",
+      "example": "il y a plusieurs formes d'humour"
+    },
+    {
+      "word": "votre",
+      "meaning": "your",
+      "example": "permettez-moi de vous parler dans votre langue"
+    },
+    {
+      "word": "important",
+      "meaning": "important",
+      "example": "c'est une question extrêmement importante"
+    },
+    {
+      "word": "présent",
+      "meaning": "present",
+      "example": "il est trop tard pour dîner à présent"
+    },
+    {
+      "word": "mieux",
+      "meaning": "better",
+      "example": "je ne vous ai jamais mieux aimée"
+    },
+    {
+      "word": "poser",
+      "meaning": "to put, pose, ask",
+      "example": "je ne me posais plus de questions"
+    },
+    {
+      "word": "jouer",
+      "meaning": "to play",
+      "example": "les enfants jouent dehors"
+    },
+    {
+      "word": "mot",
+      "meaning": "word",
+      "example": "je ne crois pas un mot sorti de ta petite bouche"
+    },
+    {
+      "word": "reconnaître",
+      "meaning": "to recognize",
+      "example": "Joseph reconnut le chant de la grive"
+    },
+    {
+      "word": "force",
+      "meaning": "force",
+      "example": "parle-moi de ces forces surnaturelles"
+    },
+    {
+      "word": "situation",
+      "meaning": "situation",
+      "example": "dans des situations aussi difficiles, il faut trancher"
+    },
+    {
+      "word": "offrir",
+      "meaning": "to offer",
+      "example": "alors, je vous offre la vie éternelle"
+    },
+    {
+      "word": "près",
+      "meaning": "near, nearby, close by",
+      "example": "il y a un siège vide près de vous"
+    },
+    {
+      "word": "choisir",
+      "meaning": "to choose",
+      "example": "c'est maintenant le moment de choisir"
+    },
+    {
+      "word": "national",
+      "meaning": "national",
+      "example": "il y avait l'intérêt national français"
+    },
+    {
+      "word": "projet",
+      "meaning": "project",
+      "example": "le gouvernement ne financerait aucun projet touchant cette pratique"
+    },
+    {
+      "word": "ni",
+      "meaning": "nor",
+      "example": "je ne mange pas de viandes, ni de produits laitiers"
+    },
+    {
+      "word": "puis",
+      "meaning": "then, so",
+      "example": "elle a tenté de me tuer, puis elle m'a chassée"
+    },
+    {
+      "word": "toucher",
+      "meaning": "to touch",
+      "example": "il lui touche l'épaule"
+    },
+    {
+      "word": "train",
+      "meaning": "train",
+      "example": "je pris le train pour un aller-retour vers la mer"
+    },
+    {
+      "word": "aujourd'hui",
+      "meaning": "today",
+      "example": "je peux, aujourd'hui encore, en réciter"
+    },
+    {
+      "word": "comment",
+      "meaning": "how",
+      "example": "voyons un peu comment les choses se sont passées"
+    },
+    {
+      "word": "surtout",
+      "meaning": "especially, above all",
+      "example": "j'ai surtout besoin d'argent"
+    },
+    {
+      "word": "gens",
+      "meaning": "people",
+      "example": "des gens sont venus me voir"
+    },
+    {
+      "word": "propre",
+      "meaning": "clean, proper",
+      "example": "la pétasse était propre, mec"
+    },
+    {
+      "word": "grâce",
+      "meaning": "thanks, grace, favour",
+      "example": "je ne vous demande aucune grâce"
+    },
+    {
+      "word": "idée",
+      "meaning": "idea",
+      "example": "que pensez-vous de cette idée?"
+    },
+    {
+      "word": "selon",
+      "meaning": "according to",
+      "example": "tout est prêt selon vos désirs"
+    },
+    {
+      "word": "région",
+      "meaning": "region",
+      "example": "la région a connu une cinquantaine de massacres"
+    },
+    {
+      "word": "aimer",
+      "meaning": "to like, love",
+      "example": "tu sais que je t'aime"
+    },
+    {
+      "word": "sens",
+      "meaning": "sense, meaning",
+      "example": "il manquait un sens à donner à ma vie"
+    },
+    {
+      "word": "retrouver",
+      "meaning": "to find, recall",
+      "example": "je te retrouve dehors"
+    },
+    {
+      "word": "semaine",
+      "meaning": "week",
+      "example": "ma pièce se jouait cette semaine"
+    },
+    {
+      "word": "également",
+      "meaning": "also, too, as well, equally",
+      "example": "reculer est également hors de question"
+    },
+    {
+      "word": "ci",
+      "meaning": "this one, here",
+      "example": "et celui-ci? oui, il est vraiment super"
+    },
+    {
+      "word": "façon",
+      "meaning": "way, manner",
+      "example": "c'est une façon de voir, je suppose"
+    },
+    {
+      "word": "nombre",
+      "meaning": "number",
+      "example": "il existe un nombre infini de réponses possibles"
+    },
+    {
+      "word": "perdre",
+      "meaning": "to lose",
+      "example": "vous avez perdu votre mère, mademoiselle?"
+    }
+  ]
+}
