@@ -59,7 +59,11 @@ export default function WordListItem({ testMode, index, word, isFinish }) {
 
     const onSpeech = () => {
         const speech = new SpeechSynthesisUtterance()
-        speech.lang = 'en-US'
+        if (word.isFrench) {
+            speech.lang = 'fr-FR'
+        } else {
+            speech.lang = 'en-US'
+        }
         speech.text = word.word
         speech.volume = 1
         speech.rate = 1

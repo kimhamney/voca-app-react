@@ -49,11 +49,13 @@ const WordCard = styled.button`
     align-items: center;
     background-color: #0066ff;
     border: 0;
+    cursor: pointer;
 `
 
 const CardText = styled.label`
     color: white;
     font-size: 1rem;
+    cursor: pointer;
 `
 
 const InputLabel = styled.label`
@@ -104,6 +106,7 @@ class Word {
         this.meaningArr = getFilterArr(data.meaning)
         this.isCorrect = false
         this.isPlaying = false
+        this.isFrench = false
     }
 }
 
@@ -113,49 +116,71 @@ const getFilterArr = (input) => {
     }
 
     let value = input.replace(/\s/g, '')
-    let arr = value.split(/[^a-zA-Z가-힣]/).filter(Boolean)
+    let arr = value.split(/[^a-zA-Z가-힣À-ÿ]/).filter(Boolean)
     return arr
 }
 
 const MIDDLE_WORD_COUNT = 15
 const TOEFL_WORD_COUNT = 13
+const FRENCH_WORD_COUNT = 20
 
-const getLocalData = (index, isMiddle) => {
-    let fileNum = index + 1
-    let folder = isMiddle ? 'middle_word' : 'toefl_word'
-    let obj = require(
-        '../resources/' + folder + '/' + folder + '_' + fileNum + '.json'
-    )
-    // let obj = require('../resources/words_data_small.json')
+const getLocalData = (index, type) => {
+    let fileNum = String(index + 1).padStart(2, '0')
+    let folder = ''
+
+    if (type === 'middle') {
+        folder = 'middle_word'
+    } else if (type === 'toefl') {
+        folder = 'toefl_word'
+    } else if (type === 'french') {
+        folder = 'french_word'
+    }
+
+    let obj = require(`../resources/${folder}/${folder}_${fileNum}.json`)
     let json = JSON.parse(JSON.stringify(obj))
     let datas = json['data']
     let list = []
 
     for (let i = 0; i < datas.length; i++) {
-        let data = new Word(datas[i], false)
+        let data = new Word(datas[i])
+        data.isFrench = type === 'french'
         list.push(data)
     }
+
     return list
 }
 
 export default function WordSelect(props) {
     const [errorMessage, setErrorMessage] = useState('')
 
-    const setList = (isMiddle) => {
+    const setList = (type) => {
         let list = []
-        let count = isMiddle ? MIDDLE_WORD_COUNT : TOEFL_WORD_COUNT
+        let count = 0
+
+        if (type === 'middle') {
+            count = MIDDLE_WORD_COUNT
+        } else if (type === 'toefl') {
+            count = TOEFL_WORD_COUNT
+        } else if (type === 'french') {
+            count = FRENCH_WORD_COUNT
+        }
+
         for (let i = 0; i < count; i++) {
             list.push(
-                <WordCard key={i} onClick={() => onClickBtn(i, isMiddle)}>
+                <WordCard
+                    key={`${type}-${i}`}
+                    onClick={() => onClickBtn(i, type)}
+                >
                     <CardText>day {i + 1}</CardText>
                 </WordCard>
             )
         }
+
         return list
     }
 
-    const onClickBtn = (index, isMiddle) => {
-        props.getDataList(getLocalData(index, isMiddle))
+    const onClickBtn = (index, type) => {
+        props.getDataList(getLocalData(index, type))
     }
 
     const onUploadFile = (e) => {
@@ -165,20 +190,22 @@ export default function WordSelect(props) {
             reader.onload = (e) => {
                 try {
                     const data = e.target.result
-                    const workbook = xlsx.read(data, { type: 'string' })
+                    const workbook = xlsx.read(data, { type: 'array' })
                     const sheetName = workbook.SheetNames[0]
                     const worksheet = workbook.Sheets[sheetName]
                     const datas = xlsx.utils.sheet_to_json(worksheet)
                     const list = []
+
                     for (let i = 0; i < datas.length; i++) {
                         if (!datas[i].word) {
                             ShowErrorMessage()
                             return
                         }
 
-                        let data = new Word(datas[i], false)
+                        let data = new Word(datas[i])
                         list.push(data)
                     }
+
                     props.getDataList(list)
                 } catch (e) {
                     ShowErrorMessage()
@@ -190,6 +217,7 @@ export default function WordSelect(props) {
                 ShowErrorMessage()
                 return
             }
+
             reader.readAsArrayBuffer(e.target.files[0])
         }
     }
@@ -202,12 +230,19 @@ export default function WordSelect(props) {
         <Container>
             <WordContainer>
                 <WordText>BASIC</WordText>
-                <ListContainer>{setList(true)}</ListContainer>
+                <ListContainer>{setList('middle')}</ListContainer>
             </WordContainer>
+
             <WordContainer>
                 <WordText>TOEFL</WordText>
-                <ListContainer>{setList(false)}</ListContainer>
+                <ListContainer>{setList('toefl')}</ListContainer>
             </WordContainer>
+
+            <WordContainer>
+                <WordText>FRENCH</WordText>
+                <ListContainer>{setList('french')}</ListContainer>
+            </WordContainer>
+
             <WordContainer>
                 <WordText>EXCEL</WordText>
                 <InputLabel htmlFor="upload">
@@ -244,6 +279,7 @@ export default function WordSelect(props) {
                         <DownloadText>Form</DownloadText>
                     </DownloadButton>
                 </DownloadContainer>
+
                 <ErrorMessageText>{errorMessage}</ErrorMessageText>
             </WordContainer>
         </Container>
