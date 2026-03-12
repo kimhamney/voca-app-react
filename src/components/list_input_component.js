@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -23,9 +24,18 @@ const Meaning = styled.p`
 `
 
 export default function WordListInput({ text, isWord, isCorrect, isFinish }) {
+    const inputRef = useRef()
+
+    useEffect(() => {
+        if (!isFinish && inputRef.current) {
+            inputRef.current.value = ''
+        }
+    }, [isFinish])
+
     return (
         <Container>
             <Input
+                ref={inputRef}
                 className={isWord ? 'wordInput' : 'meaningInput'}
                 type="text"
                 style={
@@ -33,7 +43,7 @@ export default function WordListInput({ text, isWord, isCorrect, isFinish }) {
                         ? { borderColor: 'black' }
                         : { borderColor: isCorrect ? 'blue' : 'red' }
                 }
-            ></Input>
+            />
             <Meaning
                 className="meaning"
                 style={{ display: !isFinish || isCorrect ? 'none' : 'inline' }}
