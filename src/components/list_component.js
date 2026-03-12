@@ -8,8 +8,12 @@ const ListContainer = styled.div`
     overflow-y: scroll;
 `
 
+const normalize = (str = '') => {
+    return str.toLowerCase().replace(/\s/g, '')
+}
+
 const getFilterArr = (input) => {
-    let value = input.replace(/\s/g, '')
+    let value = normalize(input)
     let arr = value.split(/[^a-zA-Z가-힣]/).filter(Boolean)
     return arr
 }
@@ -19,7 +23,7 @@ const checkWord = (words, inputs) => {
 
     for (let i = 0; i < words.length; i++) {
         for (let j = 0; j < inputs.length; j++) {
-            if (words[i] === inputs[j]) return true
+            if (normalize(words[i]) === normalize(inputs[j])) return true
         }
     }
     return false
@@ -49,11 +53,13 @@ const ListComponent = forwardRef((props, ref) => {
                 case 'listening':
                     isCorrect =
                         checkWord(meaningArr, inputArr) &&
-                        props.dataList[i].word === wordInputList[i].value
+                        normalize(props.dataList[i].word) ===
+                            normalize(wordInputList[i].value)
                     break
                 case 'meaning':
                     isCorrect =
-                        props.dataList[i].word === meaningInputList[i].value
+                        normalize(props.dataList[i].word) ===
+                        normalize(meaningInputList[i].value)
                     break
                 default:
                     break
@@ -75,7 +81,7 @@ const ListComponent = forwardRef((props, ref) => {
                     index={index}
                     word={word}
                     isFinish={props.isFinish}
-                ></ListItemComponent>
+                />
             ))}
         </ListContainer>
     )
