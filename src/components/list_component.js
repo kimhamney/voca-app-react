@@ -32,7 +32,7 @@ const checkWord = (words, inputs) => {
 const ListComponent = forwardRef((props, ref) => {
     useImperativeHandle(ref, () => ({
         submit() {
-            checkData()
+            return checkData()
         },
     }))
 
@@ -40,6 +40,7 @@ const ListComponent = forwardRef((props, ref) => {
         let wordInputList = document.getElementsByClassName('wordInput')
         let meaningInputList = document.getElementsByClassName('meaningInput')
         let count = 0
+        let wrongList = []
 
         for (let i = 0; i < props.dataList.length; i++) {
             let meaningArr = props.dataList[i].meaningArr
@@ -66,10 +67,15 @@ const ListComponent = forwardRef((props, ref) => {
             }
             props.dataList[i].isCorrect = isCorrect
 
-            if (isCorrect) count++
+            if (isCorrect) {
+                count++
+            } else {
+                wrongList.push(props.dataList[i])
+            }
         }
 
         props.testCount(count + '/' + props.dataList.length)
+        return wrongList
     }
 
     return (

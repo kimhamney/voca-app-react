@@ -50,6 +50,7 @@ export default function TestMode({ settings, dataList }) {
     const [isFinish, setFinish] = useState(false)
     const [showDataList, setShowDataList] = useState([])
     const [testCount, setTestCount] = useState('')
+    const [wrongDataList, setWrongDataList] = useState([])
     const submitRef = useRef()
 
     useEffect(() => {
@@ -65,19 +66,29 @@ export default function TestMode({ settings, dataList }) {
         let endIndex = settings.endIndex + 1
 
         for (let i = startIndex; i < endIndex; i++) {
-            list.push(dataList[i])
+            if (dataList[i]) {
+                list.push(dataList[i])
+            }
         }
 
         list.sort(() => Math.random() - 0.5)
         setShowDataList(list)
+        setWrongDataList([])
+        setFinish(false)
+        setTestCount('')
     }
 
     const onSubmit = () => {
-        setFinish(!isFinish)
-        if (isFinish) {
-            setList()
+        if (!isFinish) {
+            const wrongList = submitRef.current.submit()
+            setWrongDataList(wrongList || [])
+            setFinish(true)
         } else {
-            submitRef.current.submit()
+            const retryList = [...wrongDataList]
+            retryList.sort(() => Math.random() - 0.5)
+            setShowDataList(retryList)
+            setFinish(false)
+            setTestCount('')
         }
     }
 
